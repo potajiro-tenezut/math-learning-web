@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { Latex } from "./components/Latex";
 import { ContentError } from "./data/contentRepository";
 import type {
@@ -28,8 +28,46 @@ const statusNames: Record<ProgressStatus, string> = {
   completed: "できた",
 };
 
+const roastMessages = [
+  "え、そこ？ 正解から全力で逃げてるけど。",
+  "勘で押して、勘にも負けたの？",
+  "今の一手、数学が二度見してる。",
+  "その選択は雑すぎ。指が勝手に動いた？",
+  "考えた結果がそれ？ いったん深呼吸しよ。",
+  "逆にどうしたらそこを選べるの。",
+];
+
 function statusFor(summary: QuestionSummary, progress: ProgressRepository): ProgressStatus {
   return progress.get(summary.id, summary.revision)?.status ?? "not-started";
+}
+
+function useIOSScrollGuard(surfaceKey: string) {
+  useEffect(() => {
+    const surface = document.querySelector<HTMLElement>(".app-frame");
+    if (!surface) return;
+    let startY = 0;
+
+    const rememberStart = (event: TouchEvent) => {
+      startY = event.touches[0]?.clientY ?? 0;
+    };
+    const containAtEdges = (event: TouchEvent) => {
+      const currentY = event.touches[0]?.clientY ?? startY;
+      const deltaY = currentY - startY;
+      const atTop = surface.scrollTop <= 0;
+      const atBottom =
+        surface.scrollTop + surface.clientHeight >= surface.scrollHeight - 1;
+      if ((atTop && deltaY > 0) || (atBottom && deltaY < 0)) {
+        event.preventDefault();
+      }
+    };
+
+    surface.addEventListener("touchstart", rememberStart, { passive: true });
+    surface.addEventListener("touchmove", containAtEdges, { passive: false });
+    return () => {
+      surface.removeEventListener("touchstart", rememberStart);
+      surface.removeEventListener("touchmove", containAtEdges);
+    };
+  }, [surfaceKey]);
 }
 
 function Brand() {
@@ -267,6 +305,16 @@ interface PlayerProps {
   onDone: () => void;
 }
 
+interface FlyingAnswer {
+  id: number;
+  label: string;
+  style: CSSProperties & {
+    "--fly-x": string;
+    "--fly-y": string;
+    "--flight-duration": string;
+  };
+}
+
 function Player({ question, progress, quickPosition, onBack, onDone }: PlayerProps) {
   const saved = progress.get(question.id, question.revision);
   const [session, setSession] = useState(
@@ -278,8 +326,24 @@ function Player({ question, progress, quickPosition, onBack, onDone }: PlayerPro
       ),
   );
   const [, render] = useState(0);
+  const formulaRef = useRef<HTMLDivElement>(null);
+  const timers = useRef<number[]>([]);
+  const roastTimer = useRef<number | undefined>(undefined);
+  const [flyingAnswer, setFlyingAnswer] = useState<FlyingAnswer>();
+  const [formulaBurst, setFormulaBurst] = useState(false);
+  const [formulaTransformed, setFormulaTransformed] = useState(false);
+  const [correctFeedbackReady, setCorrectFeedbackReady] = useState(false);
+  const [roast, setRoast] = useState<{ id: number; text: string }>();
   const state = session.state;
   const step = question.solutionSteps[state.stepIndex];
+
+  useEffect(
+    () => () => {
+      timers.current.forEach((timer) => window.clearTimeout(timer));
+      if (roastTimer.current) window.clearTimeout(roastTimer.current);
+    },
+    [],
+  );
 
   const save = (status: "in-progress" | "completed", stepIndex: number) => {
     progress.save({
@@ -291,9 +355,55 @@ function Player({ question, progress, quickPosition, onBack, onDone }: PlayerPro
     });
   };
 
-  const choose = (choiceId: string) => {
-    session.select(choiceId);
+  const showRoast = () => {
+    if (roastTimer.current) window.clearTimeout(roastTimer.current);
+    const text = roastMessages[Math.floor(Math.random() * roastMessages.length)];
+    setRoast({ id: Date.now(), text });
+    roastTimer.current = window.setTimeout(() => setRoast(undefined), 1000);
+  };
+
+  const choose = (choiceId: string, button: HTMLButtonElement) => {
+    const nextState = session.select(choiceId);
     save("in-progress", session.state.stepIndex);
+    if (nextState.phase !== "correct") {
+      showRoast();
+      render((value) => value + 1);
+      return;
+    }
+
+    const target = formulaRef.current?.getBoundingClientRect();
+    const source = button.getBoundingClientRect();
+    const choice = step.choices.find((item) => item.id === choiceId);
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const duration = reducedMotion ? 0 : 780;
+    setFormulaTransformed(false);
+    setCorrectFeedbackReady(false);
+    if (target) {
+      setFlyingAnswer({
+        id: Date.now(),
+        label: choice?.text || "正解",
+        style: {
+          left: source.left,
+          top: source.top,
+          width: Math.min(source.width, 310),
+          "--fly-x": `${target.left + target.width / 2 - (source.left + source.width / 2)}px`,
+          "--fly-y": `${target.top + target.height / 2 - (source.top + source.height / 2)}px`,
+          "--flight-duration": `${duration}ms`,
+        },
+      });
+    }
+    timers.current.push(
+      window.setTimeout(() => {
+        setFlyingAnswer(undefined);
+        setFormulaTransformed(true);
+        setFormulaBurst(true);
+      }, Math.max(0, duration - 40)),
+      window.setTimeout(() => {
+        setFormulaBurst(false);
+        setCorrectFeedbackReady(true);
+        render((value) => value + 1);
+      }, duration + 300),
+    );
     render((value) => value + 1);
   };
 
@@ -301,16 +411,42 @@ function Player({ question, progress, quickPosition, onBack, onDone }: PlayerPro
     session.next();
     const nextState = session.state;
     save(nextState.phase === "completed" ? "completed" : "in-progress", nextState.stepIndex);
+    setFormulaTransformed(false);
+    setCorrectFeedbackReady(false);
+    setFormulaBurst(false);
+    setFlyingAnswer(undefined);
     render((value) => value + 1);
   };
 
   const restart = () => {
     progress.remove(question.id, question.revision);
     setSession(new LearningSession(question));
+    setFormulaTransformed(false);
+    setCorrectFeedbackReady(false);
+    setFormulaBurst(false);
+    setFlyingAnswer(undefined);
+    setRoast(undefined);
   };
 
   return (
     <main className="app-frame player-screen">
+      {flyingAnswer && (
+        <div
+          key={flyingAnswer.id}
+          className="flying-answer"
+          style={flyingAnswer.style}
+          aria-hidden="true"
+        >
+          <span>✓</span>
+          <strong>{flyingAnswer.label}</strong>
+        </div>
+      )}
+      {roast && (
+        <div key={roast.id} className="roast-popup" role="status" aria-live="assertive">
+          <span>不正解</span>
+          <strong>{roast.text}</strong>
+        </div>
+      )}
       <header className="sub-header player-header">
         <button type="button" className="back-button" onClick={onBack} aria-label="やめてホームへ戻る">
           ×
@@ -384,9 +520,20 @@ function Player({ question, progress, quickPosition, onBack, onDone }: PlayerPro
           </section>
         ) : (
           <section className="step-panel" aria-labelledby="step-question">
-            <div className="current-formula">
-              <span>いまの式</span>
-              <Latex value={step.beforeLatex} block />
+            <div
+              ref={formulaRef}
+              className={`current-formula${formulaBurst ? " exploding" : ""}${formulaTransformed ? " transformed" : ""}`}
+            >
+              <span>{formulaTransformed ? "変形すると" : "いまの式"}</span>
+              <Latex value={formulaTransformed ? step.afterLatex : step.beforeLatex} block />
+              {formulaBurst && (
+                <div className="formula-explosion" aria-hidden="true">
+                  {Array.from({ length: 10 }, (_, index) => (
+                    <i key={index} />
+                  ))}
+                  <b>BOOM!</b>
+                </div>
+              )}
             </div>
             <h2 id="step-question">次はどうする？</h2>
             <div className="choices">
@@ -404,7 +551,7 @@ function Player({ question, progress, quickPosition, onBack, onDone }: PlayerPro
                     key={choice.id}
                     className={`choice${correctness}`}
                     disabled={state.phase === "correct"}
-                    onClick={() => choose(choice.id)}
+                    onClick={(event) => choose(choice.id, event.currentTarget)}
                   >
                     <span className="choice-letter">{String.fromCharCode(65 + index)}</span>
                     <span className="choice-copy">
@@ -421,7 +568,7 @@ function Player({ question, progress, quickPosition, onBack, onDone }: PlayerPro
               })}
             </div>
 
-            {state.feedback && (
+            {state.feedback && (state.phase !== "correct" || correctFeedbackReady) && (
               <div
                 className={`feedback ${state.phase === "correct" ? "feedback-correct" : "feedback-wrong"}`}
                 role="status"
@@ -431,10 +578,6 @@ function Player({ question, progress, quickPosition, onBack, onDone }: PlayerPro
                 <p>{state.feedback}</p>
                 {state.phase === "correct" && (
                   <>
-                    <div className="result-math">
-                      <span>こうなるよ</span>
-                      <Latex value={step.afterLatex} block />
-                    </div>
                     <button type="button" className="continue-button" onClick={next} autoFocus>
                       {state.stepIndex === question.solutionSteps.length - 1
                         ? "答えを見る"
@@ -516,6 +659,8 @@ export default function App() {
   const [questionLoading, setQuestionLoading] = useState(false);
   const [quickQueue, setQuickQueue] = useState<QuestionSummary[]>();
   const [quickIndex, setQuickIndex] = useState(0);
+  const scrollSurfaceKey = `${screen}:${selected?.id ?? "none"}:${questionLoading ? "loading" : "ready"}`;
+  useIOSScrollGuard(scrollSurfaceKey);
 
   const open = async (summary: QuestionSummary) => {
     if (contentState.status !== "ready" || !contentState.repository || !contentState.content) return;

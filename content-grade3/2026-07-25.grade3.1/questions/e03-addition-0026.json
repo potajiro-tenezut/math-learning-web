@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-addition-0026",
+  "revision": "b504ad41fad543ac1ec2fe913f5c6a674769926997cc8ac0d32ad410f5781926",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-01",
+    "name": "たし算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-addition-calculation",
+  "problemText": "272 + 396 を計算しなさい。",
+  "problemLatex": "272+396",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "668"
+  },
+  "solutionPlan": {
+    "summary": "たし算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "272+396",
+      "operationText": "たし算をして、答えを 668 と求める。",
+      "operationLatex": "272+396=668",
+      "afterLatex": "668",
+      "reason": "272 と 396 をたすと 668 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "たし算をして、答えを 678 と求める。",
+          "latex": "272+396=678",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 678 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "たし算をして、答えを 668 と求める。",
+          "latex": "272+396=668",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-c",
+          "text": "たし算をして、答えを 658 と求める。",
+          "latex": "272+396=658",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 658 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "addition",
+      "summer-review"
+    ]
+  }
+}

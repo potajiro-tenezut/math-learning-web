@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-addition-0030",
+  "revision": "8c4bd39c954d51f9759b26c8b74560587a9497c7218744c7ea7d1e0f75513ac6",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-01",
+    "name": "たし算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-addition-calculation",
+  "problemText": "420 + 133 を計算しなさい。",
+  "problemLatex": "420+133",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "553"
+  },
+  "solutionPlan": {
+    "summary": "たし算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "420+133",
+      "operationText": "たし算をして、答えを 553 と求める。",
+      "operationLatex": "420+133=553",
+      "afterLatex": "553",
+      "reason": "420 と 133 をたすと 553 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "たし算をして、答えを 543 と求める。",
+          "latex": "420+133=543",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 543 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "たし算をして、答えを 563 と求める。",
+          "latex": "420+133=563",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 563 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "たし算をして、答えを 553 と求める。",
+          "latex": "420+133=553",
+          "isCorrect": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "addition",
+      "summer-review"
+    ]
+  }
+}

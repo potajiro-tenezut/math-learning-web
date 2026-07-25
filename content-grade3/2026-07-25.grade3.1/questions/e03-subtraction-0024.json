@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-subtraction-0024",
+  "revision": "2021510a29227fa451782e69345502780f8706e092932f303e70570f63ce2ae8",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-02",
+    "name": "ひき算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-subtraction-calculation",
+  "problemText": "472 - 128 を計算しなさい。",
+  "problemLatex": "472-128",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "344"
+  },
+  "solutionPlan": {
+    "summary": "ひき算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "472-128",
+      "operationText": "ひき算をして、答えを 344 と求める。",
+      "operationLatex": "472-128=344",
+      "afterLatex": "344",
+      "reason": "472 から 128 をひくと 344 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "ひき算をして、答えを 334 と求める。",
+          "latex": "472-128=334",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 334 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "ひき算をして、答えを 354 と求める。",
+          "latex": "472-128=354",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 354 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "ひき算をして、答えを 344 と求める。",
+          "latex": "472-128=344",
+          "isCorrect": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "subtraction",
+      "summer-review"
+    ]
+  }
+}

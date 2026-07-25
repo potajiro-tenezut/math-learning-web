@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-subtraction-0038",
+  "revision": "1559292cb8f087d541c002218333babf1bf8e008c0c2d1c70ed82e69641621ad",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-02",
+    "name": "ひき算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-subtraction-calculation",
+  "problemText": "344 - 66 を計算しなさい。",
+  "problemLatex": "344-66",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "278"
+  },
+  "solutionPlan": {
+    "summary": "ひき算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "344-66",
+      "operationText": "ひき算をして、答えを 278 と求める。",
+      "operationLatex": "344-66=278",
+      "afterLatex": "278",
+      "reason": "344 から 66 をひくと 278 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "ひき算をして、答えを 288 と求める。",
+          "latex": "344-66=288",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 288 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "ひき算をして、答えを 278 と求める。",
+          "latex": "344-66=278",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-c",
+          "text": "ひき算をして、答えを 268 と求める。",
+          "latex": "344-66=268",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 268 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "subtraction",
+      "summer-review"
+    ]
+  }
+}

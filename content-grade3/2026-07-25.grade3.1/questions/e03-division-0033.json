@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-division-0033",
+  "revision": "c2e3021b66551467f377c4f8363d31aad2f639c815ddcc243cd7eedfa32f96f0",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-04",
+    "name": "わり算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-division-calculation",
+  "problemText": "12 ÷ 2 を計算しなさい。",
+  "problemLatex": "12\\div2",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "6"
+  },
+  "solutionPlan": {
+    "summary": "わり算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "12\\div2",
+      "operationText": "わり算をして、答えを 6 と求める。",
+      "operationLatex": "12\\div2=6",
+      "afterLatex": "6",
+      "reason": "2 \\times 6=12 なので、12 \\div 2=6 です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "わり算をして、答えを 5 と求める。",
+          "latex": "12\\div2=5",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 5 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "わり算をして、答えを 7 と求める。",
+          "latex": "12\\div2=7",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 7 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "わり算をして、答えを 6 と求める。",
+          "latex": "12\\div2=6",
+          "isCorrect": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "division",
+      "summer-review"
+    ]
+  }
+}

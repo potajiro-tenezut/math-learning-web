@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u01-common-remainder-lcm-0007",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-01",
+    "name": "約数と倍数"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "imported",
+  "problemType": "common-remainder-lcm-basic",
+  "problemText": "15，20，24のどの数で割っても，11余る最小の3けたの整数を求めなさい。",
+  "problemLatex": "N\\equiv 11\\pmod {15},\\quad N\\equiv 11\\pmod {20},\\quad N\\equiv 11\\pmod {24}",
+  "given": {
+    "variables": [
+      "N"
+    ],
+    "conditions": [
+      "15，20，24のどの数で割っても11余る。",
+      "最小の3けたの整数を求める。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "131"
+  },
+  "solutionPlan": {
+    "summary": "求める数から共通の余り11を引くと15、20、24の公倍数になる。3数を素因数分解して最小公倍数120を求め、120の倍数に11を足した数から最小の3けたを選ぶ。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "N\\text{を}15,20,24\\text{で割るとそれぞれ}11\\text{余る}",
+      "operationText": "Nから共通の余り11を引き、15、20、24の公倍数として表す。",
+      "operationLatex": "N-11\\text{は}15,20,24\\text{の公倍数}",
+      "afterLatex": "N-11\\text{は}15,20,24\\text{の公倍数}",
+      "reason": "どの数で割っても11余るので、Nから11を引けば3つの数すべてで割り切れます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "Nから11を引き、15、20、24の公倍数と考える。",
+          "latex": "N-11",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "Nに11を足し、15、20、24の公倍数と考える。",
+          "latex": "N+11",
+          "isCorrect": false,
+          "incorrectReason": "割り切れる部分を取り出すには、Nから余り11を引きます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "Nを11で割り、15、20、24の公倍数と考える。",
+          "latex": "N\\div11",
+          "isCorrect": false,
+          "incorrectReason": "11は共通の余りであり、Nを11で割る根拠はありません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "15,\\ 20,\\ 24",
+      "operationText": "15、20、24をそれぞれ素因数分解する。",
+      "operationLatex": "15=3\\times5,\\quad20=2^2\\times5,\\quad24=2^3\\times3",
+      "afterLatex": "15=3\\times5,\\quad20=2^2\\times5,\\quad24=2^3\\times3",
+      "reason": "最小公倍数は、各素数が最も多く使われている個数を比べると求められます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "15、20、24を3×5、2^2×5、2^3×3に素因数分解する。",
+          "latex": "15=3\\times5,\\ 20=2^2\\times5,\\ 24=2^3\\times3",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "15、20、24を3×5、2×5、2^2×3に素因数分解する。",
+          "latex": "15=3\\times5,\\ 20=2\\times5,\\ 24=2^2\\times3",
+          "isCorrect": false,
+          "incorrectReason": "2×5=10、2^2×3=12なので、20と24の2の個数が足りません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "15、20、24のうち最大の24を最小公倍数と考える。",
+          "latex": "\\operatorname{lcm}(15,20,24)=24",
+          "isCorrect": false,
+          "incorrectReason": "24は15でも20でも割り切れないため、3数の公倍数ではありません。数が最も大きいだけでは最小公倍数になりません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "15=3\\times5,\\quad20=2^2\\times5,\\quad24=2^3\\times3",
+      "operationText": "2、3、5の指数の大きい方を選び、最小公倍数を求める。",
+      "operationLatex": "2^3\\times3\\times5=120",
+      "afterLatex": "\\operatorname{lcm}(15,20,24)=120",
+      "reason": "3数すべてを割り切れるように、2は3個、3は1個、5は1個使います。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "2、3、5の指数の大きい方を選び、2^3×3×5を作る。",
+          "latex": "2^3\\times3\\times5",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "共通する素因数を選び、2×3×5を作る。",
+          "latex": "2\\times3\\times5",
+          "isCorrect": false,
+          "incorrectReason": "2×3×5=30は20や24で割り切れません。最小公倍数では指数の大きい方を選びます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "3数をすべてかけて15×20×24を作る。",
+          "latex": "15\\times20\\times24",
+          "isCorrect": false,
+          "incorrectReason": "同じ素因数を重ねて数えるため、最小の公倍数になりません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-004",
+      "beforeLatex": "N-11=120k",
+      "operationText": "N=120k+11と表し、最小の3けたになるkを選ぶ。",
+      "operationLatex": "N=120k+11",
+      "afterLatex": "k=1\\text{のとき}\\ N=131",
+      "reason": "k=0ではN=11で2けたです。k=1ならN=131となり、これが最小の3けたです。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "N=120k+11とし、k=1を代入する。",
+          "latex": "N=120\\times1+11",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "N=120k-11とし、k=1を代入する。",
+          "latex": "N=120\\times1-11",
+          "isCorrect": false,
+          "incorrectReason": "Nから11を引いた数が120の倍数なので、Nへ戻すときは11を足します。"
+        },
+        {
+          "id": "choice-c",
+          "text": "N=120k+11とし、k=0を代入する。",
+          "latex": "N=120\\times0+11",
+          "isCorrect": false,
+          "incorrectReason": "N=11は2けたであり、3けたという条件を満たしません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "multiple",
+      "lcm",
+      "remainder"
+    ]
+  },
+  "revision": "057203bc45a12e876dd3635c852b33375f2c69066fac9d9e194cb7e239b8b656"
+}

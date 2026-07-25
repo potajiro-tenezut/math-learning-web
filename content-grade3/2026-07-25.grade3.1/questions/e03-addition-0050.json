@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-addition-0050",
+  "revision": "8073ae04f88db18f7c8752d22bd1f35e5a9a4d2f0857fde667447ec9cea15877",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-01",
+    "name": "たし算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-addition-calculation",
+  "problemText": "365 + 334 を計算しなさい。",
+  "problemLatex": "365+334",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "699"
+  },
+  "solutionPlan": {
+    "summary": "たし算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "365+334",
+      "operationText": "たし算をして、答えを 699 と求める。",
+      "operationLatex": "365+334=699",
+      "afterLatex": "699",
+      "reason": "365 と 334 をたすと 699 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "たし算をして、答えを 709 と求める。",
+          "latex": "365+334=709",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 709 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "たし算をして、答えを 699 と求める。",
+          "latex": "365+334=699",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-c",
+          "text": "たし算をして、答えを 689 と求める。",
+          "latex": "365+334=689",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 689 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "addition",
+      "summer-review"
+    ]
+  }
+}

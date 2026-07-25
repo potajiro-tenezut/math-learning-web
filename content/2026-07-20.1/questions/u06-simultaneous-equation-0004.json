@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u06-simultaneous-equation-0004",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-06",
+    "name": "連立方程式"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "imported",
+  "problemType": "simultaneous-equation-fractions-basic",
+  "problemText": "次の連立方程式を解きなさい。\n(1/2)x + (1/3)y = 5，(1/4)x − (2/3)y = -2",
+  "problemLatex": "\\begin{cases}\\dfrac12x+\\dfrac13y=5\\\\\\dfrac14x-\\dfrac23y=-2\\end{cases}",
+  "given": {
+    "variables": [
+      "x",
+      "y"
+    ],
+    "conditions": [
+      "分母をなくしてから、2つの方程式をともに満たすx、yを求める。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "x=\\frac{32}{5},\\quad y=\\frac{27}{5}"
+  },
+  "solutionPlan": {
+    "summary": "第1式を6倍、第2式を12倍して分母をなくす。xの係数が同じ2式を引いてyを求め、その値を第1式へ代入してxを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "\\begin{cases}\\dfrac12x+\\dfrac13y=5\\\\\\dfrac14x-\\dfrac23y=-2\\end{cases}",
+      "operationText": "第1式を6倍、第2式を12倍して、すべての分母をなくす。",
+      "operationLatex": "6\\left(\\frac12x+\\frac13y=5\\right),\\quad12\\left(\\frac14x-\\frac23y=-2\\right)",
+      "afterLatex": "\\begin{cases}3x+2y=30\\\\3x-8y=-24\\end{cases}",
+      "reason": "各式の分母の最小公倍数を式全体にかけると、整数係数の連立方程式になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "第1式を6倍して3x+2y=30、第2式を12倍して3x-8y=-24にする。",
+          "latex": "\\begin{cases}3x+2y=30\\\\3x-8y=-24\\end{cases}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "第1式を6倍して3x+3y=30、第2式を12倍して3x-8y=-24にする。",
+          "latex": "\\begin{cases}3x+3y=30\\\\3x-8y=-24\\end{cases}",
+          "isCorrect": false,
+          "incorrectReason": "6に1/3をかけると3ではなく2なので、yの項は2yです。"
+        },
+        {
+          "id": "choice-c",
+          "text": "第1式を6倍して3x+2y=30、第2式を12倍して3x-6y=-24にする。",
+          "latex": "\\begin{cases}3x+2y=30\\\\3x-6y=-24\\end{cases}",
+          "isCorrect": false,
+          "incorrectReason": "12に-2/3をかけると-8なので、yの項は-8yです。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "\\begin{cases}3x+2y=30\\\\3x-8y=-24\\end{cases}",
+      "operationText": "第1式から第2式を引いてxを消去し、yだけの方程式を作る。",
+      "operationLatex": "(3x+2y)-(3x-8y)=30-(-24)",
+      "afterLatex": "10y=54",
+      "reason": "同じ3xを引くとxが消えます。-8yを引くと+8yになり、右辺では-24を引くので54になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "第1式から第2式を引き、2y-(-8y)と30-(-24)を計算する。",
+          "latex": "10y=54",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "第1式から第2式を引き、2y-8yと30-(-24)を計算する。",
+          "latex": "-6y=54",
+          "isCorrect": false,
+          "incorrectReason": "第2式のyの項は-8yなので、それを引くと2y-(-8y)=10yです。"
+        },
+        {
+          "id": "choice-c",
+          "text": "第1式から第2式を引き、2y-(-8y)と30-24を計算する。",
+          "latex": "10y=6",
+          "isCorrect": false,
+          "incorrectReason": "右辺は-24を引くため、30-(-24)=54です。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "10y=54",
+      "operationText": "yの係数10を1にするために、両辺を10で割り、分数を約分する。",
+      "operationLatex": "y=\\frac{54}{10}=\\frac{27}{5}",
+      "afterLatex": "y=\\frac{27}{5}",
+      "reason": "10yはyの10倍なので、10で割ってから2で約分します。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "両辺を10で割り、\\frac{54}{10}を約分する。",
+          "latex": "y=\\frac{27}{5}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "両辺を54で割り、\\frac{10}{54}を約分する。",
+          "latex": "y=\\frac{5}{27}",
+          "isCorrect": false,
+          "incorrectReason": "yの係数は10なので、yを求めるには両辺を10で割ります。"
+        },
+        {
+          "id": "choice-c",
+          "text": "右辺から10を引く。",
+          "latex": "y=44",
+          "isCorrect": false,
+          "incorrectReason": "10はyの係数なので、引くのではなく両辺を10で割ります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-004",
+      "beforeLatex": "3x+2y=30,\\quad y=\\frac{27}{5}",
+      "operationText": "y=\\frac{27}{5}を3x+2y=30へ代入し、xを求める。",
+      "operationLatex": "3x+2\\cdot\\frac{27}{5}=30\\Rightarrow3x=\\frac{96}{5}",
+      "afterLatex": "x=\\frac{32}{5}",
+      "reason": "yの値を整数係数に直した第1式へ戻し、3xを求めてから3で割ります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "y=\\frac{27}{5}を3x+2y=30へ代入する。",
+          "latex": "3x+\\frac{54}{5}=30\\Rightarrow x=\\frac{32}{5}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "y=\\frac{27}{5}を3x+y=30のyに代入する。",
+          "latex": "3x+\\frac{27}{5}=30\\Rightarrow x=\\frac{41}{5}",
+          "isCorrect": false,
+          "incorrectReason": "yの係数は2なので、27/5を2倍して54/5にします。"
+        },
+        {
+          "id": "choice-c",
+          "text": "y=\\frac{27}{5}を3x-2y=30のyに代入する。",
+          "latex": "3x-\\frac{54}{5}=30\\Rightarrow x=\\frac{68}{5}",
+          "isCorrect": false,
+          "incorrectReason": "第1式のyの項は+2yなので、代入後も正のままです。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "equation",
+      "simultaneous-equation"
+    ]
+  },
+  "revision": "12e7ceef3e29ce8d284c0ed1a8d33701c649da623e07d869e89550dbbd413f0a"
+}

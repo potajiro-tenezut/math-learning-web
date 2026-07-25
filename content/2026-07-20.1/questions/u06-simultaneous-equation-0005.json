@@ -1,0 +1,195 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u06-simultaneous-equation-0005",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-06",
+    "name": "連立方程式"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "imported",
+  "problemType": "simultaneous-equation-chain-equality-basic",
+  "problemText": "次の連立方程式を解きなさい。\n4x + y = 3x − 2y = 15",
+  "problemLatex": "4x+y=3x-2y=15",
+  "given": {
+    "variables": [
+      "x",
+      "y"
+    ],
+    "conditions": [
+      "4x+yと3x-2yがどちらも15に等しい。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "x=\\frac{45}{11},\\quad y=-\\frac{15}{11}"
+  },
+  "solutionPlan": {
+    "summary": "連鎖等式を4x+y=15と3x-2y=15の2本に直す。4x+y=15をyについて解き、その式をもう一方へ代入してxを求め、最後にyを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "4x+y=3x-2y=15",
+      "operationText": "3つの式がすべて15に等しいことから、4x+y=15と3x-2y=15の2本の方程式に直す。",
+      "operationLatex": "4x+y=15,\\quad3x-2y=15",
+      "afterLatex": "\\begin{cases}4x+y=15\\\\3x-2y=15\\end{cases}",
+      "reason": "A=B=15は、AとBがどちらも15に等しいという意味です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "4x+yと3x-2yがどちらも15に等しいと読み、2本の方程式に直す。",
+          "latex": "\\begin{cases}4x+y=15\\\\3x-2y=15\\end{cases}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "4x+yは15、3x-2yは0に等しいと読み、2本の方程式に直す。",
+          "latex": "\\begin{cases}4x+y=15\\\\3x-2y=0\\end{cases}",
+          "isCorrect": false,
+          "incorrectReason": "中央の式3x-2yも、右端の15に等しいことが示されています。"
+        },
+        {
+          "id": "choice-c",
+          "text": "4x+yと3x+2yがどちらも15に等しいと読み、2本の方程式に直す。",
+          "latex": "\\begin{cases}4x+y=15\\\\3x+2y=15\\end{cases}",
+          "isCorrect": false,
+          "incorrectReason": "中央の式のyの項は+2yではなく-2yです。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "\\begin{cases}4x+y=15\\\\3x-2y=15\\end{cases}",
+      "operationText": "4x+y=15をyについて解き、yをxの式で表す。",
+      "operationLatex": "4x+y=15\\Rightarrow y=15-4x",
+      "afterLatex": "\\begin{cases}y=15-4x\\\\3x-2y=15\\end{cases}",
+      "reason": "yの係数が1なので、4xを右辺へ移すとyをすぐにxの式で表せます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "4x+y=15の4xを右辺へ移し、y=15-4xとする。",
+          "latex": "y=15-4x",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "4x+y=15の4xを右辺へ移し、y=15+4xとする。",
+          "latex": "y=15+4x",
+          "isCorrect": false,
+          "incorrectReason": "4xを反対側へ移すと符号は-になります。"
+        },
+        {
+          "id": "choice-c",
+          "text": "4x+y=15の15を左辺へ移し、y=4x-15とする。",
+          "latex": "y=4x-15",
+          "isCorrect": false,
+          "incorrectReason": "4x+y-15=0からyを求めると、y=15-4xです。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "\\begin{cases}y=15-4x\\\\3x-2y=15\\end{cases}",
+      "operationText": "y=15-4xを3x-2y=15のyに代入し、xだけの方程式を作る。",
+      "operationLatex": "3x-2(15-4x)=15\\Rightarrow11x-30=15",
+      "afterLatex": "11x-30=15",
+      "reason": "yをxの式に置き換えると、文字をxだけにできます。-2をかっこ内の両方の項へかけます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "3x-2y=15のyに15-4xを代入し、-2をかっこ内の両項へかける。",
+          "latex": "3x-30+8x=15\\Rightarrow11x-30=15",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "3x-2y=15のyに15-4xを代入し、3x-30-8x=15にする。",
+          "latex": "3x-30-8x=15\\Rightarrow-5x-30=15",
+          "isCorrect": false,
+          "incorrectReason": "負の数どうしの積は正なので、-2(-4x)=+8xです。"
+        },
+        {
+          "id": "choice-c",
+          "text": "3x-2y=15のyに15-4xを代入し、3x-30-4x=15にする。",
+          "latex": "3x-30-4x=15\\Rightarrow-x-30=15",
+          "isCorrect": false,
+          "incorrectReason": "-2を-4xにもかけるため、xの項は+8xになります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-004",
+      "beforeLatex": "11x-30=15",
+      "operationText": "左辺の-30を消すために両辺に30を足し、両辺を11で割ってxを求める。",
+      "operationLatex": "11x=45\\Rightarrow x=\\frac{45}{11}",
+      "afterLatex": "x=\\frac{45}{11}",
+      "reason": "両辺に30を足すと11x=45になり、11で割るとxだけになります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "両辺に30を足して11x=45にし、両辺を11で割る。",
+          "latex": "x=\\frac{45}{11}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "両辺から30を引いて11x=-15にし、両辺を11で割る。",
+          "latex": "x=-\\frac{15}{11}",
+          "isCorrect": false,
+          "incorrectReason": "左辺の-30を消すには30を引くのではなく30を足します。"
+        },
+        {
+          "id": "choice-c",
+          "text": "両辺に30を足して11x=45にし、両辺を45で割る。",
+          "latex": "x=\\frac{11}{45}",
+          "isCorrect": false,
+          "incorrectReason": "xの係数は11なので、xを求めるには両辺を11で割ります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-005",
+      "beforeLatex": "y=15-4x,\\quad x=\\frac{45}{11}",
+      "operationText": "x=\\frac{45}{11}をy=15-4xへ代入してyを求める。",
+      "operationLatex": "y=15-4\\cdot\\frac{45}{11}=\\frac{165}{11}-\\frac{180}{11}",
+      "afterLatex": "y=-\\frac{15}{11}",
+      "reason": "xの値をy=15-4xへ戻し、分母を11にそろえて引き算します。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "x=\\frac{45}{11}をy=15-4xへ代入する。",
+          "latex": "y=15-\\frac{180}{11}=-\\frac{15}{11}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "x=\\frac{45}{11}をy=15+4xのxに代入する。",
+          "latex": "y=15+\\frac{180}{11}=\\frac{345}{11}",
+          "isCorrect": false,
+          "incorrectReason": "y=15-4xのxの項は負なので、4xを15に足すのではなく引きます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "x=\\frac{45}{11}をy=15-xのxに代入する。",
+          "latex": "y=15-\\frac{45}{11}=\\frac{120}{11}",
+          "isCorrect": false,
+          "incorrectReason": "xの係数は4なので、45/11を4倍して180/11にします。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "equation",
+      "simultaneous-equation"
+    ]
+  },
+  "revision": "7136baffc6afc1ed2999ba6991d27d344948e5163daee7aa744fed00ff0d31ed"
+}

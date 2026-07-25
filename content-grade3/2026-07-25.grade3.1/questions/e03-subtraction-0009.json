@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-subtraction-0009",
+  "revision": "d23634543ce096b8392f5153226c2c8477e764bb1f29d52f01c74df78a5dc8e8",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-02",
+    "name": "ひき算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-subtraction-calculation",
+  "problemText": "552 - 173 を計算しなさい。",
+  "problemLatex": "552-173",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "379"
+  },
+  "solutionPlan": {
+    "summary": "ひき算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "552-173",
+      "operationText": "ひき算をして、答えを 379 と求める。",
+      "operationLatex": "552-173=379",
+      "afterLatex": "379",
+      "reason": "552 から 173 をひくと 379 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "ひき算をして、答えを 369 と求める。",
+          "latex": "552-173=369",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 369 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "ひき算をして、答えを 389 と求める。",
+          "latex": "552-173=389",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 389 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "ひき算をして、答えを 379 と求める。",
+          "latex": "552-173=379",
+          "isCorrect": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "subtraction",
+      "summer-review"
+    ]
+  }
+}

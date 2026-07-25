@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-multiplication-0024",
+  "revision": "eb512e83fa8c28018c618c62f929b5d4549708fb5d78019d193b830320701af8",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-03",
+    "name": "かけ算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-multiplication-calculation",
+  "problemText": "9 × 4 を計算しなさい。",
+  "problemLatex": "9\\times4",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "36"
+  },
+  "solutionPlan": {
+    "summary": "かけ算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "9\\times4",
+      "operationText": "かけ算をして、答えを 36 と求める。",
+      "operationLatex": "9\\times4=36",
+      "afterLatex": "36",
+      "reason": "9 が 4 こ分なので、9 \\times 4=36 です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "かけ算をして、答えを 27 と求める。",
+          "latex": "9\\times4=27",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 27 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "かけ算をして、答えを 45 と求める。",
+          "latex": "9\\times4=45",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 45 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "かけ算をして、答えを 36 と求める。",
+          "latex": "9\\times4=36",
+          "isCorrect": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "multiplication",
+      "summer-review"
+    ]
+  }
+}

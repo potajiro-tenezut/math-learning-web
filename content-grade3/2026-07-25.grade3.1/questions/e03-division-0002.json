@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-division-0002",
+  "revision": "277a81d1153316486be4fca55b24f37fa451f61e0f38aa8215b56f1b3b3eb8f8",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-04",
+    "name": "わり算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-division-calculation",
+  "problemText": "6 ÷ 3 を計算しなさい。",
+  "problemLatex": "6\\div3",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "2"
+  },
+  "solutionPlan": {
+    "summary": "わり算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "6\\div3",
+      "operationText": "わり算をして、答えを 2 と求める。",
+      "operationLatex": "6\\div3=2",
+      "afterLatex": "2",
+      "reason": "3 \\times 2=6 なので、6 \\div 3=2 です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "わり算をして、答えを 3 と求める。",
+          "latex": "6\\div3=3",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 3 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "わり算をして、答えを 2 と求める。",
+          "latex": "6\\div3=2",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-c",
+          "text": "わり算をして、答えを 1 と求める。",
+          "latex": "6\\div3=1",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 1 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "division",
+      "summer-review"
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-division-0037",
+  "revision": "b4713597d41708301bae7011a7c9d8ea203d4f757a8e846da32535893affd97d",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-04",
+    "name": "わり算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-division-calculation",
+  "problemText": "36 ÷ 6 を計算しなさい。",
+  "problemLatex": "36\\div6",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "6"
+  },
+  "solutionPlan": {
+    "summary": "わり算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "36\\div6",
+      "operationText": "わり算をして、答えを 6 と求める。",
+      "operationLatex": "36\\div6=6",
+      "afterLatex": "6",
+      "reason": "6 \\times 6=36 なので、36 \\div 6=6 です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "わり算をして、答えを 6 と求める。",
+          "latex": "36\\div6=6",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "わり算をして、答えを 5 と求める。",
+          "latex": "36\\div6=5",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 5 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "わり算をして、答えを 7 と求める。",
+          "latex": "36\\div6=7",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 7 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "division",
+      "summer-review"
+    ]
+  }
+}

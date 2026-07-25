@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u01-calendar-weekday-0009",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-01",
+    "name": "約数と倍数"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "imported",
+  "problemType": "calendar-weekday-modulo-basic",
+  "problemText": "ある年の5月のカレンダーを見ると，1日が月曜日であった。この年の6月18日は何曜日か求めなさい。",
+  "problemLatex": "\\text{5月1日が月曜日のとき，6月18日の曜日を求める。}",
+  "given": {
+    "variables": [],
+    "conditions": [
+      "5月1日が月曜日である。",
+      "同じ年の6月18日の曜日を求める。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "\\text{日曜日}"
+  },
+  "solutionPlan": {
+    "summary": "5月1日から6月18日までに進む日数を求め、7日ごとの同じ曜日を取り除いた余りだけ月曜日から進める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "\\text{5月1日から6月18日まで}",
+      "operationText": "5月の31日分と6月1日から18日までの17日分を足し、進む日数を求める。",
+      "operationLatex": "31+(18-1)=48",
+      "afterLatex": "\\text{5月1日の48日後が6月18日}",
+      "reason": "5月1日から6月1日までは31日後で、6月1日から6月18日までは17日後です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "31日と17日を足して、5月1日から48日後と考える。",
+          "latex": "31+17=48",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "31日と18日を足して、5月1日から49日後と考える。",
+          "latex": "31+18=49",
+          "isCorrect": false,
+          "incorrectReason": "6月1日から6月18日までは、日付の差である17日です。18日分を足すと1日多く数えます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "30日と17日を足して、5月1日から47日後と考える。",
+          "latex": "30+17=47",
+          "isCorrect": false,
+          "incorrectReason": "5月1日から6月1日までは31日後です。30日として計算すると1日少なくなります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "48\\text{日後}",
+      "operationText": "48を7で割り、曜日を進める日数の余りを求める。",
+      "operationLatex": "48=7\\times6+6",
+      "afterLatex": "48\\text{日後は曜日を}6\\text{日進めればよい}",
+      "reason": "曜日は7日で一周します。42日分は同じ曜日に戻るので、残り6日だけ考えます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "48を7で割り、余り6を求める。",
+          "latex": "48=7\\times6+6",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "48を6で割り、余り0を求める。",
+          "latex": "48=6\\times8",
+          "isCorrect": false,
+          "incorrectReason": "曜日は7日で一周するため、7で割った余りを使います。"
+        },
+        {
+          "id": "choice-c",
+          "text": "48から7を1回引き、41日進めると考える。",
+          "latex": "48-7=41",
+          "isCorrect": false,
+          "incorrectReason": "7日分は何回でも取り除けます。7で割った余りまで減らすと6日です。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "\\text{月曜日から6日後}",
+      "operationText": "月曜日から曜日を6日進める。",
+      "operationLatex": "\\text{月}\\to\\text{火}\\to\\text{水}\\to\\text{木}\\to\\text{金}\\to\\text{土}\\to\\text{日}",
+      "afterLatex": "\\text{6月18日は日曜日}",
+      "reason": "月曜日の1日後は火曜日なので、6日後は日曜日です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "月曜日から6日進めて日曜日とする。",
+          "latex": "\\text{月曜日}+6\\text{日}=\\text{日曜日}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "月曜日を1日目として6番目の土曜日とする。",
+          "latex": "\\text{土曜日}",
+          "isCorrect": false,
+          "incorrectReason": "求めるのは月曜日を0日後とした6日後です。月曜日を1日目と数えると1日ずれます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "月曜日から6日戻って火曜日とする。",
+          "latex": "\\text{月曜日}-6\\text{日}=\\text{火曜日}",
+          "isCorrect": false,
+          "incorrectReason": "6月18日は5月1日より後なので、曜日は月曜日から6日先へ進めます。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "multiple",
+      "remainder",
+      "calendar"
+    ]
+  },
+  "revision": "19bf3d4b43e28c411d5f2e362befbfb4d58f8b99e27278946983ecd660a50bca"
+}

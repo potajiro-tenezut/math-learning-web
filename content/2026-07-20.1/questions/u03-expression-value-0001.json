@@ -1,0 +1,134 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u03-expression-value-0001",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-03",
+    "name": "式の値"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "substitution-basic",
+  "problemText": "x = -2 のとき、3x^2 - 4x の値を求めなさい。",
+  "problemLatex": "x=-2,\\quad 3x^2-4x",
+  "given": {
+    "variables": [
+      "x"
+    ],
+    "conditions": [
+      "x = -2"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "20"
+  },
+  "solutionPlan": {
+    "summary": "xに-2を代入し、平方、かけ算、たし算の順に計算する。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "3x^2-4x",
+      "operationText": "x = -2 を 3x^2 - 4x の x に代入する。",
+      "operationLatex": "x=-2",
+      "afterLatex": "3(-2)^2-4(-2)",
+      "reason": "式の値を求めるには、文字 x のところを与えられた数 -2 に置き換えます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "x のところに -2 を代入する。",
+          "latex": "3(-2)^2-4(-2)",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "x のところに 2 を代入する。",
+          "latex": "3(2)^2-4(2)",
+          "isCorrect": false,
+          "incorrectReason": "与えられている値は 2 ではなく -2 です。符号も含めて x に代入します。"
+        },
+        {
+          "id": "choice-c",
+          "text": "x^2 に -4 を代入し、-4x のところに 8 を代入する。",
+          "latex": "3(-4)+8",
+          "isCorrect": false,
+          "incorrectReason": "(-2)^2 は -4 ではなく 4 です。また、代入のステップでは x のところに -2 を入れる形を作ります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "3(-2)^2-4(-2)",
+      "operationText": "(-2)^2、3・4、-4・(-2) を順に計算する。",
+      "operationLatex": "(-2)^2=4,\\quad 3\\cdot 4=12,\\quad -4(-2)=8",
+      "afterLatex": "12+8",
+      "reason": "(-2)^2は4です。次に3・4は12、-4・(-2)は負の数どうしのかけ算なので8になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(-2)^2を4、3・4を12、-4・(-2) を8として計算する。",
+          "latex": "12+8",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(-2)^2を4、3・4を12、-4・(-2) を-8として計算する。",
+          "latex": "12-8",
+          "isCorrect": false,
+          "incorrectReason": "-4と-2のかけ算は正の8になるので、12+8です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(-2)^2を-4、3・4を12、-4・(-2) を8として計算する。",
+          "latex": "-12+8",
+          "isCorrect": false,
+          "incorrectReason": "(-2)^2は-4ではなく4なので、3・4は正の12です。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "12+8",
+      "operationText": "12 と 8 を足す。",
+      "operationLatex": "12+8=20",
+      "afterLatex": "20",
+      "reason": "最後に残った数どうしを足して、式の値を出します。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "12+8を20として計算する。",
+          "latex": "20",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "12+8を18として計算する。",
+          "latex": "18",
+          "isCorrect": false,
+          "incorrectReason": "12+8は18ではなく20です。1の位の2+8で10になり、10の位に1くり上がります。"
+        },
+        {
+          "id": "choice-c",
+          "text": "12+8を10として計算する。",
+          "latex": "10",
+          "isCorrect": false,
+          "incorrectReason": "2+8だけを見ると10ですが、12の10の位も合わせるので20になります。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "substitution",
+      "expression"
+    ]
+  },
+  "revision": "4812266248f5d0511bebf7be822e6b2bea0f388b99311f1da43053d663f75de9"
+}

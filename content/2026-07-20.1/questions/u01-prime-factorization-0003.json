@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u01-prime-factorization-0003",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-01",
+    "name": "約数と倍数"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "imported",
+  "problemType": "prime-factorization-basic",
+  "problemText": "84を素因数分解しなさい。",
+  "problemLatex": "84",
+  "given": {
+    "variables": [],
+    "conditions": [
+      "84を素因数分解する。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "84=2^2\\times 3\\times 7"
+  },
+  "solutionPlan": {
+    "summary": "84を小さい素数2で分け、残った42をさらに2と21に分ける。最後に21を3×7に分け、素数だけのかけ算にまとめる。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "84",
+      "operationText": "84が2で割り切れるので、84を2×42に分ける。",
+      "operationLatex": "84=2\\times 42",
+      "afterLatex": "84=2\\times 42",
+      "reason": "84は偶数なので2で割り切れます。素因数分解では、小さい素数で分けられるところから始めます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "84を2×42に分ける。",
+          "latex": "84=2\\times 42",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "84を2×41に分ける。",
+          "latex": "84=2\\times 41",
+          "isCorrect": false,
+          "incorrectReason": "2×41=82なので、84にはなりません。84を2で割ると42です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "84の約数をすべて書き出す。",
+          "latex": "1,2,3,4,6,7,12,14,21,28,42,84",
+          "isCorrect": false,
+          "incorrectReason": "約数を書き出しても素因数分解の形にはなりません。ここでは84を素数2で分けます。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "84=2\\times 42",
+      "operationText": "42が2で割り切れるので、42を2×21に分ける。",
+      "operationLatex": "42=2\\times 21",
+      "afterLatex": "84=2\\times 2\\times 21=2^2\\times 21",
+      "reason": "42も偶数なので2で割り切れます。2が2個出てきたので、2×2を2^2とまとめられます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "42を2×21に分ける。",
+          "latex": "42=2\\times 21",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "42を2×20に分ける。",
+          "latex": "42=2\\times 20",
+          "isCorrect": false,
+          "incorrectReason": "2×20=40なので、42にはなりません。42を2で割ると21です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "2と42を足して、44にする。",
+          "latex": "2+42=44",
+          "isCorrect": false,
+          "incorrectReason": "素因数分解では、足し算ではなくかけ算で数を分けます。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "84=2^2\\times 21",
+      "operationText": "21を3×7に分け、84を素数だけのかけ算にする。",
+      "operationLatex": "21=3\\times 7",
+      "afterLatex": "84=2^2\\times 3\\times 7",
+      "reason": "21は3×7に分けられます。3と7はどちらも素数なので、84を素数だけのかけ算で表せました。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "21を3×7に分け、84=2^2×3×7にする。",
+          "latex": "84=2^2\\times 3\\times 7",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "21を3×6に分け、84=2^2×3×6にする。",
+          "latex": "84=2^2\\times 3\\times 6",
+          "isCorrect": false,
+          "incorrectReason": "3×6=18なので21にはなりません。また6は素数ではありません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "21を7+14に分け、84=2^2×(7+14)にする。",
+          "latex": "84=2^2\\times (7+14)",
+          "isCorrect": false,
+          "incorrectReason": "素因数分解では足し算ではなく、かけ算で素数に分けます。21は3×7です。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "divisor",
+      "prime-factorization"
+    ]
+  },
+  "revision": "5f05e395ba33bbc5246d70d0c28592a74726888931d42ab0632e846ccfc92c30"
+}

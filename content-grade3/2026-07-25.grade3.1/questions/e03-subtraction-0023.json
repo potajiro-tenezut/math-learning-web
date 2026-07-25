@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-subtraction-0023",
+  "revision": "282b327b276a867b603aa92db1ac15c8b4fa35ef1d4b8c8ce161ece34ef87f4d",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-02",
+    "name": "ひき算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-subtraction-calculation",
+  "problemText": "424 - 111 を計算しなさい。",
+  "problemLatex": "424-111",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "313"
+  },
+  "solutionPlan": {
+    "summary": "ひき算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "424-111",
+      "operationText": "ひき算をして、答えを 313 と求める。",
+      "operationLatex": "424-111=313",
+      "afterLatex": "313",
+      "reason": "424 から 111 をひくと 313 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "ひき算をして、答えを 323 と求める。",
+          "latex": "424-111=323",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 323 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "ひき算をして、答えを 313 と求める。",
+          "latex": "424-111=313",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-c",
+          "text": "ひき算をして、答えを 303 と求める。",
+          "latex": "424-111=303",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 303 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "subtraction",
+      "summer-review"
+    ]
+  }
+}

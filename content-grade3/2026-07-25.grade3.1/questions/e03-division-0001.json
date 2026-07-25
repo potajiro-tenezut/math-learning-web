@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-division-0001",
+  "revision": "9a3516a460d9f03cd8227e2d7794bf016460abcbf830f5361c135e17f05ca028",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-04",
+    "name": "わり算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-division-calculation",
+  "problemText": "4 ÷ 2 を計算しなさい。",
+  "problemLatex": "4\\div2",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "2"
+  },
+  "solutionPlan": {
+    "summary": "わり算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "4\\div2",
+      "operationText": "わり算をして、答えを 2 と求める。",
+      "operationLatex": "4\\div2=2",
+      "afterLatex": "2",
+      "reason": "2 \\times 2=4 なので、4 \\div 2=2 です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "わり算をして、答えを 2 と求める。",
+          "latex": "4\\div2=2",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "わり算をして、答えを 1 と求める。",
+          "latex": "4\\div2=1",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 1 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "わり算をして、答えを 3 と求める。",
+          "latex": "4\\div2=3",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 3 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "division",
+      "summer-review"
+    ]
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u01-common-remainder-divisor-0008",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-01",
+    "name": "約数と倍数"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "imported",
+  "problemType": "common-remainder-divisor-basic",
+  "problemText": "ある正の整数で95を割ると5余り，185を割ると5余るという。このような正の整数をすべて求めなさい。",
+  "problemLatex": "95=nq+5,\\quad185=nr+5,\\quad n>5",
+  "given": {
+    "variables": [
+      "n"
+    ],
+    "conditions": [
+      "95をnで割ると5余る。",
+      "185をnで割ると5余る。",
+      "nは正の整数で、余りより大きい。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "n=6,\\ 9,\\ 10,\\ 15,\\ 18,\\ 30,\\ 45,\\ 90"
+  },
+  "solutionPlan": {
+    "summary": "95と185から余り5を引いた90と180の公約数を求める。素因数分解で最大公約数90を確認し、90の正の約数のうち余り5より大きいものをすべて選ぶ。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "95=nq+5,\\quad185=nr+5",
+      "operationText": "95と185からそれぞれ余り5を引き、nで割り切れる数を求める。",
+      "operationLatex": "95-5=90,\\quad185-5=180",
+      "afterLatex": "90=nq,\\quad180=nr",
+      "reason": "それぞれの数から余り5を引くと、どちらもnの倍数になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "95と185からそれぞれ5を引く。",
+          "latex": "95-5=90,\\ 185-5=180",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "95と185にそれぞれ5を足す。",
+          "latex": "95+5=100,\\ 185+5=190",
+          "isCorrect": false,
+          "incorrectReason": "割り切れる部分を取り出すには、それぞれの数から余り5を引きます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "95と185をそれぞれ5で割る。",
+          "latex": "95\\div5,\\ 185\\div5",
+          "isCorrect": false,
+          "incorrectReason": "5は割る数ではなく余りです。求めるnは90と180の公約数です。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "90,\\ 180",
+      "operationText": "90と180をそれぞれ素因数分解する。",
+      "operationLatex": "90=2\\times3^2\\times5,\\quad180=2^2\\times3^2\\times5",
+      "afterLatex": "90=2\\times3^2\\times5,\\quad180=2^2\\times3^2\\times5",
+      "reason": "公約数を漏れなく調べるため、まず最大公約数を素因数の個数から求めます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "90と180を2×3^2×5、2^2×3^2×5に素因数分解する。",
+          "latex": "90=2\\times3^2\\times5,\\ 180=2^2\\times3^2\\times5",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "90と180を2×3×5、2^2×3×5に素因数分解する。",
+          "latex": "90=2\\times3\\times5,\\ 180=2^2\\times3\\times5",
+          "isCorrect": false,
+          "incorrectReason": "どちらも3を2個含みます。3を1個にすると元の数になりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "90と180を2^2×3^2×5、2×3^2×5に素因数分解する。",
+          "latex": "90=2^2\\times3^2\\times5,\\ 180=2\\times3^2\\times5",
+          "isCorrect": false,
+          "incorrectReason": "2の個数が逆です。90は2を1個、180は2を2個含みます。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "90=2\\times3^2\\times5,\\quad180=2^2\\times3^2\\times5",
+      "operationText": "共通する2、3、5の指数の小さい方を選び、最大公約数を求める。",
+      "operationLatex": "2\\times3^2\\times5=90",
+      "afterLatex": "\\gcd(90,180)=90",
+      "reason": "2は1個、3は2個、5は1個が共通して使える小さい方です。したがって公約数は90の約数です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "2、3、5の指数の小さい方を選び、2×3^2×5を作る。",
+          "latex": "2\\times3^2\\times5",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "2、3、5の指数の大きい方を選び、2^2×3^2×5を作る。",
+          "latex": "2^2\\times3^2\\times5",
+          "isCorrect": false,
+          "incorrectReason": "指数の大きい方を選ぶと最小公倍数になります。最大公約数では小さい方を選びます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "共通する3と5を選び、3^2×5を作る。",
+          "latex": "3^2\\times5",
+          "isCorrect": false,
+          "incorrectReason": "2も90と180の両方に含まれる共通の素因数なので、最大公約数に入ります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-004",
+      "beforeLatex": "n\\text{は}90\\text{の正の約数},\\quad n>5",
+      "operationText": "90の正の約数を挙げ、5より大きいものをすべて選ぶ。",
+      "operationLatex": "90=2\\times3^2\\times5",
+      "afterLatex": "n=6,\\ 9,\\ 10,\\ 15,\\ 18,\\ 30,\\ 45,\\ 90",
+      "reason": "90の正の約数は1、2、3、5、6、9、10、15、18、30、45、90です。余り5より大きいものを選びます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "90の正の約数から5より大きいものをすべて選ぶ。",
+          "latex": "n>5",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "90の正の約数から5以上のものをすべて選ぶ。",
+          "latex": "n\\ge5",
+          "isCorrect": false,
+          "incorrectReason": "割る数は余りより大きくなければならないので、n=5は選べません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "90の正の約数から10以上のものをすべて選ぶ。",
+          "latex": "n\\ge10",
+          "isCorrect": false,
+          "incorrectReason": "n=6とn=9も5より大きく、どちらの割り算でも余り5になるため除けません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "divisor",
+      "gcd",
+      "remainder"
+    ]
+  },
+  "revision": "1ccda56d995758522a457910d91d23fccfcf49dab8353434141805654fd01657"
+}

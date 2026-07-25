@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-subtraction-0043",
+  "revision": "78a52f474afb07a00f162596828f7b73c4d74ddacd7efd152f72d47c38244782",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-02",
+    "name": "ひき算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-subtraction-calculation",
+  "problemText": "584 - 151 を計算しなさい。",
+  "problemLatex": "584-151",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "433"
+  },
+  "solutionPlan": {
+    "summary": "ひき算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "584-151",
+      "operationText": "ひき算をして、答えを 433 と求める。",
+      "operationLatex": "584-151=433",
+      "afterLatex": "433",
+      "reason": "584 から 151 をひくと 433 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "ひき算をして、答えを 433 と求める。",
+          "latex": "584-151=433",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "ひき算をして、答えを 423 と求める。",
+          "latex": "584-151=423",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 423 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "ひき算をして、答えを 443 と求める。",
+          "latex": "584-151=443",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 443 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "subtraction",
+      "summer-review"
+    ]
+  }
+}

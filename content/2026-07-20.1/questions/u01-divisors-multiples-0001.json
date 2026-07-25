@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u01-divisors-multiples-0001",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-01",
+    "name": "約数と倍数"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "common-divisor-basic",
+  "problemText": "18 と 24 の最大公約数を求めなさい。",
+  "problemLatex": "18,\\ 24",
+  "given": {
+    "variables": [],
+    "conditions": [
+      "18と24の最大公約数を求める。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "6"
+  },
+  "solutionPlan": {
+    "summary": "18と24を素因数分解し、共通している素因数をかけて最大公約数を求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "18",
+      "operationText": "18を素因数分解して、素数のかけ算で表す。",
+      "operationLatex": "18=2\\times 3\\times 3",
+      "afterLatex": "18=2\\times 3^2",
+      "reason": "最大公約数を求めやすくするために、18を素数だけのかけ算に分けます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "18を素因数分解する。",
+          "latex": "18=2\\times 3\\times 3",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "18を2で割って9にする。",
+          "latex": "18\\div 2=9",
+          "isCorrect": false,
+          "incorrectReason": "18を2で割るだけでは、素因数分解がまだ終わっていません。9も3×3に分ける必要があります。"
+        },
+        {
+          "id": "choice-c",
+          "text": "18と24を足す。",
+          "latex": "18+24",
+          "isCorrect": false,
+          "incorrectReason": "最大公約数は2つの数を足して求めるものではありません。18を素因数分解するところから始めます。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "18=2\\times 3^2",
+      "operationText": "24も素因数分解して、素数のかけ算で表す。",
+      "operationLatex": "24=2\\times 2\\times 2\\times 3",
+      "afterLatex": "\\begin{aligned}18&=2\\times 3^2\\\\24&=2^3\\times 3\\end{aligned}",
+      "reason": "18と24の素因数分解を並べると、共通している素因数を見つけやすくなります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "次に24を素因数分解する。",
+          "latex": "24=2\\times 2\\times 2\\times 3",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "24を2で割って12にする。",
+          "latex": "24=2\\times 12",
+          "isCorrect": false,
+          "incorrectReason": "24を2で割るだけでは、素因数分解がまだ終わっていません。12も2×2×3に分ける必要があります。"
+        },
+        {
+          "id": "choice-c",
+          "text": "24の倍数を書き出す。",
+          "latex": "24,48,72,\\ldots",
+          "isCorrect": false,
+          "incorrectReason": "最大公約数を素因数分解で求める流れなので、ここでは倍数ではなく24の素因数分解をします。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "\\begin{aligned}18&=2\\times 3^2\\\\24&=2^3\\times 3\\end{aligned}",
+      "operationText": "出てきた素数 2 と 3 について、右肩の数字を比べ、共通して使える小さい方を選んでかける。",
+      "operationLatex": "2^1\\times 3^1=6",
+      "afterLatex": "\\text{最大公約数}=6",
+      "reason": "2は18では1個、24では3個あるので、共通して使えるのは1個です。3は18では2個、24では1個あるので、共通して使えるのは1個です。だから2^1と3^1をかけます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "2と3の右肩を比べ、共通して使える小さい方を選んでかける。（2^1 × 3^1）",
+          "latex": "2^1\\times 3^1",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "右肩の数字が大きい方を選んでかける。（2^3 × 3^2）",
+          "latex": "2^3\\times 3^2",
+          "isCorrect": false,
+          "incorrectReason": "右肩の大きい方を選ぶのは最小公倍数の考え方です。最大公約数では共通して使える小さい方を選びます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "右肩の数字を確認せず、出てきた素数2と3を1回ずつかける。（2 × 3）",
+          "latex": "2\\times 3",
+          "isCorrect": false,
+          "incorrectReason": "この問題では同じ6になりますが、右肩の数字を確認しない方法だと他の問題で間違えやすく、手順として不十分です。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "divisor",
+      "multiple",
+      "gcd"
+    ]
+  },
+  "revision": "a9e7e7e4f52d21d04a0d03d28fd5b586f894fe4912dbc07edf8e2a33da14a6ed"
+}

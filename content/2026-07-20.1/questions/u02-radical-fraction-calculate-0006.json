@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u02-radical-fraction-calculate-0006",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-02",
+    "name": "根号を含む式"
+  },
+  "gradeLevel": "high-school-basic",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "imported",
+  "problemType": "radical-fraction-calculation-basic",
+  "problemText": "\\frac{\\sqrt7}{\\sqrt7-\\sqrt2}-\\frac{\\sqrt2}{\\sqrt7+\\sqrt2} を計算しなさい。",
+  "problemLatex": "\\frac{\\sqrt7}{\\sqrt7-\\sqrt2}-\\frac{\\sqrt2}{\\sqrt7+\\sqrt2}",
+  "given": {
+    "variables": [],
+    "conditions": [
+      "根号を含む分数式を計算する。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "\\frac95"
+  },
+  "solutionPlan": {
+    "summary": "各分母の共役な式を分母・分子にかけて分母を有理化し、通分して同類項をまとめる。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "\\frac{\\sqrt7}{\\sqrt7-\\sqrt2}",
+      "operationText": "第1項 \\frac{\\sqrt7}{\\sqrt7-\\sqrt2} の分母と分子に、分母の共役な式 \\sqrt7+\\sqrt2 をかける。",
+      "operationLatex": "\\frac{\\sqrt7(\\sqrt7+\\sqrt2)}{(\\sqrt7-\\sqrt2)(\\sqrt7+\\sqrt2)}",
+      "afterLatex": "\\frac{7+\\sqrt{14}}5",
+      "reason": "差と和の積を使うと、分母は7-2=5になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "第1項の分母と分子に \\sqrt7+\\sqrt2 をかける。",
+          "latex": "\\frac{\\sqrt7(\\sqrt7+\\sqrt2)}{(\\sqrt7-\\sqrt2)(\\sqrt7+\\sqrt2)}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "第1項の分母と分子に \\sqrt7-\\sqrt2 をかける。",
+          "latex": "\\frac{\\sqrt7(\\sqrt7-\\sqrt2)}{(\\sqrt7-\\sqrt2)^2}",
+          "isCorrect": false,
+          "incorrectReason": "第1項の分母を整数にするには、差の形の共役である和の式をかけます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "第1項の分母と分子に \\sqrt2 をかける。",
+          "latex": "\\frac{\\sqrt{14}}{\\sqrt{14}-2}",
+          "isCorrect": false,
+          "incorrectReason": "第1項の分母に\\sqrt{14}が残るため、有理化できていません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "-\\frac{\\sqrt2}{\\sqrt7+\\sqrt2}",
+      "operationText": "第2項 -\\frac{\\sqrt2}{\\sqrt7+\\sqrt2} の分母と分子に、分母の共役な式 \\sqrt7-\\sqrt2 をかける。",
+      "operationLatex": "-\\frac{\\sqrt2(\\sqrt7-\\sqrt2)}{(\\sqrt7+\\sqrt2)(\\sqrt7-\\sqrt2)}",
+      "afterLatex": "-\\frac{\\sqrt{14}-2}5",
+      "reason": "和と差の積で分母は7-2=5、分子は\\sqrt{14}-2です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "第2項の分母と分子に \\sqrt7-\\sqrt2 をかける。",
+          "latex": "-\\frac{\\sqrt2(\\sqrt7-\\sqrt2)}{(\\sqrt7+\\sqrt2)(\\sqrt7-\\sqrt2)}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "第2項の分母と分子に \\sqrt7+\\sqrt2 をかける。",
+          "latex": "-\\frac{\\sqrt2(\\sqrt7+\\sqrt2)}{(\\sqrt7+\\sqrt2)^2}",
+          "isCorrect": false,
+          "incorrectReason": "第2項の分母を整数にするには、和の形の共役である差の式をかけます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "第2項の分母と分子に \\sqrt7 をかける。",
+          "latex": "-\\frac{\\sqrt{14}}{7+\\sqrt{14}}",
+          "isCorrect": false,
+          "incorrectReason": "第2項の分母に\\sqrt{14}が残るため、有理化できていません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "\\frac{7+\\sqrt{14}}5-\\frac{\\sqrt{14}-2}5",
+      "operationText": "分子を引き算し、1つの分数にまとめる。",
+      "operationLatex": "\\frac{(7+\\sqrt{14})-(\\sqrt{14}-2)}5",
+      "afterLatex": "\\frac95",
+      "reason": "分母が同じなので分子を引きます。\\sqrt{14}の項は打ち消し合います。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "分子を (7+\\sqrt{14})-(\\sqrt{14}-2) としてまとめる。",
+          "latex": "\\frac{(7+\\sqrt{14})-(\\sqrt{14}-2)}5",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "分子を (7+\\sqrt{14})+(\\sqrt{14}-2) としてまとめる。",
+          "latex": "\\frac{(7+\\sqrt{14})+(\\sqrt{14}-2)}5",
+          "isCorrect": false,
+          "incorrectReason": "2つ目の分数を引いているので、分子も引き算でまとめます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "分子を 7+\\sqrt{14}-\\sqrt{14}-2 としてまとめる。",
+          "latex": "\\frac{7+\\sqrt{14}-\\sqrt{14}-2}5",
+          "isCorrect": false,
+          "incorrectReason": "かっこの前のマイナスは-2にもかかるため、-(-2)=+2になります。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "radical",
+      "rationalization",
+      "calculation"
+    ]
+  },
+  "revision": "cf3885cd5606d972c936a34450554ef5c7e8074dfe1bf8a189f1934b9fa56643"
+}

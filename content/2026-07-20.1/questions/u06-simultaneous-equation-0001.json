@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u06-simultaneous-equation-0001",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-06",
+    "name": "連立方程式"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "imported",
+  "problemType": "simultaneous-equation-substitution-basic",
+  "problemText": "次の連立方程式を解きなさい。\nx = 2y − 1，3x + y = 17",
+  "problemLatex": "\\begin{cases}x=2y-1\\\\3x+y=17\\end{cases}",
+  "given": {
+    "variables": [
+      "x",
+      "y"
+    ],
+    "conditions": [
+      "2つの方程式をともに満たすx、yを求める。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "x=\\frac{33}{7},\\quad y=\\frac{20}{7}"
+  },
+  "solutionPlan": {
+    "summary": "xがyの式で表されているので、x=2y-1をもう一方の式に代入してyを求め、その値をx=2y-1へ戻してxを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "\\begin{cases}x=2y-1\\\\3x+y=17\\end{cases}",
+      "operationText": "x=2y-1を3x+y=17のxに代入し、yだけの方程式を作る。",
+      "operationLatex": "3(2y-1)+y=17\\Rightarrow7y-3=17",
+      "afterLatex": "7y-3=17",
+      "reason": "xがすでにyの式で表されているため、代入すると文字をyだけにできます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "下の式のxに2y-1を代入する。",
+          "latex": "3(2y-1)+y=17\\Rightarrow7y-3=17",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "下の式のyに2x-1を代入する。",
+          "latex": "3x+(2x-1)=17\\Rightarrow5x-1=17",
+          "isCorrect": false,
+          "incorrectReason": "上の式はxが2y-1に等しいことを表しています。下の式ではyではなくxを2y-1に置き換えます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "下の式のyに2y-1を代入する。",
+          "latex": "3x+(2y-1)=17\\Rightarrow3x+2y=18",
+          "isCorrect": false,
+          "incorrectReason": "2y-1はxを表す式なので、下の式のyではなくxに代入します。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "7y-3=17",
+      "operationText": "左辺の-3を消すために両辺に3を足し、両辺を7で割ってyを求める。",
+      "operationLatex": "7y=20\\Rightarrow y=\\frac{20}{7}",
+      "afterLatex": "y=\\frac{20}{7}",
+      "reason": "両辺に3を足すと7y=20になり、7で割るとyだけになります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "両辺に3を足して7y=20にし、両辺を7で割る。",
+          "latex": "y=\\frac{20}{7}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "両辺から3を引いて7y=14にし、両辺を7で割る。",
+          "latex": "y=2",
+          "isCorrect": false,
+          "incorrectReason": "左辺の-3を消すには3を引くのではなく3を足します。"
+        },
+        {
+          "id": "choice-c",
+          "text": "両辺に3を足して7y=20にし、両辺を20で割る。",
+          "latex": "y=\\frac{7}{20}",
+          "isCorrect": false,
+          "incorrectReason": "7yからyを求めるには、両辺を7で割ります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "x=2y-1,\\quad y=\\frac{20}{7}",
+      "operationText": "y=\\frac{20}{7}をx=2y-1へ代入してxを求める。",
+      "operationLatex": "x=2\\cdot\\frac{20}{7}-1=\\frac{40}{7}-\\frac{7}{7}",
+      "afterLatex": "x=\\frac{33}{7}",
+      "reason": "求めたyを、xがyの式で表された方程式へ戻すとxを計算できます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "y=\\frac{20}{7}をx=2y-1へ代入する。",
+          "latex": "x=2\\cdot\\frac{20}{7}-1=\\frac{33}{7}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "y=\\frac{20}{7}をx=2y+1のyに代入する。",
+          "latex": "x=2\\cdot\\frac{20}{7}+1=\\frac{47}{7}",
+          "isCorrect": false,
+          "incorrectReason": "使う式はx=2y+1ではなくx=2y-1なので、最後に1を引きます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "y=\\frac{20}{7}をx=y+2-1のyに代入する。",
+          "latex": "x=\\frac{20}{7}+2-1=\\frac{27}{7}",
+          "isCorrect": false,
+          "incorrectReason": "使う式はx=y+2-1ではなくx=2y-1です。2yはyに2を足すのではなく、yを2倍する項です。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "equation",
+      "simultaneous-equation"
+    ]
+  },
+  "revision": "77be9ecebaf16616b3f7578e574f760ef491bd14228efd1d3a3e6300c713983c"
+}

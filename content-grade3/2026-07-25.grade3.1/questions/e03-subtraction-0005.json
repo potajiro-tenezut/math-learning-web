@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-subtraction-0005",
+  "revision": "9ce3c03eebb614f0989b20cdc449b52fc129413540e333e7c1c4fead6eb5c7f2",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-02",
+    "name": "ひき算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-subtraction-calculation",
+  "problemText": "360 - 105 を計算しなさい。",
+  "problemLatex": "360-105",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "255"
+  },
+  "solutionPlan": {
+    "summary": "ひき算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "360-105",
+      "operationText": "ひき算をして、答えを 255 と求める。",
+      "operationLatex": "360-105=255",
+      "afterLatex": "255",
+      "reason": "360 から 105 をひくと 255 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "ひき算をして、答えを 265 と求める。",
+          "latex": "360-105=265",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 265 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "ひき算をして、答えを 255 と求める。",
+          "latex": "360-105=255",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-c",
+          "text": "ひき算をして、答えを 245 と求める。",
+          "latex": "360-105=245",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 245 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "subtraction",
+      "summer-review"
+    ]
+  }
+}

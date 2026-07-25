@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u05-quadratic-equation-0001",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-05",
+    "name": "2次方程式"
+  },
+  "gradeLevel": "high-school-basic",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "original",
+  "problemType": "quadratic-equation-factor-basic",
+  "problemText": "x^2 - 5x + 6 = 0 を解きなさい。",
+  "problemLatex": "x^2 - 5x + 6 = 0",
+  "given": {
+    "variables": [
+      "x"
+    ],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "x=2,\\ 3"
+  },
+  "solutionPlan": {
+    "summary": "足して-5、かけて6になる2つの数を見つけて因数分解し、それぞれの因数が0になる値を求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "x^2-5x+6=0",
+      "operationText": "足して -5、かけて 6 になる2つの数を探す。",
+      "operationLatex": "(-2)+(-3)=-5,\\quad (-2)\\times(-3)=6",
+      "afterLatex": "-2,\\ -3",
+      "reason": "x^2-5x+6 を因数分解するために、真ん中の -5 と最後の 6 に合う2つの数を先に見つけます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "足して -5、かけて 6 になる -2 と -3 を選ぶ。",
+          "latex": "-2,\\ -3",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "かけて 6 になる 2 と 3 を選ぶ。",
+          "latex": "2,\\ 3",
+          "isCorrect": false,
+          "incorrectReason": "2と3はかけると6ですが、足すと5になり、-5になりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "かけて 6 になる -1 と -6 を選ぶ。",
+          "latex": "-1,\\ -6",
+          "isCorrect": false,
+          "incorrectReason": "-1と-6はかけると6ですが、足すと-7なので、-5になりません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "-2,\\ -3",
+      "operationText": "見つけた -2 と -3 を使って、x^2 - 5x + 6 を因数分解する。",
+      "operationLatex": "x^2-5x+6=(x-2)(x-3)",
+      "afterLatex": "(x-2)(x-3)=0",
+      "reason": "-2と-3を使うと、(x-2)(x-3) と表せます。展開すると x^2 - 5x + 6 に戻ります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "-2 と -3 を使って (x - 2)(x - 3) に因数分解する。",
+          "latex": "(x-2)(x-3)=0",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "-2 と -3 を使って (x + 2)(x + 3) に因数分解する。",
+          "latex": "(x+2)(x+3)=0",
+          "isCorrect": false,
+          "incorrectReason": "-2 と -3 を選んだときは (x-2)(x-3) と書きます。(x+2)(x+3) を展開すると x^2+5x+6 になり、真ん中の符号が違います。"
+        },
+        {
+          "id": "choice-c",
+          "text": "-1 と -6 を使って (x - 1)(x - 6) に因数分解する。",
+          "latex": "(x-1)(x-6)=0",
+          "isCorrect": false,
+          "incorrectReason": "-1と-6はかけると6ですが、足すと-7なので、-5になりません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "(x-2)(x-3)=0",
+      "operationText": "かけ算の答えが0なので、x - 2 = 0 または x - 3 = 0 と考え、それぞれ解く。",
+      "operationLatex": "x-2=0\\Rightarrow x=2,\\quad x-3=0\\Rightarrow x=3",
+      "afterLatex": "x=2,\\ 3",
+      "reason": "2つの数をかけて0になるときは、少なくとも片方が0になります。x - 2 = 0 から x = 2、x - 3 = 0 から x = 3 が分かります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "x - 2 = 0 または x - 3 = 0 と考え、x = 2, 3 とする。",
+          "latex": "x=2,\\ 3",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "x - 2 = 1 または x - 3 = 1 と考え、x = 3, 4 とする。",
+          "latex": "x=3,\\ 4",
+          "isCorrect": false,
+          "incorrectReason": "右辺は0なので、それぞれの因数が1ではなく0になる場合を考えます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "x - 2 = 0 または x - 3 = 0 と考え、x = -2, -3 とする。",
+          "latex": "x=-2,\\ -3",
+          "isCorrect": false,
+          "incorrectReason": "x - 2 = 0 の解は x = -2 ではなく x = 2 です。x - 3 = 0 も同じように x = 3 になります。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "equation",
+      "quadratic",
+      "factorization"
+    ]
+  },
+  "revision": "e8e1d0df0f368fe2ad44740e92f4123ed2d24a6261e3e3c6523f7036a0660118"
+}

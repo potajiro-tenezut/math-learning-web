@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-subtraction-0031",
+  "revision": "fdfd3e00582b8672bb7ae63c5b8f88838b40955f8ebc99ef54be6e7b88dd9adc",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-02",
+    "name": "ひき算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-subtraction-calculation",
+  "problemText": "808 - 247 を計算しなさい。",
+  "problemLatex": "808-247",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "561"
+  },
+  "solutionPlan": {
+    "summary": "ひき算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "808-247",
+      "operationText": "ひき算をして、答えを 561 と求める。",
+      "operationLatex": "808-247=561",
+      "afterLatex": "561",
+      "reason": "808 から 247 をひくと 561 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "ひき算をして、答えを 561 と求める。",
+          "latex": "808-247=561",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "ひき算をして、答えを 551 と求める。",
+          "latex": "808-247=551",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 551 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "ひき算をして、答えを 571 と求める。",
+          "latex": "808-247=571",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 571 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "subtraction",
+      "summer-review"
+    ]
+  }
+}

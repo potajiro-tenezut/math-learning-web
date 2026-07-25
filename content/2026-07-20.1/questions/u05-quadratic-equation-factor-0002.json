@@ -1,0 +1,315 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u05-quadratic-equation-factor-0002",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-05",
+    "name": "2次方程式"
+  },
+  "gradeLevel": "high-school-basic",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "imported",
+  "problemType": "quadratic-equation-factor-basic",
+  "problemText": "次の二次方程式を解きなさい。\n(1) x² − 5x + 6 = 0\n(2) x² + 4x = 0\n(3) x² − 12x + 36 = 0\n(4) 2x² + x − 6 = 0\n(5) (x + 4)² = 49\n(6) (3x − 2)² − 16 = 0\n(7) x² + 6x + 5 = 0\n(8) 3(x − 1)² + (x − 1) − 2 = 0",
+  "problemLatex": "\\begin{array}{ll}(1)&x^2-5x+6=0\\\\(2)&x^2+4x=0\\\\(3)&x^2-12x+36=0\\\\(4)&2x^2+x-6=0\\\\(5)&(x+4)^2=49\\\\(6)&(3x-2)^2-16=0\\\\(7)&x^2+6x+5=0\\\\(8)&3(x-1)^2+(x-1)-2=0\\end{array}",
+  "given": {
+    "variables": [
+      "x"
+    ],
+    "conditions": [
+      "因数分解や平方根の形を使って二次方程式を解く。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "(1)\\ x=2,3;\\ (2)\\ x=0,-4;\\ (3)\\ x=6;\\ (4)\\ x=\\frac32,-2;\\ (5)\\ x=3,-11;\\ (6)\\ x=2,-\\frac23;\\ (7)\\ x=-1,-5;\\ (8)\\ x=0,\\frac53"
+  },
+  "solutionPlan": {
+    "summary": "各式を因数分解または平方根の形にし、足して一次の係数、かけて定数になる数を確認してから、各因数が0になる条件を解く。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "x^2-5x+6=0",
+      "operationText": "(1)で足して-5、かけて6になる2数を探し、因数分解して解く。",
+      "operationLatex": "(-2)+(-3)=-5,\\ (-2)(-3)=6\\Rightarrow(x-2)(x-3)=0",
+      "afterLatex": "x=2,3",
+      "reason": "-2と-3を使うと(x-2)(x-3)=0になり、各因数が0になる値を求められます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(1)で-2と-3を選び、(x-2)(x-3)=0として解く。",
+          "latex": "x=2,3",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(1)で2と3を選び、(x+2)(x+3)=0として解く。",
+          "latex": "x=-2,-3",
+          "isCorrect": false,
+          "incorrectReason": "2と3の和は5なので、中央の係数-5に合いません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(1)で-1と-6を選び、(x-1)(x-6)=0として解く。",
+          "latex": "x=1,6",
+          "isCorrect": false,
+          "incorrectReason": "-1と-6の和は-7なので、中央の係数-5に合いません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "x^2+4x=0",
+      "operationText": "(2)で共通因数xをくくり、各因数が0になる値を求める。",
+      "operationLatex": "x(x+4)=0\\Rightarrow x=0,-4",
+      "afterLatex": "x=0,-4",
+      "reason": "積が0なのでx=0またはx+4=0です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(2)でxをくくり、x(x+4)=0として解く。",
+          "latex": "x=0,-4",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(2)で4をくくり、4(x^2+x)=0として解く。",
+          "latex": "x=0,-1",
+          "isCorrect": false,
+          "incorrectReason": "x^2の係数1は4で割り切れないため、4は共通因数ではありません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(2)でxをくくり、x(x-4)=0として解く。",
+          "latex": "x=0,4",
+          "isCorrect": false,
+          "incorrectReason": "x^2+4xからxをくくると、かっこ内はx-4ではなくx+4です。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "x^2-12x+36=0",
+      "operationText": "(3)を同じ二項式の積に因数分解し、かっこ内を0として解く。",
+      "operationLatex": "(x-6)^2=0\\Rightarrow x-6=0",
+      "afterLatex": "x=6",
+      "reason": "(x-6)^2を展開するとx^2-12x+36です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(3)を(x-6)^2=0と表し、x-6=0を解く。",
+          "latex": "x=6",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(3)を(x+6)^2=0と表し、x+6=0を解く。",
+          "latex": "x=-6",
+          "isCorrect": false,
+          "incorrectReason": "中央の項は-12xなので、かっこ内はx-6です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(3)を(x-12)^2=0と表し、x-12=0を解く。",
+          "latex": "x=12",
+          "isCorrect": false,
+          "incorrectReason": "(x-12)^2の中央の項は-24x、定数項は144になり、元の式と一致しません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-004",
+      "beforeLatex": "2x^2+x-6=0",
+      "operationText": "(4)の左辺をax^2+bx+cと見てa=2、b=1、c=-6を読み取り、解の和と積を使って因数分解する。",
+      "operationLatex": "x_1+x_2=-\\frac{b}{a}=-\\frac12,\\quad x_1x_2=\\frac{c}{a}=-3\\Rightarrow(2x-3)(x+2)=0",
+      "afterLatex": "x=\\frac32,-2",
+      "reason": "左辺をax^2+bx+cと見たとき、解の和は-b/a、積はc/aです。この式ではa=2、b=1、c=-6なので、和は-1/2、積は-3になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "左辺をax^2+bx+cと見てa=2、b=1、c=-6とし、解の和を-b/a=-1/2、積をc/a=-3として因数分解する。",
+          "latex": "(2x-3)(x+2)=0\\Rightarrow x=\\frac32,-2",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "左辺をax^2+bx+cと見てa=2、b=1、c=-6とし、解の和をb=1、積をc=-6として2数を求める。",
+          "latex": "x=3,-2,\\quad x_1+x_2=1,\\quad x_1x_2=-6",
+          "isCorrect": false,
+          "incorrectReason": "左辺をax^2+bx+cと見たとき、解の和はbではなく-b/a、積はcではなくc/aです。"
+        },
+        {
+          "id": "choice-c",
+          "text": "左辺をax^2+bx+cと見てa=2、b=1、c=-6とし、解の和をc/a=-3、積を-b/a=-1/2として2数を求める。",
+          "latex": "x=\\frac{-3+\\sqrt{11}}2,\\frac{-3-\\sqrt{11}}2,\\quad x_1+x_2=-3,\\quad x_1x_2=-\\frac12",
+          "isCorrect": false,
+          "incorrectReason": "左辺をax^2+bx+cと見たとき、解の和は-b/a=-1/2、積はc/a=-3です。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-005",
+      "beforeLatex": "(x+4)^2=49",
+      "operationText": "(5)で両辺の平方根を考え、x+4=\\pm7として解く。",
+      "operationLatex": "x+4=\\pm7",
+      "afterLatex": "x=3,-11",
+      "reason": "平方が49になる数は7と-7の2つです。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(5)で(x+4)^2=49からx+4=\\pm7として解く。",
+          "latex": "x+4=\\pm7\\Rightarrow x=3,-11",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(5)で(x+4)^2=49からx+4=49として解く。",
+          "latex": "x+4=49\\Rightarrow x=45",
+          "isCorrect": false,
+          "incorrectReason": "左辺の平方を外すときは、右辺49の平方根である7と-7を使います。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(5)で(x+4)^2=49からx-4=\\pm7として解く。",
+          "latex": "x-4=\\pm7\\Rightarrow x=11,-3",
+          "isCorrect": false,
+          "incorrectReason": "平方されている式はx-4ではなくx+4です。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-006",
+      "beforeLatex": "(3x-2)^2-16=0",
+      "operationText": "(6)で16=4^2として平方の差の公式を使い、因数分解して解く。",
+      "operationLatex": "(3x-2-4)(3x-2+4)=0",
+      "afterLatex": "x=2,-\\frac23",
+      "reason": "因数は3x-6と3x+2になり、それぞれを0として解きます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(6)で16=4^2として、(3x-6)(3x+2)=0に因数分解して解く。",
+          "latex": "x=2,-\\frac23",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(6)で16=4^2として、(3x-4)(3x+4)=0に因数分解して解く。",
+          "latex": "x=\\frac43,-\\frac43",
+          "isCorrect": false,
+          "incorrectReason": "平方されている式全体は3x-2なので、その式に4を足し引きします。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(6)で16を差の式に使い、(3x-2-16)(3x-2+16)=0に因数分解して解く。",
+          "latex": "x=6,-\\frac{14}3",
+          "isCorrect": false,
+          "incorrectReason": "平方の差では16ではなく、その平方根4を3x-2に足し引きします。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-007",
+      "beforeLatex": "x^2+6x+5=0",
+      "operationText": "(7)で足して6、かけて5になる2数を探し、因数分解して解く。",
+      "operationLatex": "1+5=6,\\ 1\\times5=5\\Rightarrow(x+1)(x+5)=0",
+      "afterLatex": "x=-1,-5",
+      "reason": "1と5を使うと中央の係数と定数項の両方に合います。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(7)で1と5を選び、(x+1)(x+5)=0として解く。",
+          "latex": "x=-1,-5",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(7)で-1と-5を選び、(x-1)(x-5)=0として解く。",
+          "latex": "x=1,5",
+          "isCorrect": false,
+          "incorrectReason": "-1と-5の和は-6なので、中央の係数+6に合いません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(7)で1と-5を選び、(x+1)(x-5)=0として解く。",
+          "latex": "x=-1,5",
+          "isCorrect": false,
+          "incorrectReason": "1と-5の積は-5なので、定数項+5に合いません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-008",
+      "beforeLatex": "3(x-1)^2+(x-1)-2=0",
+      "operationText": "(8)でt=x-1とおき、x-1をtに置き換えてtの二次方程式にする。",
+      "operationLatex": "t=x-1\\Rightarrow3t^2+t-2=0",
+      "afterLatex": "3t^2+t-2=0",
+      "reason": "同じ式x-1が2か所にあるので、tとおくと見慣れた二次方程式になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(8)でt=x-1とおき、(x-1)^2をt^2、x-1をtに置き換える。",
+          "latex": "3t^2+t-2=0",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(8)でt=x-1とおき、(x-1)^2とx-1をともにtに置き換える。",
+          "latex": "3t+t-2=0",
+          "isCorrect": false,
+          "incorrectReason": "(x-1)^2は、t=x-1よりt^2に置き換えます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(8)でt=x-1とおき、(x-1)^2とx-1をともにt^2に置き換える。",
+          "latex": "3t^2+t^2-2=0",
+          "isCorrect": false,
+          "incorrectReason": "平方されていないx-1はtに置き換えます。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-009",
+      "beforeLatex": "3t^2+t-2=0",
+      "operationText": "(8)でtの二次方程式を因数分解して解き、t=x-1からxに戻す。",
+      "operationLatex": "(3t-2)(t+1)=0\\Rightarrow t=\\frac23,-1\\Rightarrow x=t+1",
+      "afterLatex": "x=\\frac53,0",
+      "reason": "t=x-1なのでx=t+1です。tの各値に1を足します。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(8)で(3t-2)(t+1)=0としてtを求め、x=t+1でxに戻す。",
+          "latex": "t=\\frac23,-1\\Rightarrow x=\\frac53,0",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(8)で(3t+2)(t-1)=0としてtを求め、x=t+1でxに戻す。",
+          "latex": "t=-\\frac23,1\\Rightarrow x=\\frac13,2",
+          "isCorrect": false,
+          "incorrectReason": "(3t+2)(t-1)を展開すると3t^2-t-2となり、中央の係数が合いません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(8)で(3t-2)(t+1)=0としてtを求め、x=t-1でxに戻す。",
+          "latex": "t=\\frac23,-1\\Rightarrow x=-\\frac13,-2",
+          "isCorrect": false,
+          "incorrectReason": "t=x-1をxについて解くとx=t+1です。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "equation",
+      "quadratic",
+      "factorization"
+    ]
+  },
+  "revision": "8826676c5bde9df211dfe53068375068b48dc333c7cd03b48a18d1fe2a21961c"
+}

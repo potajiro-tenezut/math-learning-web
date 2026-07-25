@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-addition-0035",
+  "revision": "5e4eeac2232e7db5350dc2935dc3910d3df4aafcbc7a473a9a5fd4b51144050a",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-01",
+    "name": "たし算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-addition-calculation",
+  "problemText": "605 + 278 を計算しなさい。",
+  "problemLatex": "605+278",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "883"
+  },
+  "solutionPlan": {
+    "summary": "たし算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "605+278",
+      "operationText": "たし算をして、答えを 883 と求める。",
+      "operationLatex": "605+278=883",
+      "afterLatex": "883",
+      "reason": "605 と 278 をたすと 883 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "たし算をして、答えを 893 と求める。",
+          "latex": "605+278=893",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 893 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "たし算をして、答えを 883 と求める。",
+          "latex": "605+278=883",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-c",
+          "text": "たし算をして、答えを 873 と求める。",
+          "latex": "605+278=873",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 873 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "addition",
+      "summer-review"
+    ]
+  }
+}

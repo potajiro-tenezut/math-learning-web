@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-addition-0036",
+  "revision": "675a2ef41a6b6e238fa66b91736ace9ca821b6185b8471fdc4d55f5865ccd8ed",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-01",
+    "name": "たし算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-addition-calculation",
+  "problemText": "642 + 307 を計算しなさい。",
+  "problemLatex": "642+307",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "949"
+  },
+  "solutionPlan": {
+    "summary": "たし算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "642+307",
+      "operationText": "たし算をして、答えを 949 と求める。",
+      "operationLatex": "642+307=949",
+      "afterLatex": "949",
+      "reason": "642 と 307 をたすと 949 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "たし算をして、答えを 939 と求める。",
+          "latex": "642+307=939",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 939 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "たし算をして、答えを 959 と求める。",
+          "latex": "642+307=959",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 959 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "たし算をして、答えを 949 と求める。",
+          "latex": "642+307=949",
+          "isCorrect": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "addition",
+      "summer-review"
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-addition-0013",
+  "revision": "d7d56d600cb1266f0a39b7de21da3994c90a7f316a48d7f41a278b170b3bfec6",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-01",
+    "name": "たし算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-addition-calculation",
+  "problemText": "586 + 398 を計算しなさい。",
+  "problemLatex": "586+398",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "984"
+  },
+  "solutionPlan": {
+    "summary": "たし算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "586+398",
+      "operationText": "たし算をして、答えを 984 と求める。",
+      "operationLatex": "586+398=984",
+      "afterLatex": "984",
+      "reason": "586 と 398 をたすと 984 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "たし算をして、答えを 984 と求める。",
+          "latex": "586+398=984",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "たし算をして、答えを 974 と求める。",
+          "latex": "586+398=974",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 974 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "たし算をして、答えを 994 と求める。",
+          "latex": "586+398=994",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 994 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "addition",
+      "summer-review"
+    ]
+  }
+}

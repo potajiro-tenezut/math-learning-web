@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u02-radical-simplify-0003",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-02",
+    "name": "根号を含む式"
+  },
+  "gradeLevel": "high-school-basic",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "imported",
+  "problemType": "radical-simplify-basic",
+  "problemText": "√0.08 を簡単にしなさい。",
+  "problemLatex": "\\sqrt{0.08}",
+  "given": {
+    "variables": [],
+    "conditions": [
+      "小数を分数に直し、根号を含む式を簡単にする。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "\\dfrac{\\sqrt2}{5}"
+  },
+  "solutionPlan": {
+    "summary": "0.08を分数8/100に直し、分子と分母の平方根に分ける。√8を2√2に簡単にして約分する。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "\\sqrt{0.08}",
+      "operationText": "0.08を分数8/100に直す。",
+      "operationLatex": "0.08=\\dfrac8{100}",
+      "afterLatex": "\\sqrt{0.08}=\\sqrt{\\dfrac8{100}}",
+      "reason": "小数を分数にすると、分母100の平方根を整数にできます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "0.08を8/100に直す。",
+          "latex": "0.08=\\dfrac8{100}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "0.08を8/10に直す。",
+          "latex": "0.08=\\dfrac8{10}",
+          "isCorrect": false,
+          "incorrectReason": "8/10は0.8です。小数第2位まである0.08は8/100です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "0.08を80/100に直す。",
+          "latex": "0.08=\\dfrac{80}{100}",
+          "isCorrect": false,
+          "incorrectReason": "80/100は0.8です。0.08を100分の形にすると分子は8です。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "\\sqrt{0.08}=\\sqrt{\\dfrac8{100}}",
+      "operationText": "分子と分母の平方根に分け、√100を10にする。",
+      "operationLatex": "\\sqrt{\\dfrac8{100}}=\\dfrac{\\sqrt8}{\\sqrt{100}}",
+      "afterLatex": "\\sqrt{0.08}=\\dfrac{\\sqrt8}{10}",
+      "reason": "正の数では分数の平方根を分子と分母に分けられ、√100=10です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "√(8/100)を√8/√100に分け、分母を10にする。",
+          "latex": "\\dfrac{\\sqrt8}{10}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "√(8/100)を√8/100に分け、分母を100にする。",
+          "latex": "\\dfrac{\\sqrt8}{100}",
+          "isCorrect": false,
+          "incorrectReason": "分母にも平方根がかかるため、√100=10となります。"
+        },
+        {
+          "id": "choice-c",
+          "text": "√(8/100)を8/√100に分け、分母を10にする。",
+          "latex": "\\dfrac8{10}",
+          "isCorrect": false,
+          "incorrectReason": "分子8にも平方根がかかっているので、分子は8ではなく√8です。正しくは√8/10になります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "\\sqrt{0.08}=\\dfrac{\\sqrt8}{10}",
+      "operationText": "√8を2√2に直し、分子と分母を2で約分する。",
+      "operationLatex": "\\dfrac{\\sqrt8}{10}=\\dfrac{2\\sqrt2}{10}",
+      "afterLatex": "\\sqrt{0.08}=\\dfrac{\\sqrt2}{5}",
+      "reason": "8=4×2なので√8=2√2です。2√2/10は分子と分母を2で割れます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "√8を2√2に直し、2√2/10を√2/5に約分する。",
+          "latex": "\\dfrac{2\\sqrt2}{10}=\\dfrac{\\sqrt2}{5}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "√8を4√2に直し、4√2/10を2√2/5に約分する。",
+          "latex": "\\dfrac{4\\sqrt2}{10}=\\dfrac{2\\sqrt2}{5}",
+          "isCorrect": false,
+          "incorrectReason": "√4=2なので、√8=√(4×2)=2√2です。4√2にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "√8を2√2に直し、2√2/10を2√2/5に約分する。",
+          "latex": "\\dfrac{2\\sqrt2}{10}=\\dfrac{2\\sqrt2}{5}",
+          "isCorrect": false,
+          "incorrectReason": "分母を10から5へ2で割るなら、分子の係数2も2で割って1にします。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "radical",
+      "simplify"
+    ]
+  },
+  "revision": "97f1cf988f46a3002ae1644486db83f640917483d90b5e680e98410f77e08b4e"
+}

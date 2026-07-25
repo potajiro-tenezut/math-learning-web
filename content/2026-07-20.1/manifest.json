@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": "2026-07-20.1",
+  "generatedAt": "2026-07-20T12:36:48.575Z",
+  "questionCount": 30,
+  "packageChecksum": "11647943733956aa0e5387782e97123354e07a4d61c65e29570df740db5659e1",
+  "files": [
+    {
+      "path": "index.json",
+      "sha256": "9a228d86fd2c89a2ee5154a2ae5e61c142952a853e15a3c3140d1530109b81b7",
+      "bytes": 16273
+    },
+    {
+      "path": "questions/u01-calendar-weekday-0009.json",
+      "sha256": "ca0d5abc44ef30439c9af29d29aae26e05bc5cd8a8f16b2acece2d2abfab89fc",
+      "bytes": 5249
+    },
+    {
+      "path": "questions/u01-common-remainder-divisor-0008.json",
+      "sha256": "3fc1a276153676232ebb594501db5b3872ccd09406b149f388df6be6b7c43777",
+      "bytes": 6705
+    },
+    {
+      "path": "questions/u01-common-remainder-lcm-0007.json",
+      "sha256": "e46cd2606689343ce7311a18c84490c296c6b3b37af4b587440981886e1cffc3",
+      "bytes": 6588
+    },
+    {
+      "path": "questions/u01-congruence-nearest-0010.json",
+      "sha256": "3efef689de0c6941d56a01548e5d66d9270ec026e372a1a9d51e8bcbec9fc07d",
+      "bytes": 10357
+    },
+    {
+      "path": "questions/u01-divisors-multiples-0001.json",
+      "sha256": "e5a7d9a85e0a9524366e9089e2303b33df4f3ac13037734a145ecf10b221aeb6",
+      "bytes": 5242
+    },
+    {
+      "path": "questions/u01-gcd-lcm-0004.json",
+      "sha256": "b28f8e681a661f60431819a3bbf12b7f3af003a29e1f3fd31cb5cb833cfcb04f",
+      "bytes": 6691
+    },
+    {
+      "path": "questions/u01-gcd-lcm-relation-0005.json",
+      "sha256": "da2ebc0d1f8cd317a94e327598690923e98af3578ee75cd887aabfb076ac3cf7",
+      "bytes": 6843
+    },
+    {
+      "path": "questions/u01-prime-factorization-0003.json",
+      "sha256": "09df853942079a3a73ef8ec22f5772ad4f177524810f874dd5233cd0a9534ccf",
+      "bytes": 4661
+    },
+    {
+      "path": "questions/u01-prime-list-0002.json",
+      "sha256": "8d611f68196d4d1e83e77723ef4b1395ddeb980bb204283873245a03855a45da",
+      "bytes": 8475
+    },
+    {
+      "path": "questions/u01-remainder-divisors-0006.json",
+      "sha256": "3ebc470d6a56d93b32ad0d6df313a41d8755e843b855d00ae0146b761b738199",
+      "bytes": 4694
+    },
+    {
+      "path": "questions/u02-radical-calculation-0004.json",
+      "sha256": "87627cbed90e48b14fa08ecb3db668c99c288f1584c04328941660de1ed8526b",
+      "bytes": 3810
+    },
+    {
+      "path": "questions/u02-radical-fraction-calculate-0006.json",
+      "sha256": "126f40a6c4fa5628153b670d2edf89b59ca22854390098109b225da71c50172e",
+      "bytes": 5418
+    },
+    {
+      "path": "questions/u02-radical-simplify-0003.json",
+      "sha256": "4cfc022a2f2caa393915f7ca71f4407e78f845ae11aa45df2a4f803a4b6d0f53",
+      "bytes": 4812
+    },
+    {
+      "path": "questions/u02-radicals-0001.json",
+      "sha256": "6a59c772522bf433d150686ca9f75fd1d0de2bf6af5fe890637d9218dbe276d9",
+      "bytes": 3417
+    },
+    {
+      "path": "questions/u02-radicals-0002.json",
+      "sha256": "1906fec0481478a55333e2be583f24bca4eec539e2eab075f8261adfee807c56",
+      "bytes": 2585
+    },
+    {
+      "path": "questions/u02-rationalize-denominator-0005.json",
+      "sha256": "ebf6c7a22533ecdccf09c3028a49cf72432bb0b6f13127ef41e8418d81cd81a4",
+      "bytes": 5268
+    },
+    {
+      "path": "questions/u03-expression-value-0001.json",
+      "sha256": "604dc1f5fbce56c90a86d82b4f15f5e653714dd79fa007cf2cf3f20762fd915f",
+      "bytes": 4407
+    },
+    {
+      "path": "questions/u03-expression-value-0002.json",
+      "sha256": "bc933c30c74a96ff6b2f600723b0fe728b326cbbf84ec01da7d22038e4d62da2",
+      "bytes": 9959
+    },
+    {
+      "path": "questions/u04-linear-equation-0001.json",
+      "sha256": "77f8377c172a6c9848e4e82cb86df5d28fe296183ce590530dc77785ff8727dc",
+      "bytes": 3151
+    },
+    {
+      "path": "questions/u04-linear-equation-0002.json",
+      "sha256": "451386d68e485358efeb92649fe72cad5ec479ad1e864811c0f4815d026e9708",
+      "bytes": 12951
+    },
+    {
+      "path": "questions/u05-quadratic-equation-0001.json",
+      "sha256": "79bbc22d335a68070b27e7d272bd0cdc0e0f6f730de124c8f3d4ca5630cc4374",
+      "bytes": 4911
+    },
+    {
+      "path": "questions/u05-quadratic-equation-factor-0002.json",
+      "sha256": "9d134fa9a53a92a6c82fa67d4ca73805ab19feea14026fefc15d81e878b01c44",
+      "bytes": 12795
+    },
+    {
+      "path": "questions/u05-quadratic-equation-formula-0003.json",
+      "sha256": "7ea646e0e0728e1adde1a9dd42b3885cf9c9af26c254df8396572f6becb29ff7",
+      "bytes": 8282
+    },
+    {
+      "path": "questions/u05-quadratic-root-relation-0004.json",
+      "sha256": "982f439c3e40046e5807d21810e5a97af0427d77b4e6a13ad497432b4da88319",
+      "bytes": 5482
+    },
+    {
+      "path": "questions/u06-simultaneous-equation-0001.json",
+      "sha256": "732477c8142a75c61ebcc8821db970fe11380253e4aeadd7addfc6f96b17c543",
+      "bytes": 5020
+    },
+    {
+      "path": "questions/u06-simultaneous-equation-0002.json",
+      "sha256": "2d0c61985d85f46c291cfb582b5ce84f3150e0f08345cd329fe405dcc42d7530",
+      "bytes": 4891
+    },
+    {
+      "path": "questions/u06-simultaneous-equation-0003.json",
+      "sha256": "168e0f57f7aef3791b2e725a8774846c609a70b49aee19fd283a9cc614851494",
+      "bytes": 6480
+    },
+    {
+      "path": "questions/u06-simultaneous-equation-0004.json",
+      "sha256": "09f0a6e2d98ca8fc0bfee5214b992ceabc83a12197ce4a87cbf7974ebb1a145a",
+      "bytes": 6540
+    },
+    {
+      "path": "questions/u06-simultaneous-equation-0005.json",
+      "sha256": "b4c757b84d350fb91185c64049c2ef320616ec2adece70685ba0744182bce225",
+      "bytes": 7591
+    },
+    {
+      "path": "questions/u06-simultaneous-equation-0006.json",
+      "sha256": "755e6d1c06c8f9be68015c1e55568a71d200a0ae5b0c6700f8f7c40925775abf",
+      "bytes": 8929
+    }
+  ]
+}

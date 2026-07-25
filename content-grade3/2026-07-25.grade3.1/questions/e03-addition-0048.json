@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-addition-0048",
+  "revision": "b6980711e5ef8dd67057073b87eda0f67ce8d2b304e80d2fe96c46d0844bfe5f",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-01",
+    "name": "たし算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-addition-calculation",
+  "problemText": "291 + 276 を計算しなさい。",
+  "problemLatex": "291+276",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "567"
+  },
+  "solutionPlan": {
+    "summary": "たし算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "291+276",
+      "operationText": "たし算をして、答えを 567 と求める。",
+      "operationLatex": "291+276=567",
+      "afterLatex": "567",
+      "reason": "291 と 276 をたすと 567 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "たし算をして、答えを 557 と求める。",
+          "latex": "291+276=557",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 557 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "たし算をして、答えを 577 と求める。",
+          "latex": "291+276=577",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 577 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "たし算をして、答えを 567 と求める。",
+          "latex": "291+276=567",
+          "isCorrect": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "addition",
+      "summer-review"
+    ]
+  }
+}

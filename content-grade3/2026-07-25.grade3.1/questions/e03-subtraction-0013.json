@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-subtraction-0013",
+  "revision": "8c3a4ec3c9c4adb8e291cd228dfd7ef7aea5f151db87e24c24b82d0a399fb861",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-02",
+    "name": "ひき算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-subtraction-calculation",
+  "problemText": "744 - 241 を計算しなさい。",
+  "problemLatex": "744-241",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "503"
+  },
+  "solutionPlan": {
+    "summary": "ひき算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "744-241",
+      "operationText": "ひき算をして、答えを 503 と求める。",
+      "operationLatex": "744-241=503",
+      "afterLatex": "503",
+      "reason": "744 から 241 をひくと 503 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "ひき算をして、答えを 503 と求める。",
+          "latex": "744-241=503",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "ひき算をして、答えを 493 と求める。",
+          "latex": "744-241=493",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 493 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "ひき算をして、答えを 513 と求める。",
+          "latex": "744-241=513",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 513 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "subtraction",
+      "summer-review"
+    ]
+  }
+}

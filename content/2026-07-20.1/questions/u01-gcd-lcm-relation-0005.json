@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u01-gcd-lcm-relation-0005",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-01",
+    "name": "約数と倍数"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "imported",
+  "problemType": "gcd-lcm-relation-basic",
+  "problemText": "最大公約数が18，最小公倍数が540となる正の整数の組をすべて求めなさい。ただし，数の順序は考えないものとします。",
+  "problemLatex": "\\gcd(a,b)=18,\\ \\operatorname{lcm}(a,b)=540",
+  "given": {
+    "variables": [
+      "a",
+      "b"
+    ],
+    "conditions": [
+      "2数の最大公約数が18である。",
+      "2数の最小公倍数が540である。",
+      "2数は正の整数で、数の順序は考えない。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "(18,540),\\ (36,270),\\ (54,180),\\ (90,108)"
+  },
+  "solutionPlan": {
+    "summary": "2数を18x,18yとおき、xとyが互いに素であることを使う。2数の最小公倍数を18xyと表してxy=30を求め、30の素因数を2組に分ける。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "\\gcd(a,b)=18,\\quad \\operatorname{lcm}(a,b)=540",
+      "operationText": "最大公約数18を使い、2数をa=18x、b=18yとおく。",
+      "operationLatex": "a=18x,\\quad b=18y,\\quad \\gcd(x,y)=1",
+      "afterLatex": "a=18x,\\quad b=18y,\\quad \\gcd(x,y)=1",
+      "reason": "最大公約数が18なので、2数から18を取り除いたxとyには共通する素因数がありません。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "2数をa=18x、b=18yとおく。",
+          "latex": "a=18x,\\ b=18y",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "2数をa=540x、b=540yとおく。",
+          "latex": "a=540x,\\ b=540y",
+          "isCorrect": false,
+          "incorrectReason": "540は最小公倍数であり、2数がどちらも540の倍数とは限りません。共通にくくり出せる18を使います。"
+        },
+        {
+          "id": "choice-c",
+          "text": "18と540を足して2数の和を求める。",
+          "latex": "a+b=18+540",
+          "isCorrect": false,
+          "incorrectReason": "最大公約数と最小公倍数の和は、もとの2数の和にはなりません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "a=18x,\\quad b=18y,\\quad \\gcd(x,y)=1",
+      "operationText": "xとyが互いに素なので、2数の最小公倍数を18xyと表し、xyを求める。",
+      "operationLatex": "18xy=540",
+      "afterLatex": "xy=30",
+      "reason": "xとyには共通する素因数がないため、18xと18yの最小公倍数は18xyです。18xy=540の両辺を18で割るとxy=30になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "最小公倍数を18xyと表し、18xy=540からxyを求める。",
+          "latex": "18xy=540",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "最小公倍数を18(x+y)と表し、18(x+y)=540からx+yを求める。",
+          "latex": "18(x+y)=540",
+          "isCorrect": false,
+          "incorrectReason": "xとyが互いに素なとき、最小公倍数にはxとyの積を使います。和ではありません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "最小公倍数を18^2xyと表し、18^2xy=540からxyを求める。",
+          "latex": "18^2xy=540",
+          "isCorrect": false,
+          "incorrectReason": "18^2xyは2数の積です。最小公倍数では共通する18を重ねて数えず、18xyとします。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "xy=30,\\quad \\gcd(x,y)=1",
+      "operationText": "30を素因数分解し、共通する素因数をもたない因数の組をすべて作る。",
+      "operationLatex": "30=2\\times3\\times5",
+      "afterLatex": "(x,y)=(1,30),(2,15),(3,10),(5,6)",
+      "reason": "xとyは互いに素なので、2、3、5の各素因数を分けずにどちらか一方へ振り分けます。順序を考えない組は4組です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "30を2×3×5に素因数分解し、素因数を2組に振り分ける。",
+          "latex": "30=2\\times3\\times5",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "和が30になる互いに素な正の整数の組を探す。",
+          "latex": "x+y=30",
+          "isCorrect": false,
+          "incorrectReason": "前のステップで分かった条件はx+y=30ではなくxy=30です。積が30になる組を探します。"
+        },
+        {
+          "id": "choice-c",
+          "text": "素因数2、3、5から2個を選び、(2,3)、(2,5)、(3,5)を作る。",
+          "latex": "(x,y)=(2,3),(2,5),(3,5)",
+          "isCorrect": false,
+          "incorrectReason": "xとyの積が30になるように、2、3、5を余さず2組へ振り分ける必要があります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-004",
+      "beforeLatex": "a=18x,\\quad b=18y,\\quad (x,y)=(1,30),(2,15),(3,10),(5,6)",
+      "operationText": "各(x,y)をa=18x、b=18yに代入し、もとの2数の組を解答にする。",
+      "operationLatex": "(a,b)=(18x,18y)",
+      "afterLatex": "(a,b)=(18,540),(36,270),(54,180),(90,108)",
+      "reason": "a=18x、b=18yなので、見つけた各組の両方を18倍します。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "各(x,y)をa=18x、b=18yに代入し、(a,b)を求める。",
+          "latex": "(a,b)=(18x,18y)",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "各組の両方の数に18を足す。",
+          "latex": "(a,b)=(x+18,y+18)",
+          "isCorrect": false,
+          "incorrectReason": "a=18x、b=18yは18倍を表します。18を足す関係ではありません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "各組の一方を18倍し、もう一方を540倍する。",
+          "latex": "(a,b)=(18x,540y)",
+          "isCorrect": false,
+          "incorrectReason": "2数はどちらも最大公約数18をくくり出しているので、両方を18倍して戻します。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "divisor",
+      "multiple",
+      "gcd",
+      "lcm"
+    ]
+  },
+  "revision": "ac8162e7f03591937e21d94848ecaf22c62bdd94ba7a7cfab5764d78bf0047b3"
+}

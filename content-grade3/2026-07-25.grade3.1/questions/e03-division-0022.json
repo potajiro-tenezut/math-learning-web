@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-division-0022",
+  "revision": "4b517a093097debe1aec92dcc470fcab1443ebb262615ed1ea4a2948d0e6e810",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-04",
+    "name": "わり算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-division-calculation",
+  "problemText": "28 ÷ 7 を計算しなさい。",
+  "problemLatex": "28\\div7",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "4"
+  },
+  "solutionPlan": {
+    "summary": "わり算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "28\\div7",
+      "operationText": "わり算をして、答えを 4 と求める。",
+      "operationLatex": "28\\div7=4",
+      "afterLatex": "4",
+      "reason": "7 \\times 4=28 なので、28 \\div 7=4 です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "わり算をして、答えを 4 と求める。",
+          "latex": "28\\div7=4",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "わり算をして、答えを 3 と求める。",
+          "latex": "28\\div7=3",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 3 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "わり算をして、答えを 5 と求める。",
+          "latex": "28\\div7=5",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 5 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "division",
+      "summer-review"
+    ]
+  }
+}

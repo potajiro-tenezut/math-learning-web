@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-subtraction-0022",
+  "revision": "7a92ac242a521b7020e9c946b0c3a4abecb60ebe15a8721f0e4afc05e8f9667f",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-02",
+    "name": "ひき算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-subtraction-calculation",
+  "problemText": "376 - 94 を計算しなさい。",
+  "problemLatex": "376-94",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "282"
+  },
+  "solutionPlan": {
+    "summary": "ひき算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "376-94",
+      "operationText": "ひき算をして、答えを 282 と求める。",
+      "operationLatex": "376-94=282",
+      "afterLatex": "282",
+      "reason": "376 から 94 をひくと 282 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "ひき算をして、答えを 282 と求める。",
+          "latex": "376-94=282",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "ひき算をして、答えを 272 と求める。",
+          "latex": "376-94=272",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 272 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "ひき算をして、答えを 292 と求める。",
+          "latex": "376-94=292",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 292 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "subtraction",
+      "summer-review"
+    ]
+  }
+}

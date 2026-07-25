@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-addition-0040",
+  "revision": "6296250f8f4e56a82c05590014516d667bea404f6769b1889e5ef3fc842a1e7f",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-01",
+    "name": "たし算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-addition-calculation",
+  "problemText": "790 + 44 を計算しなさい。",
+  "problemLatex": "790+44",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "834"
+  },
+  "solutionPlan": {
+    "summary": "たし算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "790+44",
+      "operationText": "たし算をして、答えを 834 と求める。",
+      "operationLatex": "790+44=834",
+      "afterLatex": "834",
+      "reason": "790 と 44 をたすと 834 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "たし算をして、答えを 834 と求める。",
+          "latex": "790+44=834",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "たし算をして、答えを 824 と求める。",
+          "latex": "790+44=824",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 824 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "たし算をして、答えを 844 と求める。",
+          "latex": "790+44=844",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 844 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "addition",
+      "summer-review"
+    ]
+  }
+}

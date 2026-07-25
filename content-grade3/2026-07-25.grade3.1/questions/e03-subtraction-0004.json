@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-subtraction-0004",
+  "revision": "8fd34f85c03cb88a34c9b6f50c96f7bba867896308536618e45acef9fd7e1f35",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-02",
+    "name": "ひき算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-subtraction-calculation",
+  "problemText": "312 - 88 を計算しなさい。",
+  "problemLatex": "312-88",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "224"
+  },
+  "solutionPlan": {
+    "summary": "ひき算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "312-88",
+      "operationText": "ひき算をして、答えを 224 と求める。",
+      "operationLatex": "312-88=224",
+      "afterLatex": "224",
+      "reason": "312 から 88 をひくと 224 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "ひき算をして、答えを 224 と求める。",
+          "latex": "312-88=224",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "ひき算をして、答えを 214 と求める。",
+          "latex": "312-88=214",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 214 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "ひき算をして、答えを 234 と求める。",
+          "latex": "312-88=234",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 234 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "subtraction",
+      "summer-review"
+    ]
+  }
+}

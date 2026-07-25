@@ -48,5 +48,18 @@ describe("実エクスポート統合", () => {
     expect(new Set(grade3Questions.map((question) => question.unit.name))).toEqual(
       new Set(["たし算", "ひき算", "かけ算", "わり算"]),
     );
+    const grade3Prose = grade3Questions.flatMap((question) => [
+      question.problemText,
+      question.solutionPlan.summary,
+      ...question.solutionSteps.flatMap((step) => [
+        step.operationText,
+        step.reason,
+        ...step.choices.flatMap((choice) => [
+          choice.text,
+          choice.incorrectReason ?? "",
+        ]),
+      ]),
+    ]);
+    expect(grade3Prose.join("\n")).not.toMatch(/\\(?:times|div)\b/);
   });
 });

@@ -4,8 +4,8 @@ import { question, summary } from "../test/fixtures";
 import {
   CachedContentRepository,
   ContentError,
-  decodeEscapedUnicode,
   HttpContentRepository,
+  normalizeProseMath,
   resolveWithinBase,
   sha256,
   type ContentCache,
@@ -114,15 +114,18 @@ describe("HttpContentRepository", () => {
   });
 });
 
-describe("decodeEscapedUnicode", () => {
-  it("二重エスケープされたインライン数式記号を表示文字へ戻す", () => {
-    expect(decodeEscapedUnicode("\\u221a50 を簡単にする")).toBe("√50 を簡単にする");
-    expect(decodeEscapedUnicode("\\u00b12 と \\u03c0")).toBe("±2 と π");
+describe("normalizeProseMath", () => {
+  it("二重エスケープされた記号と本文中のLaTeXを表示文字へ戻す", () => {
+    expect(normalizeProseMath("\\u221a50 を簡単にする")).toBe("√50 を簡単にする");
+    expect(normalizeProseMath("\\u00b12 と \\u03c0")).toBe("±2 と π");
+    expect(normalizeProseMath("2 \\times 5=10、10 \\div 2=5")).toBe(
+      "2 × 5=10、10 ÷ 2=5",
+    );
+    expect(normalizeProseMath("\\sqrt{50} と \\frac{1}{2}")).toBe("√50 と 1/2");
   });
 
-  it("通常の文章とLaTeXコマンドは変更しない", () => {
-    expect(decodeEscapedUnicode("平方根を考える")).toBe("平方根を考える");
-    expect(decodeEscapedUnicode("\\sqrt{50}")).toBe("\\sqrt{50}");
+  it("通常の文章は変更しない", () => {
+    expect(normalizeProseMath("平方根を考える")).toBe("平方根を考える");
   });
 });
 

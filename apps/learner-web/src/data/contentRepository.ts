@@ -162,31 +162,41 @@ function validateQuestion(
   const question = value as unknown as PublicQuestion;
   return {
     ...question,
-    problemText: decodeEscapedUnicode(question.problemText),
+    problemText: normalizeProseMath(question.problemText),
     solutionPlan: {
       ...question.solutionPlan,
-      summary: decodeEscapedUnicode(question.solutionPlan.summary),
+      summary: normalizeProseMath(question.solutionPlan.summary),
     },
     solutionSteps: question.solutionSteps.map((step) => ({
       ...step,
-      operationText: decodeEscapedUnicode(step.operationText),
-      reason: decodeEscapedUnicode(step.reason),
+      operationText: normalizeProseMath(step.operationText),
+      reason: normalizeProseMath(step.reason),
       choices: step.choices.map((choice) => ({
         ...choice,
-        text: decodeEscapedUnicode(choice.text),
+        text: normalizeProseMath(choice.text),
         incorrectReason:
           choice.incorrectReason === undefined
             ? undefined
-            : decodeEscapedUnicode(choice.incorrectReason),
+            : normalizeProseMath(choice.incorrectReason),
       })),
     })),
   };
 }
 
-export function decodeEscapedUnicode(value: string): string {
-  return value.replace(/\\u([0-9a-fA-F]{4})/g, (_, codePoint: string) =>
-    String.fromCharCode(Number.parseInt(codePoint, 16)),
-  );
+export function normalizeProseMath(value: string): string {
+  return value
+    .replace(/\\u([0-9a-fA-F]{4})/g, (_, codePoint: string) =>
+      String.fromCharCode(Number.parseInt(codePoint, 16)),
+    )
+    .replace(/\\sqrt\{([^{}]+)\}/g, "√$1")
+    .replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, "$1/$2")
+    .replace(/\\times\b/g, "×")
+    .replace(/\\div\b/g, "÷")
+    .replace(/\\cdot\b/g, "·")
+    .replace(/\\pm\b/g, "±")
+    .replace(/\\(?:le|leq)\b/g, "≤")
+    .replace(/\\(?:ge|geq)\b/g, "≥")
+    .replace(/\\neq\b/g, "≠");
 }
 
 export function resolveWithinBase(relativePath: string, baseUrl: URL): URL {

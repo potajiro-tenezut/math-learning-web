@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-division-0021",
+  "revision": "d6d73ffde00e0f8ac64cf7ea2113c79757447d6ab50c134df91b93ef3cdc5f72",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-04",
+    "name": "わり算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-division-calculation",
+  "problemText": "24 ÷ 6 を計算しなさい。",
+  "problemLatex": "24\\div6",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "4"
+  },
+  "solutionPlan": {
+    "summary": "わり算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "24\\div6",
+      "operationText": "わり算をして、答えを 4 と求める。",
+      "operationLatex": "24\\div6=4",
+      "afterLatex": "4",
+      "reason": "6 \\times 4=24 なので、24 \\div 6=4 です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "わり算をして、答えを 3 と求める。",
+          "latex": "24\\div6=3",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 3 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "わり算をして、答えを 5 と求める。",
+          "latex": "24\\div6=5",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 5 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "わり算をして、答えを 4 と求める。",
+          "latex": "24\\div6=4",
+          "isCorrect": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "division",
+      "summer-review"
+    ]
+  }
+}

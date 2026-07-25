@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-subtraction-0046",
+  "revision": "af591cafb09679abbebc9e25d614f87a58f208348383d6e1cb7e2708400ad7b3",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-02",
+    "name": "ひき算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-subtraction-calculation",
+  "problemText": "728 - 202 を計算しなさい。",
+  "problemLatex": "728-202",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "526"
+  },
+  "solutionPlan": {
+    "summary": "ひき算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "728-202",
+      "operationText": "ひき算をして、答えを 526 と求める。",
+      "operationLatex": "728-202=526",
+      "afterLatex": "526",
+      "reason": "728 から 202 をひくと 526 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "ひき算をして、答えを 526 と求める。",
+          "latex": "728-202=526",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "ひき算をして、答えを 516 と求める。",
+          "latex": "728-202=516",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 516 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "ひき算をして、答えを 536 と求める。",
+          "latex": "728-202=536",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 536 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "subtraction",
+      "summer-review"
+    ]
+  }
+}

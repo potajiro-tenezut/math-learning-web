@@ -1,0 +1,4208 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": "2026-07-25.grade3.1",
+  "generatedAt": "2026-07-25T00:00:00.000Z",
+  "questionCount": 200,
+  "questions": [
+    {
+      "id": "e03-addition-0001",
+      "revision": "8632fc4ec27ca936b2f4d0b4a356e93e57dbd135a451a8aae5f774cd81f44aad",
+      "file": "questions/e03-addition-0001.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0002",
+      "revision": "ce839f303b9c8bc3865a78654972e4bdba4201342dd0d2594317dc500b75ed92",
+      "file": "questions/e03-addition-0002.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0003",
+      "revision": "8f8c14f1894fe1ae5b518074b64e4f68cbf41fcc9ed7baa80cebe2f13a5b8694",
+      "file": "questions/e03-addition-0003.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0004",
+      "revision": "89107a4f7193d0df0db4847b1f0073b89936c3c52fc391995c5f8bb974df0a0e",
+      "file": "questions/e03-addition-0004.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0005",
+      "revision": "8833306224294a7020a63cea20233755cf1561069fb08a356a9066d4cf748c5e",
+      "file": "questions/e03-addition-0005.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0006",
+      "revision": "9e14c0344e0e054131e8924dac8e26a3601222b674199d31461c57925479c13e",
+      "file": "questions/e03-addition-0006.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0007",
+      "revision": "08eeba822be775d3a2f8828c1208589448a88bf0b4c16694ff1fea243ce1ede4",
+      "file": "questions/e03-addition-0007.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0008",
+      "revision": "1f8935433f4f1fbf05b2c5499b0ae228028f6cc764e1e52d0499f01ebd00d428",
+      "file": "questions/e03-addition-0008.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0009",
+      "revision": "0275dda03d525d976dd6df2f9238bdded5fd8961849f39198597e87c0b5a9471",
+      "file": "questions/e03-addition-0009.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0010",
+      "revision": "94a09316ad396dac6821364477620e2c1eabd4aa01084adae9fde4f9009d3f5d",
+      "file": "questions/e03-addition-0010.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0011",
+      "revision": "10dbf25a69db4879f921ed43cd35aef75d0a815b759cb9f076b16643718398e2",
+      "file": "questions/e03-addition-0011.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0012",
+      "revision": "2d919b9479a1a4faa637c13d5c25bc7f58abcb1ce14056306c1630c80afd5ed3",
+      "file": "questions/e03-addition-0012.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0013",
+      "revision": "d7d56d600cb1266f0a39b7de21da3994c90a7f316a48d7f41a278b170b3bfec6",
+      "file": "questions/e03-addition-0013.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0014",
+      "revision": "cfa9260cf44f594228138a2322e2c20055810917f026fc9135538e0467af5654",
+      "file": "questions/e03-addition-0014.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0015",
+      "revision": "5af036b2753133178c8b3672c18a31c0985dc157f207d0494ee5171e2a5174d1",
+      "file": "questions/e03-addition-0015.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0016",
+      "revision": "49c5d1033ded144213b8241f0ced6d9c897241fe6956f41e20ecde27e520576c",
+      "file": "questions/e03-addition-0016.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0017",
+      "revision": "bcc5aaa3605a7c4f1d1f946c4bab529c7ee7dcf6e15de3510732c8ff0833cbd5",
+      "file": "questions/e03-addition-0017.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0018",
+      "revision": "951bd364f81fcd089c1ad1042a834df4cc07bf1cc19e570acdf5fbe9a02c7c66",
+      "file": "questions/e03-addition-0018.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0019",
+      "revision": "c0d817d449c9d467cd54f0bbe197a0365e11c3dc3a77d2c11b658266eb15352f",
+      "file": "questions/e03-addition-0019.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0020",
+      "revision": "3df38c6f8071f88ecfd9bcbda83ba7d956025e4e13338b39d3b5169011db59ec",
+      "file": "questions/e03-addition-0020.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0021",
+      "revision": "f9293b729afd97ae4f39e0b11253a23389690af609699ce76848e07477ea90bc",
+      "file": "questions/e03-addition-0021.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0022",
+      "revision": "f741627eb4c4a516fbc7f8fc31d25445403a4aad4c21146e59753c60c08ed863",
+      "file": "questions/e03-addition-0022.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0023",
+      "revision": "ac3ecebc8d336879b59183964b189a766f847a9dcce7938a8bb6ec91f434f863",
+      "file": "questions/e03-addition-0023.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0024",
+      "revision": "7dbdde241d17dc4caadb09840eea6f9ca656a38e4be298e2b7fb853c8b054f2a",
+      "file": "questions/e03-addition-0024.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0025",
+      "revision": "b8f826e47266ab2cefb1f604557714ed3e7231c5a1e1640e6fc375a3bbfd32e5",
+      "file": "questions/e03-addition-0025.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0026",
+      "revision": "b504ad41fad543ac1ec2fe913f5c6a674769926997cc8ac0d32ad410f5781926",
+      "file": "questions/e03-addition-0026.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0027",
+      "revision": "ebce18957767cd38e9771b224004a2fd08bd813f25078940a1bd2aab9086129d",
+      "file": "questions/e03-addition-0027.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0028",
+      "revision": "2132857a8037029507722c0363ae042f26def7cce492ac510dca4ed7cd0357d6",
+      "file": "questions/e03-addition-0028.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0029",
+      "revision": "2b2b1735050682f18f497dde06431072e341bf7a37ce0f1a45986344b19c1dff",
+      "file": "questions/e03-addition-0029.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0030",
+      "revision": "8c4bd39c954d51f9759b26c8b74560587a9497c7218744c7ea7d1e0f75513ac6",
+      "file": "questions/e03-addition-0030.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0031",
+      "revision": "0aad2d67d2c1263530fdcc1913af25d5366a8ada68edd46a271f7f9045b05e68",
+      "file": "questions/e03-addition-0031.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0032",
+      "revision": "c03ec71a87939dd67a802de0939ed9bc3f81bf4528679a4db948292770cb155c",
+      "file": "questions/e03-addition-0032.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0033",
+      "revision": "efce77c825d643f545b7ae73cd328b15a6248703c0da9443ceb1ae92c6a005e0",
+      "file": "questions/e03-addition-0033.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0034",
+      "revision": "aef23b47c613d072e5059fe92482f5d6287c3cdbddd939a5b757408835f981d9",
+      "file": "questions/e03-addition-0034.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0035",
+      "revision": "5e4eeac2232e7db5350dc2935dc3910d3df4aafcbc7a473a9a5fd4b51144050a",
+      "file": "questions/e03-addition-0035.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0036",
+      "revision": "675a2ef41a6b6e238fa66b91736ace9ca821b6185b8471fdc4d55f5865ccd8ed",
+      "file": "questions/e03-addition-0036.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0037",
+      "revision": "03c0f9256cb8ccee11ee98fff5d9d3a942db81d299606ab908cfec774b041fcd",
+      "file": "questions/e03-addition-0037.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0038",
+      "revision": "b93c055b9b81dddbf05f6abc37448403de4a3c21ca304fedefe42fbeb53b7027",
+      "file": "questions/e03-addition-0038.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0039",
+      "revision": "b99fb1e07661efa4f6c84768fa4ddf1f5c62bd35b48d8a57293c1dcb52b5dc43",
+      "file": "questions/e03-addition-0039.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0040",
+      "revision": "6296250f8f4e56a82c05590014516d667bea404f6769b1889e5ef3fc842a1e7f",
+      "file": "questions/e03-addition-0040.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0041",
+      "revision": "4df8dcbd7bbf3b7a561214ecb2672795e060c9af5d07a7c147774e575498ac4c",
+      "file": "questions/e03-addition-0041.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0042",
+      "revision": "84c9142ba78b1523f31235cce58f5e1c7090521b7cf96d290d51423a78ba9660",
+      "file": "questions/e03-addition-0042.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0043",
+      "revision": "8f0b0ce74e77f1cf1291e2bf67ff1d2dbe40ad2a58e6d972760112cafca9f20f",
+      "file": "questions/e03-addition-0043.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0044",
+      "revision": "792cdc697d3c541d1f13dffefe32b5810b6c10a1c31e20421d20e30d69bd6629",
+      "file": "questions/e03-addition-0044.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0045",
+      "revision": "c664c0f0a1b63f9e4a02cc9da7557e299ca8e63999588b223034447138f00ca7",
+      "file": "questions/e03-addition-0045.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0046",
+      "revision": "d446ed0441dfce33b93ba6683571f34c8178a264fc49af8eb2749fb3b0ccbd8c",
+      "file": "questions/e03-addition-0046.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0047",
+      "revision": "54dea8230a3bf0938efd6ad5681d4b6e544ba022ac56ea5a21d8a2298cf4b90c",
+      "file": "questions/e03-addition-0047.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0048",
+      "revision": "b6980711e5ef8dd67057073b87eda0f67ce8d2b304e80d2fe96c46d0844bfe5f",
+      "file": "questions/e03-addition-0048.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0049",
+      "revision": "8ddc5a832776cecb7d111ca601fad8d26b45e3b7bba9c7e0d92ce81c3acc29c0",
+      "file": "questions/e03-addition-0049.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-addition-0050",
+      "revision": "8073ae04f88db18f7c8752d22bd1f35e5a9a4d2f0857fde667447ec9cea15877",
+      "file": "questions/e03-addition-0050.json",
+      "unit": {
+        "id": "elementary-unit-01",
+        "name": "たし算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-addition-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "addition",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0001",
+      "revision": "9a3516a460d9f03cd8227e2d7794bf016460abcbf830f5361c135e17f05ca028",
+      "file": "questions/e03-division-0001.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0002",
+      "revision": "277a81d1153316486be4fca55b24f37fa451f61e0f38aa8215b56f1b3b3eb8f8",
+      "file": "questions/e03-division-0002.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0003",
+      "revision": "f6f18729270488054879e0a3e656e811453c01210573ec8afcf4cff047af39e3",
+      "file": "questions/e03-division-0003.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0004",
+      "revision": "cb82b13566a99a203a75f51b61049ae7c78f3d74ddca7a7470e3427845bfb7b1",
+      "file": "questions/e03-division-0004.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0005",
+      "revision": "295991f320f7a4946f3b6c0f26df1bea78e4e580336003655e21673a9c462a02",
+      "file": "questions/e03-division-0005.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0006",
+      "revision": "7abc8e502d6f5e910636f9e484d5679c4d8bb27b36ad2ac8c3dc9e7426890e03",
+      "file": "questions/e03-division-0006.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0007",
+      "revision": "d7e58a30b3b2dea14aaba6ac7dc6974673ea8c46c49b029d827b9df32d76dd0e",
+      "file": "questions/e03-division-0007.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0008",
+      "revision": "36d18db8763e616a926502eff5f9336ea8d1d3d1993d4e47fb7d21352dff3405",
+      "file": "questions/e03-division-0008.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0009",
+      "revision": "5b2aa860925736cba60758cb17bb48605ee3f4059b421ed06c7085c9356356ac",
+      "file": "questions/e03-division-0009.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0010",
+      "revision": "ec08eb1fc0ce2cf246456e6c88c0f47b68cb2bf7ccc449434e29048f40b6d7bb",
+      "file": "questions/e03-division-0010.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0011",
+      "revision": "de6c51be1ec16c05b8f49972406eb2988f26b426911d815c1c90341d7259236c",
+      "file": "questions/e03-division-0011.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0012",
+      "revision": "c97f5d12e31d99dc6e28f5e5dbdecc476e1042265c3442efeddc3a097387b998",
+      "file": "questions/e03-division-0012.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0013",
+      "revision": "35ee4be4d5ed843ffee01fe1d5bd17531e5fa868781c53dd1942d27ece6501ad",
+      "file": "questions/e03-division-0013.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0014",
+      "revision": "a4075b5ab9f7d89444c26308b7fc858a8498ff878eac0622a024769b4aed5dc6",
+      "file": "questions/e03-division-0014.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0015",
+      "revision": "b360f77283ec4e65ec36d8ae51371e5b1dd9c76e326a69f4a35e9ea02cac8252",
+      "file": "questions/e03-division-0015.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0016",
+      "revision": "1c95e88bbc60f8230d4280aab3269a4fea088325abb9f07d897b351f216b6862",
+      "file": "questions/e03-division-0016.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0017",
+      "revision": "20aa2d272af7eec8de3917f8d0b426fb0e877f8fa1b28ca4f7029b1dbb66cada",
+      "file": "questions/e03-division-0017.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0018",
+      "revision": "190482b8580d54934e40f5359e000c901e104018a86be1de1bfc1c5054c79c1e",
+      "file": "questions/e03-division-0018.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0019",
+      "revision": "3c96486496453a518d1c6da6fd5418d4e8913ecd8d73b42835322a7a7e3a6539",
+      "file": "questions/e03-division-0019.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0020",
+      "revision": "8375d09d39aec63614658743f424ee07eddd1f9d0899ad33a7e9e5d2f2119f86",
+      "file": "questions/e03-division-0020.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0021",
+      "revision": "d6d73ffde00e0f8ac64cf7ea2113c79757447d6ab50c134df91b93ef3cdc5f72",
+      "file": "questions/e03-division-0021.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0022",
+      "revision": "4b517a093097debe1aec92dcc470fcab1443ebb262615ed1ea4a2948d0e6e810",
+      "file": "questions/e03-division-0022.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0023",
+      "revision": "f3e0da15a04c927ae0c8333a36d29fb23a9d491eb95777a961bf0e6ff7129cff",
+      "file": "questions/e03-division-0023.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0024",
+      "revision": "7f5d26f09eb3ad27273f87eab55fe9013b089dba69d795fd1aaecce215d5d9bb",
+      "file": "questions/e03-division-0024.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0025",
+      "revision": "9f80ad57363189200b0704ef4ea723e86541188537f76c4eedb2d9bd4c308a6f",
+      "file": "questions/e03-division-0025.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0026",
+      "revision": "4d044eb83eee06ec84d86dfa58b303316691dd12136bb536513eddd913f33b70",
+      "file": "questions/e03-division-0026.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0027",
+      "revision": "b1806f23271d6bb84f9686ff9d60f52a456c234c6d997a3c870fd7e6da2a2f64",
+      "file": "questions/e03-division-0027.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0028",
+      "revision": "ae865adc59d10cd504ee1722d072718259d593bdea16cda46ad75ab153440dbe",
+      "file": "questions/e03-division-0028.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0029",
+      "revision": "4c96131fe3681ede0e1bb9f79b28a87511896272fe1c53d06531f1486a70d50e",
+      "file": "questions/e03-division-0029.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0030",
+      "revision": "4d5d2f7c464da4604b9f23a510f9ca8c982327cc5ebe99a60e5158b569a8a5ad",
+      "file": "questions/e03-division-0030.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0031",
+      "revision": "6220aafa826d03684b63cf36d056a24e9c8344f0250b97be2b995aeeed7ed027",
+      "file": "questions/e03-division-0031.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0032",
+      "revision": "611c9639dab5fd9d21e82f0c26a7289d5e064b6e42972268599ee5503be6609b",
+      "file": "questions/e03-division-0032.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0033",
+      "revision": "c2e3021b66551467f377c4f8363d31aad2f639c815ddcc243cd7eedfa32f96f0",
+      "file": "questions/e03-division-0033.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0034",
+      "revision": "986fa1ee9ceaca7bb35d6bca09a17eb47bd91c4ffef17963db43449e7fec1e86",
+      "file": "questions/e03-division-0034.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0035",
+      "revision": "4147d3f6b24479d3bb042275ff4a1bea2f0cbb16e09b50d8ba91c1dbe8070aa8",
+      "file": "questions/e03-division-0035.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0036",
+      "revision": "1bacf2e203a406009c995f059ec3e86f1bf350f0ff75b9496571152cdaa70f96",
+      "file": "questions/e03-division-0036.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0037",
+      "revision": "b4713597d41708301bae7011a7c9d8ea203d4f757a8e846da32535893affd97d",
+      "file": "questions/e03-division-0037.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0038",
+      "revision": "e9c87f0e2b3f87c9f9233902fbfa97a69bc7d05320ec1f7c12c6fa9496a18593",
+      "file": "questions/e03-division-0038.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0039",
+      "revision": "6fcf623326913b49fb7378fa1aee7c01422963422885ed6a2b5091043f9c5248",
+      "file": "questions/e03-division-0039.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0040",
+      "revision": "fbffb4fcbb7ba14f73d68af382337c0419ea79dc6fb95c456b3eb2e841820ed7",
+      "file": "questions/e03-division-0040.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0041",
+      "revision": "202a8ea6dee827d1e53eca157d7274af996bceff91e160ed147aff407025f5b3",
+      "file": "questions/e03-division-0041.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0042",
+      "revision": "f84039f5eec442b708d0ce1a7d9f03cd026713b016b800301534d0c282e5a5a3",
+      "file": "questions/e03-division-0042.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0043",
+      "revision": "1ff76ca5f026694462e88798555e3feb677d8c6a9a102fe327fed9aa56e98117",
+      "file": "questions/e03-division-0043.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0044",
+      "revision": "a0a794e8bb3dff6ff3436c7f27becdbcb7db925fb5903ab522d7806e7e21bc6b",
+      "file": "questions/e03-division-0044.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0045",
+      "revision": "5f05f1f0cc6e5eba26aafbf63c0ddc5c8bef98f3e9af0e84bcedbaac315e0223",
+      "file": "questions/e03-division-0045.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0046",
+      "revision": "e0afd9e6a3a44d5717fcaf61237f6ede7b643da1ec24ba2f7850e50ed03c7005",
+      "file": "questions/e03-division-0046.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0047",
+      "revision": "220177290d8a21eede31596caf859fb0bd2ed719346acb6ee4c222aac6e6ee41",
+      "file": "questions/e03-division-0047.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0048",
+      "revision": "23be5ba32e240980350c03e5a6c2cdbb68ee3a18e15d2042497f802eba59e4a2",
+      "file": "questions/e03-division-0048.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0049",
+      "revision": "29a44d7738043d30bf018ab3f3bc99d8919b8ddb25116c9a00ea57915d541a71",
+      "file": "questions/e03-division-0049.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-division-0050",
+      "revision": "e2474b48d236139cd27c30ee17c3ebc61bbdbf9104c227aa064ac48d421b2d4f",
+      "file": "questions/e03-division-0050.json",
+      "unit": {
+        "id": "elementary-unit-04",
+        "name": "わり算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-division-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "division",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0001",
+      "revision": "1ef9f235b65d4fd7027c03359d2befb318a45c37ca21026e8fcda0269c4f7a36",
+      "file": "questions/e03-multiplication-0001.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0002",
+      "revision": "ee3b422985b708f7a446c517f78e5c661bcd956d6c835851868c3546c9dc7ec2",
+      "file": "questions/e03-multiplication-0002.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0003",
+      "revision": "5b48c692ba07bf560dbd657809edeff38bb03e8a9c730eb93e79a080ad9ea836",
+      "file": "questions/e03-multiplication-0003.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0004",
+      "revision": "53bacd26542ab92eb1cb9d779b0a69722271d5ef195468aa8b2ec38240865004",
+      "file": "questions/e03-multiplication-0004.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0005",
+      "revision": "754cf68a791f4913dda8da9990d6a760bdc215ac9c582dc4b0a4c4d76685f96f",
+      "file": "questions/e03-multiplication-0005.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0006",
+      "revision": "20b949bc2484b318f061b5982c3b759bdc4c2d8c242e42a77df5d7c6ab8ac8d8",
+      "file": "questions/e03-multiplication-0006.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0007",
+      "revision": "eda375ce68a2019769ddd640a59e194d16690ff37bb593461800ceff889ebfed",
+      "file": "questions/e03-multiplication-0007.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0008",
+      "revision": "0c50dee16092dbc8e9c698d4f1688ba56ed6787614cb24d61329e161d1a6ce8d",
+      "file": "questions/e03-multiplication-0008.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0009",
+      "revision": "8e642d533f1807f6aa57c80249f6b4ffa10bebd30d408f2011ec70b53fbc66c1",
+      "file": "questions/e03-multiplication-0009.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0010",
+      "revision": "a4403616385fb506ed275369e7489809d601844d37a1add137554123fcda2b0c",
+      "file": "questions/e03-multiplication-0010.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0011",
+      "revision": "4e8cf3b11503e6c7d3aa8951819d02454c2bb525542ae3b8c4e7df89cf83fdae",
+      "file": "questions/e03-multiplication-0011.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0012",
+      "revision": "0ae828d95cc503d503b23435bb3403f8a146d031abb2c3512a6f12a8215349cd",
+      "file": "questions/e03-multiplication-0012.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0013",
+      "revision": "b60f8628cfe613c5ffb37c5d9402419c04e3db6a97ce2924db254473736a9863",
+      "file": "questions/e03-multiplication-0013.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0014",
+      "revision": "7223abf54984a81e3106973c25934b68cba8cb90a7793ce7217e03ffe0ae68ff",
+      "file": "questions/e03-multiplication-0014.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0015",
+      "revision": "e521a2a7b90f45a6e914151ec09ff2b7108671e5a6cd39ad1e0c25726b605050",
+      "file": "questions/e03-multiplication-0015.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0016",
+      "revision": "509cb9bc82cd23e2b618f0018f14a15e3e4dd441e860e72d6bc01d7fb520977f",
+      "file": "questions/e03-multiplication-0016.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0017",
+      "revision": "5fd59c6e486a681577c10cfd5bfd19365fbaf371fe511549809a49d5fb1c99d8",
+      "file": "questions/e03-multiplication-0017.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0018",
+      "revision": "c8a15bef157808690a4c75dcffd6236cc027febf90bd911a563d1dafe0fccf99",
+      "file": "questions/e03-multiplication-0018.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0019",
+      "revision": "ef8bb2d2b5578b3d7df7c2deb4103b9b50df9396025869685e00897134ed428d",
+      "file": "questions/e03-multiplication-0019.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0020",
+      "revision": "70811204c0caabbcd82d7387b8c17432d11b72b34105f768ceab07227147deaa",
+      "file": "questions/e03-multiplication-0020.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0021",
+      "revision": "e13e650cca0e8f8558746d86e3a6a4aade14db09b2acf9c5df28c7ff1da0b0ba",
+      "file": "questions/e03-multiplication-0021.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0022",
+      "revision": "4e7b81dea707198ea00f156e437d057ecd915ccd77bc3df443665ff3fd05b7d1",
+      "file": "questions/e03-multiplication-0022.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0023",
+      "revision": "97860ba31bbb524909e56e2b153b6c867101edc392abdd0dc92e193c4ea1515a",
+      "file": "questions/e03-multiplication-0023.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0024",
+      "revision": "eb512e83fa8c28018c618c62f929b5d4549708fb5d78019d193b830320701af8",
+      "file": "questions/e03-multiplication-0024.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0025",
+      "revision": "d4fb0b55880562e23ca0f9ce2807461fc49c648671308673aa1ebc4449c99701",
+      "file": "questions/e03-multiplication-0025.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0026",
+      "revision": "e618e93727d8a83ec5089b0e2d6bc92dc6be637d85a02e59dbd6a48c9fa0bf3f",
+      "file": "questions/e03-multiplication-0026.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0027",
+      "revision": "789437c3c804c6f929bf74ff9a211c39a3bb58e54887dbc4bb9e18328c0755a0",
+      "file": "questions/e03-multiplication-0027.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0028",
+      "revision": "5ce847adbb09a449473b0e995d33f3d66e4207bc6f67ec81275e7118a47170e1",
+      "file": "questions/e03-multiplication-0028.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0029",
+      "revision": "dded1aa50a368d64c6d6b0600acbf7c381d4c10c72a4c7e60ca30364643a3958",
+      "file": "questions/e03-multiplication-0029.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0030",
+      "revision": "ecb5be7a703c963036bcad27fa7c8737ff3d933a1cb20f41499a10611c5e3944",
+      "file": "questions/e03-multiplication-0030.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0031",
+      "revision": "6b9bca271dc7db4023fd8d90a5b684a904cabc4081e0a01caa815ef3223d8553",
+      "file": "questions/e03-multiplication-0031.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0032",
+      "revision": "d322a5e2f2aaf68c3d459801db2691b894a9310f11afc655d46f1c70f922e2f9",
+      "file": "questions/e03-multiplication-0032.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0033",
+      "revision": "89f01c236ce2a7ace728f492c01e05844ddbb4f65c5cd4a3ab1ea4418faeda16",
+      "file": "questions/e03-multiplication-0033.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0034",
+      "revision": "55b7ced86df8ae7b94a5df4e721874424fea23ce621b2eb07eb2ae0e177b1405",
+      "file": "questions/e03-multiplication-0034.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0035",
+      "revision": "4ee8dffa496139aa35366188062a55999cc38ac02e64c40e8af96f04074f8880",
+      "file": "questions/e03-multiplication-0035.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0036",
+      "revision": "01a57206025c2ccc6c36ce42c6e7333a769d71fa9b4e108ad4b6d0ba06eab493",
+      "file": "questions/e03-multiplication-0036.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0037",
+      "revision": "10da2726b8d54bd32894b048ae3f0d702b6506a85fa16ca6c0965221166976a7",
+      "file": "questions/e03-multiplication-0037.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0038",
+      "revision": "c52fccddfdfc63c09f65ad062ceaaa16c7bc121db744fc8f66ca0db90c13e092",
+      "file": "questions/e03-multiplication-0038.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0039",
+      "revision": "0f14019ea21b4c5c75aa03bb69a30846a638294b432f2ae9ec32d25a60c8937a",
+      "file": "questions/e03-multiplication-0039.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0040",
+      "revision": "c7b8d54ad6a020595587b1abdb88288a0000fa3fe8e50766bbebaf8b099cd1f8",
+      "file": "questions/e03-multiplication-0040.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0041",
+      "revision": "90ea870c63ae75c9e4387fe7c15c8f3817c06470271231f72a78afb2c3459007",
+      "file": "questions/e03-multiplication-0041.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0042",
+      "revision": "71a1ea62e63ed736b5ddfd511a172e9cc5210d773bd9f787f67d57e50ebfa00b",
+      "file": "questions/e03-multiplication-0042.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0043",
+      "revision": "90bb17a7adcf77759fabc97c2da8a2b732e8037bb1e5291eabef29f677050c9b",
+      "file": "questions/e03-multiplication-0043.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0044",
+      "revision": "8073ac9f5170b07037245df7cdc8d8fd5d2b112057ca378e41cb60640d80dfa1",
+      "file": "questions/e03-multiplication-0044.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0045",
+      "revision": "a54d1ebad4de48722fec1675d5ed24f4792313b7e208512ac29f126de2a00647",
+      "file": "questions/e03-multiplication-0045.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0046",
+      "revision": "95e064fc965e297d4649a806da63a28bcedb95f088d57b92a973a798a52f2c24",
+      "file": "questions/e03-multiplication-0046.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0047",
+      "revision": "62a3e054ab0214d45dc7a4ce63b695e880f1948530281243e49cd2f33a1dcf2e",
+      "file": "questions/e03-multiplication-0047.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0048",
+      "revision": "358878f3a27894d6caafb7abd072f8b2064b6df8c7ca5e4dbf0b5935f195fa8c",
+      "file": "questions/e03-multiplication-0048.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0049",
+      "revision": "931c396fd1687b28ffe6e42cb6930a1af31423d476580555ba504054e1322f4c",
+      "file": "questions/e03-multiplication-0049.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-multiplication-0050",
+      "revision": "28635c2417baab052ffefec1bec05d4d69d1a2ea6f9ccd1c7c3ddb3f79b0bf04",
+      "file": "questions/e03-multiplication-0050.json",
+      "unit": {
+        "id": "elementary-unit-03",
+        "name": "かけ算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-multiplication-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "multiplication",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0001",
+      "revision": "4f4a66d433add628a8ccbce05313ff31cb8e301e361fe8da47622ab8e6a59464",
+      "file": "questions/e03-subtraction-0001.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0002",
+      "revision": "5dd1d8e64a8174be7ffd2846f2b670b6c0a43ffc361da19eaa32c5ba397862e9",
+      "file": "questions/e03-subtraction-0002.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0003",
+      "revision": "0fd060ca1ad50ef103ac6f69c42b0580c04982e0c469c8a749cb616fdf4966cf",
+      "file": "questions/e03-subtraction-0003.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0004",
+      "revision": "8fd34f85c03cb88a34c9b6f50c96f7bba867896308536618e45acef9fd7e1f35",
+      "file": "questions/e03-subtraction-0004.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0005",
+      "revision": "9ce3c03eebb614f0989b20cdc449b52fc129413540e333e7c1c4fead6eb5c7f2",
+      "file": "questions/e03-subtraction-0005.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0006",
+      "revision": "d1e5e44eb6ee625c20a85b7baa097c86119c36628d8c75a826c74d75feda8146",
+      "file": "questions/e03-subtraction-0006.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0007",
+      "revision": "316b3f525d8c79e04a21e455b727eaa3453a5ad28336d4bd8325d7e941fa9b47",
+      "file": "questions/e03-subtraction-0007.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0008",
+      "revision": "5ab852a278563dd21b3bf412119f250f5c4c7ac46aa18f931e64bb45fb0eb04e",
+      "file": "questions/e03-subtraction-0008.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0009",
+      "revision": "d23634543ce096b8392f5153226c2c8477e764bb1f29d52f01c74df78a5dc8e8",
+      "file": "questions/e03-subtraction-0009.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0010",
+      "revision": "cd7ff904f2d3355f7c522c42b8ef5c85789d11a6a172389dd075adb8acb415db",
+      "file": "questions/e03-subtraction-0010.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0011",
+      "revision": "de8f97b8dd9ae9d48c104883a8b4ef14afa0b01c09bc8ab903be21083c3328c5",
+      "file": "questions/e03-subtraction-0011.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0012",
+      "revision": "20d6c4a1416c2df7c354aedc4ea214c29f33e1d4676b2fc2815d6d0d4e3c0c0c",
+      "file": "questions/e03-subtraction-0012.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0013",
+      "revision": "8c3a4ec3c9c4adb8e291cd228dfd7ef7aea5f151db87e24c24b82d0a399fb861",
+      "file": "questions/e03-subtraction-0013.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0014",
+      "revision": "af53b52e30bde943ebc549465fb3d5f29b90ee8a7a4f938458ad6487b472a045",
+      "file": "questions/e03-subtraction-0014.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0015",
+      "revision": "15964c0586af57f5e7ba46c77d719964c0b3840f1ea5adb3afe080d05da77eb5",
+      "file": "questions/e03-subtraction-0015.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0016",
+      "revision": "d281ce307678931d3768271a53be6333f2ac7fc21659e70f292dd4f557430ef8",
+      "file": "questions/e03-subtraction-0016.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0017",
+      "revision": "df58b9e88c4cd6d479db99d3a818be7d024db4bb4023f31d27ddda916c62916c",
+      "file": "questions/e03-subtraction-0017.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0018",
+      "revision": "7f8d2c1041b64cb9dc83c0a079b1e8943b605fbadc29297b74dbe6290ed5587f",
+      "file": "questions/e03-subtraction-0018.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0019",
+      "revision": "208224bfacda4e42061a3c7b973988b5badd6b173afd454b4309f86af82352ae",
+      "file": "questions/e03-subtraction-0019.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0020",
+      "revision": "c885bf4f2edd2d494e5bd61e8ef76fd1aa92088d1bdbf3d052c68c9184af9ab0",
+      "file": "questions/e03-subtraction-0020.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0021",
+      "revision": "af157061b939f841bd723397b27e37992f6ee7c488b4b7ea9b43002962d6e069",
+      "file": "questions/e03-subtraction-0021.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0022",
+      "revision": "7a92ac242a521b7020e9c946b0c3a4abecb60ebe15a8721f0e4afc05e8f9667f",
+      "file": "questions/e03-subtraction-0022.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0023",
+      "revision": "282b327b276a867b603aa92db1ac15c8b4fa35ef1d4b8c8ce161ece34ef87f4d",
+      "file": "questions/e03-subtraction-0023.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0024",
+      "revision": "2021510a29227fa451782e69345502780f8706e092932f303e70570f63ce2ae8",
+      "file": "questions/e03-subtraction-0024.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0025",
+      "revision": "e067817f661124be6a56812ca26dc56eb4a8068484f849dfe7d66388b885600a",
+      "file": "questions/e03-subtraction-0025.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0026",
+      "revision": "f92730f1c14f239848a6950f74df5c69a6ae05084cefae7b3631ce108931f9ce",
+      "file": "questions/e03-subtraction-0026.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0027",
+      "revision": "d1f6c8bb57ede81f9ea0d7830ae05efe2d2d7458a81b5e2a282a5390553bad9d",
+      "file": "questions/e03-subtraction-0027.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0028",
+      "revision": "133da472ac235300ee1e3913587f000361bdff69204e4c55cd257762ff99e26f",
+      "file": "questions/e03-subtraction-0028.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0029",
+      "revision": "bcaeccd7da62fedcbfafc91ec61d63406e3441cc6563c8bf48775d593e99d27d",
+      "file": "questions/e03-subtraction-0029.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0030",
+      "revision": "637f7a998e339613a764fdac28e6c36ec6d344651ae3395919c7efd55968585a",
+      "file": "questions/e03-subtraction-0030.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0031",
+      "revision": "fdfd3e00582b8672bb7ae63c5b8f88838b40955f8ebc99ef54be6e7b88dd9adc",
+      "file": "questions/e03-subtraction-0031.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0032",
+      "revision": "8874b030ff643e0d260402344a5292dac229e5959e0f3e8c8291829f73ce933a",
+      "file": "questions/e03-subtraction-0032.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0033",
+      "revision": "2524548feb3769d4503e056b270b4b5fc9136ba50bb1aefb2508e13519e0d108",
+      "file": "questions/e03-subtraction-0033.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0034",
+      "revision": "69862d767b660fb611086e4e58f0396c46cdfaf20f7eb068e7f1db3a4349cb7f",
+      "file": "questions/e03-subtraction-0034.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0035",
+      "revision": "71f2a6dc810aaf85e2c72932094fc7d9013fc1963cb741a2d8591760925fc32a",
+      "file": "questions/e03-subtraction-0035.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0036",
+      "revision": "35ef1b03872413e7c274edb765e22652c3e535f37e2104ec3c657284d067eaea",
+      "file": "questions/e03-subtraction-0036.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0037",
+      "revision": "83d0924bfab78991fb8438f9018f5bb657300ddcb7ec940c96e4265b966e2dfe",
+      "file": "questions/e03-subtraction-0037.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0038",
+      "revision": "1559292cb8f087d541c002218333babf1bf8e008c0c2d1c70ed82e69641621ad",
+      "file": "questions/e03-subtraction-0038.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0039",
+      "revision": "29d749ac0790e00cc26c9998e134149a8182c8a5daba685ac6f1ea064cd76797",
+      "file": "questions/e03-subtraction-0039.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0040",
+      "revision": "0bf586b52262fd0d76736f075e5b8d6a685c714e1907d88b9613c7c312f87f5a",
+      "file": "questions/e03-subtraction-0040.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0041",
+      "revision": "f2574489a2f4048d3245ac7fcf0da7307f6ba24f01d9aa984ebd61d1752644fa",
+      "file": "questions/e03-subtraction-0041.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0042",
+      "revision": "de08f3e97bb76c5108d00d2c35eb5cbfa91cbed9a01e544a0968797e1394085c",
+      "file": "questions/e03-subtraction-0042.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0043",
+      "revision": "78a52f474afb07a00f162596828f7b73c4d74ddacd7efd152f72d47c38244782",
+      "file": "questions/e03-subtraction-0043.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0044",
+      "revision": "ea00b4401c3a231dab29953148102258d59e49d1ff06db8d21ae9f1ffb7771fd",
+      "file": "questions/e03-subtraction-0044.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0045",
+      "revision": "ef2ba154cfa9cf19751c7c200a20218efd266419be86b2b48e6a00efe891ba98",
+      "file": "questions/e03-subtraction-0045.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0046",
+      "revision": "af591cafb09679abbebc9e25d614f87a58f208348383d6e1cb7e2708400ad7b3",
+      "file": "questions/e03-subtraction-0046.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0047",
+      "revision": "6e8c61894465d05bd810565c3bf074c331957d1c5c5162b16289319dce10dcd4",
+      "file": "questions/e03-subtraction-0047.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0048",
+      "revision": "4aa40b685c447efa71789c9ddf441e1c44a8ea7a8ef187dc15da27ec5aecd4de",
+      "file": "questions/e03-subtraction-0048.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0049",
+      "revision": "f3ba702da5d3774188058c8dd8dd1bbc501d0020d92929858bc5dc39c232c965",
+      "file": "questions/e03-subtraction-0049.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    },
+    {
+      "id": "e03-subtraction-0050",
+      "revision": "575eb5ae33928c749c44941cdd372027f5c9b0f580c5ecb69d08791b76b52be0",
+      "file": "questions/e03-subtraction-0050.json",
+      "unit": {
+        "id": "elementary-unit-02",
+        "name": "ひき算"
+      },
+      "gradeLevel": "elementary-grade-3",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "elementary-subtraction-calculation",
+      "tags": [
+        "elementary-grade-3",
+        "calculation",
+        "subtraction",
+        "summer-review"
+      ]
+    }
+  ]
+}

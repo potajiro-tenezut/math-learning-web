@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-subtraction-0041",
+  "revision": "f2574489a2f4048d3245ac7fcf0da7307f6ba24f01d9aa984ebd61d1752644fa",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-02",
+    "name": "ひき算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-subtraction-calculation",
+  "problemText": "488 - 117 を計算しなさい。",
+  "problemLatex": "488-117",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "371"
+  },
+  "solutionPlan": {
+    "summary": "ひき算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "488-117",
+      "operationText": "ひき算をして、答えを 371 と求める。",
+      "operationLatex": "488-117=371",
+      "afterLatex": "371",
+      "reason": "488 から 117 をひくと 371 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "ひき算をして、答えを 381 と求める。",
+          "latex": "488-117=381",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 381 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "ひき算をして、答えを 371 と求める。",
+          "latex": "488-117=371",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-c",
+          "text": "ひき算をして、答えを 361 と求める。",
+          "latex": "488-117=361",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 361 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "subtraction",
+      "summer-review"
+    ]
+  }
+}

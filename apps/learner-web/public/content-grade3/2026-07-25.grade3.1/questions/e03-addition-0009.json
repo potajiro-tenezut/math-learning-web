@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-addition-0009",
+  "revision": "0275dda03d525d976dd6df2f9238bdded5fd8961849f39198597e87c0b5a9471",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-01",
+    "name": "たし算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-addition-calculation",
+  "problemText": "438 + 282 を計算しなさい。",
+  "problemLatex": "438+282",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "720"
+  },
+  "solutionPlan": {
+    "summary": "たし算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "438+282",
+      "operationText": "たし算をして、答えを 720 と求める。",
+      "operationLatex": "438+282=720",
+      "afterLatex": "720",
+      "reason": "438 と 282 をたすと 720 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "たし算をして、答えを 710 と求める。",
+          "latex": "438+282=710",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 710 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "たし算をして、答えを 730 と求める。",
+          "latex": "438+282=730",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 730 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "たし算をして、答えを 720 と求める。",
+          "latex": "438+282=720",
+          "isCorrect": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "addition",
+      "summer-review"
+    ]
+  }
+}

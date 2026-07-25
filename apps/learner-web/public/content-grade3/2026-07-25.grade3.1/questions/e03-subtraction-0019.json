@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-subtraction-0019",
+  "revision": "208224bfacda4e42061a3c7b973988b5badd6b173afd454b4309f86af82352ae",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-02",
+    "name": "ひき算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-subtraction-calculation",
+  "problemText": "232 - 43 を計算しなさい。",
+  "problemLatex": "232-43",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "189"
+  },
+  "solutionPlan": {
+    "summary": "ひき算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "232-43",
+      "operationText": "ひき算をして、答えを 189 と求める。",
+      "operationLatex": "232-43=189",
+      "afterLatex": "189",
+      "reason": "232 から 43 をひくと 189 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "ひき算をして、答えを 189 と求める。",
+          "latex": "232-43=189",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "ひき算をして、答えを 179 と求める。",
+          "latex": "232-43=179",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 179 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "ひき算をして、答えを 199 と求める。",
+          "latex": "232-43=199",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 199 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "subtraction",
+      "summer-review"
+    ]
+  }
+}

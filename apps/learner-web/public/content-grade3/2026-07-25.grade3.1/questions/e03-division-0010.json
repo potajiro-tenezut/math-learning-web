@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-division-0010",
+  "revision": "ec08eb1fc0ce2cf246456e6c88c0f47b68cb2bf7ccc449434e29048f40b6d7bb",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-04",
+    "name": "わり算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-division-calculation",
+  "problemText": "9 ÷ 3 を計算しなさい。",
+  "problemLatex": "9\\div3",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "3"
+  },
+  "solutionPlan": {
+    "summary": "わり算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "9\\div3",
+      "operationText": "わり算をして、答えを 3 と求める。",
+      "operationLatex": "9\\div3=3",
+      "afterLatex": "3",
+      "reason": "3 \\times 3=9 なので、9 \\div 3=3 です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "わり算をして、答えを 3 と求める。",
+          "latex": "9\\div3=3",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "わり算をして、答えを 2 と求める。",
+          "latex": "9\\div3=2",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 2 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "わり算をして、答えを 4 と求める。",
+          "latex": "9\\div3=4",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 4 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "division",
+      "summer-review"
+    ]
+  }
+}

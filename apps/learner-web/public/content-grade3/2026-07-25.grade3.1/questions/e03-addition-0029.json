@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-addition-0029",
+  "revision": "2b2b1735050682f18f497dde06431072e341bf7a37ce0f1a45986344b19c1dff",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-01",
+    "name": "たし算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-addition-calculation",
+  "problemText": "383 + 104 を計算しなさい。",
+  "problemLatex": "383+104",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "487"
+  },
+  "solutionPlan": {
+    "summary": "たし算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "383+104",
+      "operationText": "たし算をして、答えを 487 と求める。",
+      "operationLatex": "383+104=487",
+      "afterLatex": "487",
+      "reason": "383 と 104 をたすと 487 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "たし算をして、答えを 497 と求める。",
+          "latex": "383+104=497",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 497 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "たし算をして、答えを 487 と求める。",
+          "latex": "383+104=487",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-c",
+          "text": "たし算をして、答えを 477 と求める。",
+          "latex": "383+104=477",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 477 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "addition",
+      "summer-review"
+    ]
+  }
+}

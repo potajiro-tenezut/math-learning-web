@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-addition-0039",
+  "revision": "b99fb1e07661efa4f6c84768fa4ddf1f5c62bd35b48d8a57293c1dcb52b5dc43",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-01",
+    "name": "たし算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-addition-calculation",
+  "problemText": "753 + 394 を計算しなさい。",
+  "problemLatex": "753+394",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "1147"
+  },
+  "solutionPlan": {
+    "summary": "たし算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "753+394",
+      "operationText": "たし算をして、答えを 1147 と求める。",
+      "operationLatex": "753+394=1147",
+      "afterLatex": "1147",
+      "reason": "753 と 394 をたすと 1147 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "たし算をして、答えを 1137 と求める。",
+          "latex": "753+394=1137",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 1137 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "たし算をして、答えを 1157 と求める。",
+          "latex": "753+394=1157",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 1157 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "たし算をして、答えを 1147 と求める。",
+          "latex": "753+394=1147",
+          "isCorrect": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "addition",
+      "summer-review"
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-addition-0028",
+  "revision": "2132857a8037029507722c0363ae042f26def7cce492ac510dca4ed7cd0357d6",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-01",
+    "name": "たし算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-addition-calculation",
+  "problemText": "346 + 75 を計算しなさい。",
+  "problemLatex": "346+75",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "421"
+  },
+  "solutionPlan": {
+    "summary": "たし算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "346+75",
+      "operationText": "たし算をして、答えを 421 と求める。",
+      "operationLatex": "346+75=421",
+      "afterLatex": "421",
+      "reason": "346 と 75 をたすと 421 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "たし算をして、答えを 421 と求める。",
+          "latex": "346+75=421",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "たし算をして、答えを 411 と求める。",
+          "latex": "346+75=411",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 411 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "たし算をして、答えを 431 と求める。",
+          "latex": "346+75=431",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 431 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "addition",
+      "summer-review"
+    ]
+  }
+}

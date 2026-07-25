@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-addition-0049",
+  "revision": "8ddc5a832776cecb7d111ca601fad8d26b45e3b7bba9c7e0d92ce81c3acc29c0",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-01",
+    "name": "たし算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-addition-calculation",
+  "problemText": "328 + 305 を計算しなさい。",
+  "problemLatex": "328+305",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "633"
+  },
+  "solutionPlan": {
+    "summary": "たし算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "328+305",
+      "operationText": "たし算をして、答えを 633 と求める。",
+      "operationLatex": "328+305=633",
+      "afterLatex": "633",
+      "reason": "328 と 305 をたすと 633 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "たし算をして、答えを 633 と求める。",
+          "latex": "328+305=633",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "たし算をして、答えを 623 と求める。",
+          "latex": "328+305=623",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 623 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "たし算をして、答えを 643 と求める。",
+          "latex": "328+305=643",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 643 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "addition",
+      "summer-review"
+    ]
+  }
+}

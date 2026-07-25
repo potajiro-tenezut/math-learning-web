@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-multiplication-0034",
+  "revision": "55b7ced86df8ae7b94a5df4e721874424fea23ce621b2eb07eb2ae0e177b1405",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-03",
+    "name": "かけ算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-multiplication-calculation",
+  "problemText": "3 × 6 を計算しなさい。",
+  "problemLatex": "3\\times6",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "18"
+  },
+  "solutionPlan": {
+    "summary": "かけ算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "3\\times6",
+      "operationText": "かけ算をして、答えを 18 と求める。",
+      "operationLatex": "3\\times6=18",
+      "afterLatex": "18",
+      "reason": "3 が 6 こ分なので、3 \\times 6=18 です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "かけ算をして、答えを 18 と求める。",
+          "latex": "3\\times6=18",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "かけ算をして、答えを 15 と求める。",
+          "latex": "3\\times6=15",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 15 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "かけ算をして、答えを 21 と求める。",
+          "latex": "3\\times6=21",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 21 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "multiplication",
+      "summer-review"
+    ]
+  }
+}

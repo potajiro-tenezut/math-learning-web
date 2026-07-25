@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-addition-0011",
+  "revision": "10dbf25a69db4879f921ed43cd35aef75d0a815b759cb9f076b16643718398e2",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-01",
+    "name": "たし算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-addition-calculation",
+  "problemText": "512 + 340 を計算しなさい。",
+  "problemLatex": "512+340",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "852"
+  },
+  "solutionPlan": {
+    "summary": "たし算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "512+340",
+      "operationText": "たし算をして、答えを 852 と求める。",
+      "operationLatex": "512+340=852",
+      "afterLatex": "852",
+      "reason": "512 と 340 をたすと 852 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "たし算をして、答えを 862 と求める。",
+          "latex": "512+340=862",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 862 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "たし算をして、答えを 852 と求める。",
+          "latex": "512+340=852",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-c",
+          "text": "たし算をして、答えを 842 と求める。",
+          "latex": "512+340=842",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 842 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "addition",
+      "summer-review"
+    ]
+  }
+}

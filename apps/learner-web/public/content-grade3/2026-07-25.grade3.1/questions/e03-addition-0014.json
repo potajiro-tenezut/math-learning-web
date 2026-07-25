@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-addition-0014",
+  "revision": "cfa9260cf44f594228138a2322e2c20055810917f026fc9135538e0467af5654",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-01",
+    "name": "たし算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-addition-calculation",
+  "problemText": "623 + 48 を計算しなさい。",
+  "problemLatex": "623+48",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "671"
+  },
+  "solutionPlan": {
+    "summary": "たし算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "623+48",
+      "operationText": "たし算をして、答えを 671 と求める。",
+      "operationLatex": "623+48=671",
+      "afterLatex": "671",
+      "reason": "623 と 48 をたすと 671 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "たし算をして、答えを 681 と求める。",
+          "latex": "623+48=681",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 681 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "たし算をして、答えを 671 と求める。",
+          "latex": "623+48=671",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-c",
+          "text": "たし算をして、答えを 661 と求める。",
+          "latex": "623+48=661",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 661 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "addition",
+      "summer-review"
+    ]
+  }
+}

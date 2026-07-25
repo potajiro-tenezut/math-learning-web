@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-addition-0019",
+  "revision": "c0d817d449c9d467cd54f0bbe197a0365e11c3dc3a77d2c11b658266eb15352f",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-01",
+    "name": "たし算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-addition-calculation",
+  "problemText": "808 + 193 を計算しなさい。",
+  "problemLatex": "808+193",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "1001"
+  },
+  "solutionPlan": {
+    "summary": "たし算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "808+193",
+      "operationText": "たし算をして、答えを 1001 と求める。",
+      "operationLatex": "808+193=1001",
+      "afterLatex": "1001",
+      "reason": "808 と 193 をたすと 1001 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "たし算をして、答えを 1001 と求める。",
+          "latex": "808+193=1001",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "たし算をして、答えを 991 と求める。",
+          "latex": "808+193=991",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 991 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "たし算をして、答えを 1011 と求める。",
+          "latex": "808+193=1011",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 1011 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "addition",
+      "summer-review"
+    ]
+  }
+}

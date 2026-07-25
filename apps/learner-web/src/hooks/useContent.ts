@@ -7,7 +7,7 @@ import {
   HttpContentRepository,
   type ContentRepository,
 } from "../data/contentRepository";
-import type { AvailableContent } from "../domain/content";
+import type { AvailableContent, ContentTrack } from "../domain/content";
 
 interface ContentState {
   status: "loading" | "ready" | "error";
@@ -17,7 +17,7 @@ interface ContentState {
   diagnostic?: string;
 }
 
-export function useContent() {
+export function useContent(track: ContentTrack) {
   const [attempt, setAttempt] = useState(0);
   const [state, setState] = useState<ContentState>({ status: "loading" });
 
@@ -26,10 +26,10 @@ export function useContent() {
     setState({ status: "loading" });
     void (async () => {
       try {
-        const baseUrl = await loadContentBaseUrl();
+        const baseUrl = await loadContentBaseUrl(track);
         const repository = new CachedContentRepository(
           new HttpContentRepository(baseUrl),
-          new BrowserContentCache(),
+          new BrowserContentCache(window.localStorage, track),
         );
         const content = await repository.loadAvailableContent();
         if (active) setState({ status: "ready", content, repository });
@@ -49,7 +49,7 @@ export function useContent() {
     return () => {
       active = false;
     };
-  }, [attempt]);
+  }, [attempt, track]);
 
   const retry = useCallback(() => setAttempt((current) => current + 1), []);
   return useMemo(() => ({ ...state, retry }), [state, retry]);

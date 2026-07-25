@@ -3,6 +3,7 @@ import { Latex } from "./components/Latex";
 import { ContentError } from "./data/contentRepository";
 import type {
   AvailableContent,
+  ContentTrack,
   DifficultyLabel,
   ProgressStatus,
   PublicQuestion,
@@ -14,6 +15,7 @@ import {
 } from "./domain/progress";
 import { pickRandomQuestions } from "./domain/quickSession";
 import { pickRoastMessage } from "./domain/roasts";
+import { pickPraiseMessage } from "./domain/praise";
 import { LearningSession } from "./domain/session";
 import { useContent } from "./hooks/useContent";
 
@@ -80,12 +82,14 @@ function Brand() {
 
 interface HomeProps {
   content: AvailableContent;
+  track: ContentTrack;
   progress: ProgressRepository;
+  onTrackChange: (track: ContentTrack) => void;
   onStart: (unitId: string) => void;
   onLibrary: () => void;
 }
 
-function Home({ content, progress, onStart, onLibrary }: HomeProps) {
+function Home({ content, track, progress, onTrackChange, onStart, onLibrary }: HomeProps) {
   const [unitId, setUnitId] = useState("all");
   const units = useMemo(
     () =>
@@ -116,6 +120,25 @@ function Home({ content, progress, onStart, onLibrary }: HomeProps) {
         </aside>
       )}
 
+      <div className="track-switch" aria-label="学年を切り替える">
+        <button
+          type="button"
+          className={track === "grade-3" ? "active" : undefined}
+          aria-pressed={track === "grade-3"}
+          onClick={() => onTrackChange("grade-3")}
+        >
+          小学3年生
+        </button>
+        <button
+          type="button"
+          className={track === "high-school" ? "active" : undefined}
+          aria-pressed={track === "high-school"}
+          onClick={() => onTrackChange("high-school")}
+        >
+          高校数学
+        </button>
+      </div>
+
       <section className="hello">
         <span className="hello-spark" aria-hidden="true">
           ✦
@@ -124,7 +147,7 @@ function Home({ content, progress, onStart, onLibrary }: HomeProps) {
         <h1>
           ちょっとだけ、
           <br />
-          数学しよっか。
+          {track === "grade-3" ? "算数しよっか。" : "数学しよっか。"}
         </h1>
       </section>
 
@@ -146,7 +169,11 @@ function Home({ content, progress, onStart, onLibrary }: HomeProps) {
         <div className="quick-copy">
           <p>QUICK LESSON</p>
           <h2 id="quick-title">ランダム3問</h2>
-          <span>未クリアの問題から優先して選びます</span>
+          <span>
+            {track === "grade-3"
+              ? "200問から、まだできていない問題を優先します"
+              : "未クリアの問題から優先して選びます"}
+          </span>
         </div>
 
         <label className="unit-picker">
@@ -596,6 +623,8 @@ interface SessionCompleteProps {
 }
 
 function SessionComplete({ questions, onAgain, onHome }: SessionCompleteProps) {
+  const praise = useMemo(() => pickPraiseMessage(), []);
+
   return (
     <main className="app-frame session-complete">
       <div className="confetti" aria-hidden="true">
@@ -614,6 +643,10 @@ function SessionComplete({ questions, onAgain, onHome }: SessionCompleteProps) {
         <br />
         さまでした！
       </h1>
+      <p className="completion-praise">
+        <span aria-hidden="true">★</span>
+        <strong>{praise}</strong>
+      </p>
       <p className="complete-copy">空き時間でここまでできたら、今日はもう十分。</p>
 
       <div className="completed-list">
@@ -643,7 +676,16 @@ function SessionComplete({ questions, onAgain, onHome }: SessionCompleteProps) {
 }
 
 export default function App() {
-  const contentState = useContent();
+  const [track, setTrack] = useState<ContentTrack>(() => {
+    try {
+      return window.localStorage.getItem("hana-math:track:v1") === "grade-3"
+        ? "grade-3"
+        : "high-school";
+    } catch {
+      return "high-school";
+    }
+  });
+  const contentState = useContent(track);
   const progressRef = useRef<ProgressRepository | null>(null);
   if (!progressRef.current) progressRef.current = new BrowserProgressRepository();
   const [screen, setScreen] = useState<"home" | "library" | "complete">("home");
@@ -655,6 +697,22 @@ export default function App() {
   const [quickIndex, setQuickIndex] = useState(0);
   const scrollSurfaceKey = `${screen}:${selected?.id ?? "none"}:${questionLoading ? "loading" : "ready"}`;
   useIOSScrollGuard(scrollSurfaceKey);
+
+  const changeTrack = (nextTrack: ContentTrack) => {
+    if (nextTrack === track) return;
+    setSelected(undefined);
+    setQuestion(undefined);
+    setQuestionError(undefined);
+    setQuickQueue(undefined);
+    setQuickIndex(0);
+    setScreen("home");
+    try {
+      window.localStorage.setItem("hana-math:track:v1", nextTrack);
+    } catch {
+      // The selected track still applies for this visit.
+    }
+    setTrack(nextTrack);
+  };
 
   const open = async (summary: QuestionSummary) => {
     if (contentState.status !== "ready" || !contentState.repository || !contentState.content) return;
@@ -815,7 +873,9 @@ export default function App() {
   return (
     <Home
       content={contentState.content!}
+      track={track}
       progress={progressRef.current}
+      onTrackChange={changeTrack}
       onStart={startQuick}
       onLibrary={() => setScreen("library")}
     />

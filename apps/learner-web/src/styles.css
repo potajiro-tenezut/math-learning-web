@@ -196,9 +196,45 @@ summary:focus-visible {
   text-align: center;
 }
 
+.track-switch {
+  margin-top: 20px;
+  padding: 4px;
+  border: 1px solid #ebe4ea;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.track-switch button {
+  min-height: 42px;
+  border: 0;
+  border-radius: 12px;
+  color: #8a7f8d;
+  background: transparent;
+  font-size: 0.76rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.track-switch button.active {
+  color: #4f4352;
+  background: #fff;
+  box-shadow: 0 5px 14px rgba(82, 68, 86, 0.1);
+}
+
 .hello {
   padding: 44px 8px 26px;
   position: relative;
+}
+
+.track-switch + .hello {
+  padding-top: 28px;
+}
+
+.track-switch + .hello .hello-spark {
+  top: 19px;
 }
 
 .hello-spark {
@@ -1206,6 +1242,30 @@ summary:focus-visible {
   font-size: 0.8rem;
   font-weight: 500;
   line-height: 1.8;
+}
+
+.completion-praise {
+  margin: 0 auto 12px;
+  padding: 15px 16px;
+  border: 2px solid #f1cc66;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  color: #66501d;
+  background: #fff6cf;
+  box-shadow: 0 8px 18px rgba(190, 147, 47, 0.12);
+}
+
+.completion-praise span {
+  color: #e6ac27;
+  font-size: 1.15rem;
+}
+
+.completion-praise strong {
+  font-size: 0.9rem;
+  line-height: 1.55;
 }
 
 .completed-list {

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-multiplication-0031",
+  "revision": "6b9bca271dc7db4023fd8d90a5b684a904cabc4081e0a01caa815ef3223d8553",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-03",
+    "name": "かけ算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-multiplication-calculation",
+  "problemText": "8 × 5 を計算しなさい。",
+  "problemLatex": "8\\times5",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "40"
+  },
+  "solutionPlan": {
+    "summary": "かけ算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "8\\times5",
+      "operationText": "かけ算をして、答えを 40 と求める。",
+      "operationLatex": "8\\times5=40",
+      "afterLatex": "40",
+      "reason": "8 が 5 こ分なので、8 \\times 5=40 です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "かけ算をして、答えを 40 と求める。",
+          "latex": "8\\times5=40",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "かけ算をして、答えを 32 と求める。",
+          "latex": "8\\times5=32",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 32 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "かけ算をして、答えを 48 と求める。",
+          "latex": "8\\times5=48",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 48 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "multiplication",
+      "summer-review"
+    ]
+  }
+}

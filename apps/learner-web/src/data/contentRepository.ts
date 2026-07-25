@@ -335,10 +335,16 @@ export class HttpContentRepository implements ContentRepository {
 }
 
 export class BrowserContentCache implements ContentCache {
-  private readonly activeKey = "hana-math:content:active:v1";
-  private readonly questionPrefix = "hana-math:content:question:v1:";
+  private readonly activeKey: string;
+  private readonly questionPrefix: string;
 
-  constructor(private readonly storage: Storage = window.localStorage) {}
+  constructor(
+    private readonly storage: Storage = window.localStorage,
+    namespace = "default",
+  ) {
+    this.activeKey = `hana-math:content:active:v1:${namespace}`;
+    this.questionPrefix = `hana-math:content:question:v1:${namespace}:`;
+  }
 
   getActive(): AvailableContent | undefined {
     try {

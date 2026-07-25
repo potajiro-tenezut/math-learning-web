@@ -2,6 +2,7 @@ export const SUPPORTED_SCHEMA_VERSION = "1.0.0";
 
 export type DifficultyLabel = "intro" | "standard" | "challenge";
 export type ProgressStatus = "not-started" | "in-progress" | "completed";
+export type ContentTrack = "high-school" | "grade-3";
 
 export interface Unit {
   id: string;
@@ -18,7 +19,7 @@ export interface QuestionSummary {
   revision: string;
   file: string;
   unit: Unit;
-  gradeLevel: "junior-high-review" | "high-school-basic";
+  gradeLevel: "elementary-grade-3" | "junior-high-review" | "high-school-basic";
   difficulty: Difficulty;
   problemType: string;
   tags: string[];
@@ -69,7 +70,7 @@ export interface PublicQuestion {
   schemaVersion: string;
   id: string;
   revision: string;
-  audience: { schoolStage: "high-school"; levelNote: string };
+  audience: { schoolStage: "elementary-school" | "high-school"; levelNote: string };
   unit: Unit;
   gradeLevel: QuestionSummary["gradeLevel"];
   difficulty: Difficulty;

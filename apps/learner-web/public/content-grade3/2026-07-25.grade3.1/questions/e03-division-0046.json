@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-division-0046",
+  "revision": "e0afd9e6a3a44d5717fcaf61237f6ede7b643da1ec24ba2f7850e50ed03c7005",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-04",
+    "name": "わり算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-division-calculation",
+  "problemText": "49 ÷ 7 を計算しなさい。",
+  "problemLatex": "49\\div7",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "7"
+  },
+  "solutionPlan": {
+    "summary": "わり算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "49\\div7",
+      "operationText": "わり算をして、答えを 7 と求める。",
+      "operationLatex": "49\\div7=7",
+      "afterLatex": "7",
+      "reason": "7 \\times 7=49 なので、49 \\div 7=7 です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "わり算をして、答えを 7 と求める。",
+          "latex": "49\\div7=7",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "わり算をして、答えを 6 と求める。",
+          "latex": "49\\div7=6",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 6 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "わり算をして、答えを 8 と求める。",
+          "latex": "49\\div7=8",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 8 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "division",
+      "summer-review"
+    ]
+  }
+}

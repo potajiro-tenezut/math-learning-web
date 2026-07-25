@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-subtraction-0006",
+  "revision": "d1e5e44eb6ee625c20a85b7baa097c86119c36628d8c75a826c74d75feda8146",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-02",
+    "name": "ひき算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-subtraction-calculation",
+  "problemText": "408 - 122 を計算しなさい。",
+  "problemLatex": "408-122",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "286"
+  },
+  "solutionPlan": {
+    "summary": "ひき算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "408-122",
+      "operationText": "ひき算をして、答えを 286 と求める。",
+      "operationLatex": "408-122=286",
+      "afterLatex": "286",
+      "reason": "408 から 122 をひくと 286 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "ひき算をして、答えを 276 と求める。",
+          "latex": "408-122=276",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 276 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "ひき算をして、答えを 296 と求める。",
+          "latex": "408-122=296",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 296 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "ひき算をして、答えを 286 と求める。",
+          "latex": "408-122=286",
+          "isCorrect": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "subtraction",
+      "summer-review"
+    ]
+  }
+}

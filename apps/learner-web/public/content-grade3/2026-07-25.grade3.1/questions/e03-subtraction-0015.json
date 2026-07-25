@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-subtraction-0015",
+  "revision": "15964c0586af57f5e7ba46c77d719964c0b3840f1ea5adb3afe080d05da77eb5",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-02",
+    "name": "ひき算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-subtraction-calculation",
+  "problemText": "840 - 275 を計算しなさい。",
+  "problemLatex": "840-275",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "565"
+  },
+  "solutionPlan": {
+    "summary": "ひき算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "840-275",
+      "operationText": "ひき算をして、答えを 565 と求める。",
+      "operationLatex": "840-275=565",
+      "afterLatex": "565",
+      "reason": "840 から 275 をひくと 565 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "ひき算をして、答えを 555 と求める。",
+          "latex": "840-275=555",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 555 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "ひき算をして、答えを 575 と求める。",
+          "latex": "840-275=575",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 575 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "ひき算をして、答えを 565 と求める。",
+          "latex": "840-275=565",
+          "isCorrect": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "subtraction",
+      "summer-review"
+    ]
+  }
+}

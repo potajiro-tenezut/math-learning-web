@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-division-0006",
+  "revision": "7abc8e502d6f5e910636f9e484d5679c4d8bb27b36ad2ac8c3dc9e7426890e03",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-04",
+    "name": "わり算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-division-calculation",
+  "problemText": "14 ÷ 7 を計算しなさい。",
+  "problemLatex": "14\\div7",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "2"
+  },
+  "solutionPlan": {
+    "summary": "わり算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "14\\div7",
+      "operationText": "わり算をして、答えを 2 と求める。",
+      "operationLatex": "14\\div7=2",
+      "afterLatex": "2",
+      "reason": "7 \\times 2=14 なので、14 \\div 7=2 です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "わり算をして、答えを 1 と求める。",
+          "latex": "14\\div7=1",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 1 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "わり算をして、答えを 3 と求める。",
+          "latex": "14\\div7=3",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 3 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "わり算をして、答えを 2 と求める。",
+          "latex": "14\\div7=2",
+          "isCorrect": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "division",
+      "summer-review"
+    ]
+  }
+}

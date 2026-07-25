@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-multiplication-0023",
+  "revision": "97860ba31bbb524909e56e2b153b6c867101edc392abdd0dc92e193c4ea1515a",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-03",
+    "name": "かけ算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-multiplication-calculation",
+  "problemText": "8 × 4 を計算しなさい。",
+  "problemLatex": "8\\times4",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "32"
+  },
+  "solutionPlan": {
+    "summary": "かけ算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "8\\times4",
+      "operationText": "かけ算をして、答えを 32 と求める。",
+      "operationLatex": "8\\times4=32",
+      "afterLatex": "32",
+      "reason": "8 が 4 こ分なので、8 \\times 4=32 です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "かけ算をして、答えを 40 と求める。",
+          "latex": "8\\times4=40",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 40 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "かけ算をして、答えを 32 と求める。",
+          "latex": "8\\times4=32",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-c",
+          "text": "かけ算をして、答えを 24 と求める。",
+          "latex": "8\\times4=24",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 24 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "multiplication",
+      "summer-review"
+    ]
+  }
+}

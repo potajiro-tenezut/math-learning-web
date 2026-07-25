@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-addition-0008",
+  "revision": "1f8935433f4f1fbf05b2c5499b0ae228028f6cc764e1e52d0499f01ebd00d428",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-01",
+    "name": "たし算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-addition-calculation",
+  "problemText": "401 + 253 を計算しなさい。",
+  "problemLatex": "401+253",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "654"
+  },
+  "solutionPlan": {
+    "summary": "たし算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "401+253",
+      "operationText": "たし算をして、答えを 654 と求める。",
+      "operationLatex": "401+253=654",
+      "afterLatex": "654",
+      "reason": "401 と 253 をたすと 654 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "たし算をして、答えを 664 と求める。",
+          "latex": "401+253=664",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 664 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "たし算をして、答えを 654 と求める。",
+          "latex": "401+253=654",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-c",
+          "text": "たし算をして、答えを 644 と求める。",
+          "latex": "401+253=644",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 644 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "addition",
+      "summer-review"
+    ]
+  }
+}

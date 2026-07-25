@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-multiplication-0007",
+  "revision": "eda375ce68a2019769ddd640a59e194d16690ff37bb593461800ceff889ebfed",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-03",
+    "name": "かけ算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-multiplication-calculation",
+  "problemText": "8 × 2 を計算しなさい。",
+  "problemLatex": "8\\times2",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "16"
+  },
+  "solutionPlan": {
+    "summary": "かけ算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "8\\times2",
+      "operationText": "かけ算をして、答えを 16 と求める。",
+      "operationLatex": "8\\times2=16",
+      "afterLatex": "16",
+      "reason": "8 が 2 こ分なので、8 \\times 2=16 です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "かけ算をして、答えを 16 と求める。",
+          "latex": "8\\times2=16",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "かけ算をして、答えを 8 と求める。",
+          "latex": "8\\times2=8",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 8 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "かけ算をして、答えを 24 と求める。",
+          "latex": "8\\times2=24",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 24 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "multiplication",
+      "summer-review"
+    ]
+  }
+}

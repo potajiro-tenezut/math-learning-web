@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-multiplication-0001",
+  "revision": "1ef9f235b65d4fd7027c03359d2befb318a45c37ca21026e8fcda0269c4f7a36",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-03",
+    "name": "かけ算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-multiplication-calculation",
+  "problemText": "2 × 2 を計算しなさい。",
+  "problemLatex": "2\\times2",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "4"
+  },
+  "solutionPlan": {
+    "summary": "かけ算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "2\\times2",
+      "operationText": "かけ算をして、答えを 4 と求める。",
+      "operationLatex": "2\\times2=4",
+      "afterLatex": "4",
+      "reason": "2 が 2 こ分なので、2 \\times 2=4 です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "かけ算をして、答えを 4 と求める。",
+          "latex": "2\\times2=4",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "かけ算をして、答えを 2 と求める。",
+          "latex": "2\\times2=2",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 2 にはなりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "かけ算をして、答えを 6 と求める。",
+          "latex": "2\\times2=6",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 6 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "multiplication",
+      "summer-review"
+    ]
+  }
+}

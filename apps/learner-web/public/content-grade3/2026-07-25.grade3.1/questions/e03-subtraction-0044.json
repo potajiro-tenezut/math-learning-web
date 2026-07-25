@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "e03-subtraction-0044",
+  "revision": "ea00b4401c3a231dab29953148102258d59e49d1ff06db8d21ae9f1ffb7771fd",
+  "audience": {
+    "schoolStage": "elementary-school",
+    "levelNote": "小学3年生の夏休みに取り組める、やさしい計算問題。"
+  },
+  "unit": {
+    "id": "elementary-unit-02",
+    "name": "ひき算"
+  },
+  "gradeLevel": "elementary-grade-3",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "elementary-subtraction-calculation",
+  "problemText": "632 - 168 を計算しなさい。",
+  "problemLatex": "632-168",
+  "given": {
+    "variables": [],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "464"
+  },
+  "solutionPlan": {
+    "summary": "ひき算をして答えを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "632-168",
+      "operationText": "ひき算をして、答えを 464 と求める。",
+      "operationLatex": "632-168=464",
+      "afterLatex": "464",
+      "reason": "632 から 168 をひくと 464 になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "ひき算をして、答えを 474 と求める。",
+          "latex": "632-168=474",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 474 にはなりません。"
+        },
+        {
+          "id": "choice-b",
+          "text": "ひき算をして、答えを 464 と求める。",
+          "latex": "632-168=464",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-c",
+          "text": "ひき算をして、答えを 454 と求める。",
+          "latex": "632-168=454",
+          "isCorrect": false,
+          "incorrectReason": "計算をたしかめると 454 にはなりません。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "elementary-grade-3",
+      "calculation",
+      "subtraction",
+      "summer-review"
+    ]
+  }
+}

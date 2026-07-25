@@ -12,36 +12,51 @@ import {
   BrowserProgressRepository,
   type ProgressRepository,
 } from "./domain/progress";
+import { pickRandomQuestions } from "./domain/quickSession";
 import { LearningSession } from "./domain/session";
 import { useContent } from "./hooks/useContent";
 
 const difficultyNames: Record<DifficultyLabel, string> = {
-  intro: "入門",
-  standard: "標準",
-  challenge: "挑戦",
+  intro: "やさしい",
+  standard: "ふつう",
+  challenge: "チャレンジ",
 };
 
 const statusNames: Record<ProgressStatus, string> = {
-  "not-started": "未着手",
+  "not-started": "まだ",
   "in-progress": "途中",
-  completed: "完了",
+  completed: "できた",
 };
 
 function statusFor(summary: QuestionSummary, progress: ProgressRepository): ProgressStatus {
   return progress.get(summary.id, summary.revision)?.status ?? "not-started";
 }
 
-interface LibraryProps {
-  content: AvailableContent;
-  progress: ProgressRepository;
-  onOpen: (summary: QuestionSummary) => void;
+function Brand() {
+  return (
+    <span className="brand">
+      <span className="brand-flower" aria-hidden="true">
+        <i />
+        <i />
+        <i />
+        <i />
+        <i />
+        <b />
+      </span>
+      <span>ひとくち数学</span>
+    </span>
+  );
 }
 
-function Library({ content, progress, onOpen }: LibraryProps) {
-  const [unit, setUnit] = useState("all");
-  const [difficulty, setDifficulty] = useState("all");
-  const [tag, setTag] = useState("all");
+interface HomeProps {
+  content: AvailableContent;
+  progress: ProgressRepository;
+  onStart: (unitId: string) => void;
+  onLibrary: () => void;
+}
 
+function Home({ content, progress, onStart, onLibrary }: HomeProps) {
+  const [unitId, setUnitId] = useState("all");
   const units = useMemo(
     () =>
       Array.from(
@@ -49,155 +64,210 @@ function Library({ content, progress, onOpen }: LibraryProps) {
       ),
     [content],
   );
-  const tags = useMemo(
-    () => Array.from(new Set(content.index.questions.flatMap((question) => question.tags))).sort(),
+  const completedCount = content.index.questions.filter(
+    (question) => statusFor(question, progress) === "completed",
+  ).length;
+  const percent = Math.round((completedCount / content.index.questionCount) * 100);
+
+  return (
+    <main className="app-frame home-screen">
+      <header className="home-header">
+        <Brand />
+        <button type="button" className="round-icon" onClick={onLibrary} aria-label="問題一覧を開く">
+          <span />
+          <span />
+          <span />
+        </button>
+      </header>
+
+      {content.usedFallback && (
+        <aside className="offline-note" role="status">
+          前回ひらいた問題を使っています
+        </aside>
+      )}
+
+      <section className="hello">
+        <span className="hello-spark" aria-hidden="true">
+          ✦
+        </span>
+        <p>おつかれさま。</p>
+        <h1>
+          ちょっとだけ、
+          <br />
+          数学しよっか。
+        </h1>
+      </section>
+
+      <section className="quick-card" aria-labelledby="quick-title">
+        <div className="quick-card-top">
+          <span className="time-pill">約5分</span>
+          <div className="mini-dots" aria-label="3問">
+            <i />
+            <i />
+            <i />
+          </div>
+        </div>
+        <div className="quick-illustration" aria-hidden="true">
+          <span className="pencil">×</span>
+          <span className="paper-line line-one" />
+          <span className="paper-line line-two" />
+          <span className="paper-answer">＝ ?</span>
+        </div>
+        <div className="quick-copy">
+          <p>QUICK LESSON</p>
+          <h2 id="quick-title">ランダム3問</h2>
+          <span>未クリアの問題から優先して選びます</span>
+        </div>
+
+        <label className="unit-picker">
+          <span>出題範囲</span>
+          <select value={unitId} onChange={(event) => setUnitId(event.target.value)}>
+            <option value="all">ぜんぶからおまかせ</option>
+            {units.map((unit) => (
+              <option key={unit.id} value={unit.id}>
+                {unit.name}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <button type="button" className="start-button" onClick={() => onStart(unitId)}>
+          <span>3問だけやる</span>
+          <span className="start-arrow" aria-hidden="true">
+            →
+          </span>
+        </button>
+      </section>
+
+      <section className="today-card" aria-label="学習の進み具合">
+        <div className="today-copy">
+          <span className="tiny-label">MY PROGRESS</span>
+          <strong>
+            {completedCount}
+            <small> / {content.index.questionCount}問</small>
+          </strong>
+          <p>{completedCount === 0 ? "最初の1問から、ゆっくりでOK" : "ちゃんと積み上がってるよ"}</p>
+        </div>
+        <div
+          className="progress-ring"
+          style={{ "--progress": `${percent * 3.6}deg` } as React.CSSProperties}
+          aria-label={`${percent}%完了`}
+        >
+          <span>{percent}%</span>
+        </div>
+      </section>
+
+      <button type="button" className="library-link" onClick={onLibrary}>
+        <span>
+          <b>問題を選んで解く</b>
+          <small>単元や難しさから探せます</small>
+        </span>
+        <span aria-hidden="true">›</span>
+      </button>
+
+      <p className="content-version">content {content.contentVersion}</p>
+    </main>
+  );
+}
+
+interface LibraryProps {
+  content: AvailableContent;
+  progress: ProgressRepository;
+  onOpen: (summary: QuestionSummary) => void;
+  onBack: () => void;
+}
+
+function Library({ content, progress, onOpen, onBack }: LibraryProps) {
+  const [unit, setUnit] = useState("all");
+  const [difficulty, setDifficulty] = useState("all");
+  const units = useMemo(
+    () =>
+      Array.from(
+        new Map(content.index.questions.map((question) => [question.unit.id, question.unit])).values(),
+      ),
     [content],
   );
   const filtered = content.index.questions.filter(
     (question) =>
       (unit === "all" || question.unit.id === unit) &&
-      (difficulty === "all" || question.difficulty.label === difficulty) &&
-      (tag === "all" || question.tags.includes(tag)),
+      (difficulty === "all" || question.difficulty.label === difficulty),
   );
-  const completedCount = content.index.questions.filter(
-    (question) => statusFor(question, progress) === "completed",
-  ).length;
 
   return (
-    <>
-      <header className="hero">
-        <div>
-          <p className="eyebrow">HANA MATH · STEP BY STEP</p>
-          <h1>
-            考える順番が、
-            <br />
-            数学をやさしくする。
-          </h1>
-          <p className="hero-copy">
-            答えを急がず、次の一手を選びながら。
-            <br />
-            途中式の意味をひとつずつ身につけよう。
-          </p>
-        </div>
-        <div className="progress-orbit" aria-label={`${completedCount}問完了`}>
-          <span>{completedCount}</span>
-          <small>/ {content.index.questionCount} 問</small>
-          <strong>学習済み</strong>
-        </div>
+    <main className="app-frame library-screen">
+      <header className="sub-header">
+        <button type="button" className="back-button" onClick={onBack} aria-label="ホームへ戻る">
+          ←
+        </button>
+        <h1>問題を選ぶ</h1>
+        <span className="header-spacer" />
       </header>
 
-      {content.usedFallback && (
-        <aside className="notice" role="status">
-          <span aria-hidden="true">↺</span>
-          通信を確認できなかったため、前回正常に読み込んだ問題を表示しています。
-        </aside>
-      )}
+      <div className="compact-filters">
+        <label>
+          <span>単元</span>
+          <select value={unit} onChange={(event) => setUnit(event.target.value)}>
+            <option value="all">すべて</option>
+            {units.map((item) => (
+              <option key={item.id} value={item.id}>
+                {item.name}
+              </option>
+            ))}
+          </select>
+        </label>
+        <label>
+          <span>難しさ</span>
+          <select value={difficulty} onChange={(event) => setDifficulty(event.target.value)}>
+            <option value="all">すべて</option>
+            {Object.entries(difficultyNames).map(([value, label]) => (
+              <option key={value} value={value}>
+                {label}
+              </option>
+            ))}
+          </select>
+        </label>
+      </div>
 
-      <section className="library" aria-labelledby="library-title">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">QUESTION LIBRARY</p>
-            <h2 id="library-title">今日は、どこから始める？</h2>
-          </div>
-          <p className="version">コンテンツ {content.contentVersion}</p>
-        </div>
-
-        <div className="filters" aria-label="問題の絞り込み">
-          <label>
-            <span>単元</span>
-            <select value={unit} onChange={(event) => setUnit(event.target.value)}>
-              <option value="all">すべての単元</option>
-              {units.map((item) => (
-                <option key={item.id} value={item.id}>
-                  {item.name}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label>
-            <span>むずかしさ</span>
-            <select
-              value={difficulty}
-              onChange={(event) => setDifficulty(event.target.value)}
+      <p className="list-count">{filtered.length}問</p>
+      <div className="question-list">
+        {filtered.map((question) => {
+          const status = statusFor(question, progress);
+          return (
+            <button
+              type="button"
+              className="question-row"
+              key={`${question.id}:${question.revision}`}
+              onClick={() => onOpen(question)}
             >
-              <option value="all">すべて</option>
-              {Object.entries(difficultyNames).map(([value, label]) => (
-                <option key={value} value={value}>
-                  {label}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label>
-            <span>タグ</span>
-            <select value={tag} onChange={(event) => setTag(event.target.value)}>
-              <option value="all">すべて</option>
-              {tags.map((item) => (
-                <option key={item} value={item}>
-                  {item}
-                </option>
-              ))}
-            </select>
-          </label>
-        </div>
-
-        <p className="result-count" aria-live="polite">
-          {filtered.length}問を表示
-        </p>
-        {filtered.length === 0 ? (
-          <div className="empty">
-            <span aria-hidden="true">◇</span>
-            <h3>条件に合う問題がありません</h3>
-            <p>絞り込みを変えて、別の問題を探してみましょう。</p>
-          </div>
-        ) : (
-          <div className="question-grid">
-            {filtered.map((question, index) => {
-              const status = statusFor(question, progress);
-              return (
-                <button
-                  type="button"
-                  className="question-card"
-                  key={`${question.id}:${question.revision}`}
-                  onClick={() => onOpen(question)}
-                >
-                  <span className="card-number">{String(index + 1).padStart(2, "0")}</span>
-                  <span className={`status status-${status}`}>
-                    <span aria-hidden="true">
-                      {status === "completed" ? "✓" : status === "in-progress" ? "◐" : "○"}
-                    </span>
-                    {statusNames[status]}
-                  </span>
-                  <strong>{question.unit.name}</strong>
-                  <span className="card-meta">
-                    {difficultyNames[question.difficulty.label]} · レベル
-                    {question.difficulty.score}
-                  </span>
-                  <span className="tag-row">
-                    {question.tags.slice(0, 3).map((item) => (
-                      <span key={item}>#{item}</span>
-                    ))}
-                  </span>
-                  <span className="card-action">
-                    問題をひらく <span aria-hidden="true">→</span>
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-        )}
-      </section>
-    </>
+              <span className={`row-state state-${status}`} aria-hidden="true">
+                {status === "completed" ? "✓" : status === "in-progress" ? "…" : ""}
+              </span>
+              <span className="row-copy">
+                <strong>{question.unit.name}</strong>
+                <small>
+                  {difficultyNames[question.difficulty.label]} · {statusNames[status]}
+                </small>
+              </span>
+              <span className="row-arrow" aria-hidden="true">
+                ›
+              </span>
+            </button>
+          );
+        })}
+      </div>
+    </main>
   );
 }
 
 interface PlayerProps {
   question: PublicQuestion;
   progress: ProgressRepository;
+  quickPosition?: { current: number; total: number };
   onBack: () => void;
+  onDone: () => void;
 }
 
-function Player({ question, progress, onBack }: PlayerProps) {
+function Player({ question, progress, quickPosition, onBack, onDone }: PlayerProps) {
   const saved = progress.get(question.id, question.revision);
   const [session, setSession] = useState(
     () =>
@@ -240,26 +310,41 @@ function Player({ question, progress, onBack }: PlayerProps) {
   };
 
   return (
-    <main className="player-shell">
-      <nav className="player-nav" aria-label="問題ナビゲーション">
-        <button type="button" className="text-button" onClick={onBack}>
-          <span aria-hidden="true">←</span> 問題一覧
+    <main className="app-frame player-screen">
+      <header className="sub-header player-header">
+        <button type="button" className="back-button" onClick={onBack} aria-label="やめてホームへ戻る">
+          ×
         </button>
-        <span>{question.unit.name}</span>
-        <button type="button" className="text-button" onClick={restart}>
-          最初から
+        <div className="lesson-dots" aria-label={quickPosition ? `${quickPosition.current}問目` : "1問"}>
+          {Array.from({ length: quickPosition?.total ?? 1 }, (_, index) => (
+            <i
+              key={index}
+              className={index < (quickPosition?.current ?? 1) ? "filled" : undefined}
+            />
+          ))}
+        </div>
+        <button type="button" className="reset-button" onClick={restart}>
+          やり直す
         </button>
-      </nav>
+      </header>
 
       <article className="player">
-        <div className="player-meta">
+        <div className="question-meta">
+          <span>{question.unit.name}</span>
           <span>{difficultyNames[question.difficulty.label]}</span>
-          <span>
-            {state.phase === "completed"
-              ? "完了"
-              : `STEP ${state.stepIndex + 1} / ${question.solutionSteps.length}`}
-          </span>
         </div>
+        <div className="step-counter">
+          <span>
+            STEP {Math.min(state.stepIndex + 1, question.solutionSteps.length)} /{" "}
+            {question.solutionSteps.length}
+          </span>
+          <div>
+            {question.solutionSteps.map((item, index) => (
+              <i key={item.stepId} className={index <= state.stepIndex ? "active" : undefined} />
+            ))}
+          </div>
+        </div>
+
         <h1>{question.problemText}</h1>
         {question.problemLatex && (
           <div className="problem-math">
@@ -269,43 +354,41 @@ function Player({ question, progress, onBack }: PlayerProps) {
 
         {state.phase === "completed" ? (
           <section className="completion" aria-live="polite">
-            <span className="completion-mark" aria-hidden="true">
-              ✓
+            <span className="completion-face" aria-hidden="true">
+              <i>•</i>
+              <i>•</i>
+              <b>⌣</b>
             </span>
-            <p className="eyebrow">WELL DONE</p>
-            <h2>最後まで解けました</h2>
+            <p className="tiny-label">NICE!</p>
+            <h2>1問できた！</h2>
             <div className="answer-box">
-              <span>答え</span>
+              <span>こたえ</span>
               <Latex value={question.answer.finalAnswerLatex} block />
             </div>
-            <div className="plan">
-              <h3>解き方のまとめ</h3>
+            <details className="solution-note">
+              <summary>解き方をおさらい</summary>
               <p>{question.solutionPlan.summary}</p>
-            </div>
-            <div className="completion-actions">
-              <button type="button" className="primary-button" onClick={onBack}>
-                ほかの問題へ
-              </button>
-              <button type="button" className="secondary-button" onClick={restart}>
-                もう一度解く
-              </button>
-            </div>
+            </details>
+            <button type="button" className="start-button next-question" onClick={onDone}>
+              <span>
+                {quickPosition && quickPosition.current < quickPosition.total
+                  ? "次の問題へ"
+                  : quickPosition
+                    ? "3問の結果を見る"
+                    : "ホームへ戻る"}
+              </span>
+              <span className="start-arrow" aria-hidden="true">
+                →
+              </span>
+            </button>
           </section>
         ) : (
           <section className="step-panel" aria-labelledby="step-question">
-            <div className="step-progress" aria-hidden="true">
-              {question.solutionSteps.map((item, index) => (
-                <span
-                  key={item.stepId}
-                  className={index <= state.stepIndex ? "active" : undefined}
-                />
-              ))}
-            </div>
-            <p className="current-expression">いまの式</p>
-            <div className="step-math">
+            <div className="current-formula">
+              <span>いまの式</span>
               <Latex value={step.beforeLatex} block />
             </div>
-            <h2 id="step-question">次に、どの操作をする？</h2>
+            <h2 id="step-question">次はどうする？</h2>
             <div className="choices">
               {session.choices.map((choice, index) => {
                 const selected = state.selectedChoiceId === choice.id;
@@ -324,12 +407,14 @@ function Player({ question, progress, onBack }: PlayerProps) {
                     onClick={() => choose(choice.id)}
                   >
                     <span className="choice-letter">{String.fromCharCode(65 + index)}</span>
-                    <span>
+                    <span className="choice-copy">
                       <strong>{choice.text}</strong>
                       {choice.latex && <Latex value={choice.latex} />}
                     </span>
                     {selected && (
-                      <span aria-hidden="true">{state.phase === "correct" ? "✓" : "×"}</span>
+                      <span className="choice-result" aria-hidden="true">
+                        {state.phase === "correct" ? "✓" : "×"}
+                      </span>
                     )}
                   </button>
                 );
@@ -342,18 +427,18 @@ function Player({ question, progress, onBack }: PlayerProps) {
                 role="status"
                 aria-live="polite"
               >
-                <strong>{state.phase === "correct" ? "その通り！" : "もう一度考えてみよう"}</strong>
+                <strong>{state.phase === "correct" ? "いい感じ！" : "おしい！"}</strong>
                 <p>{state.feedback}</p>
                 {state.phase === "correct" && (
                   <>
                     <div className="result-math">
-                      <span>すると</span>
+                      <span>こうなるよ</span>
                       <Latex value={step.afterLatex} block />
                     </div>
-                    <button type="button" className="primary-button" onClick={next} autoFocus>
+                    <button type="button" className="continue-button" onClick={next} autoFocus>
                       {state.stepIndex === question.solutionSteps.length - 1
-                        ? "答えを確認する"
-                        : "次のステップへ"}{" "}
+                        ? "答えを見る"
+                        : "つづける"}{" "}
                       <span aria-hidden="true">→</span>
                     </button>
                   </>
@@ -367,14 +452,70 @@ function Player({ question, progress, onBack }: PlayerProps) {
   );
 }
 
+interface SessionCompleteProps {
+  questions: QuestionSummary[];
+  onAgain: () => void;
+  onHome: () => void;
+}
+
+function SessionComplete({ questions, onAgain, onHome }: SessionCompleteProps) {
+  return (
+    <main className="app-frame session-complete">
+      <div className="confetti" aria-hidden="true">
+        <i />
+        <i />
+        <i />
+        <i />
+        <i />
+      </div>
+      <span className="big-flower" aria-hidden="true">
+        🌼
+      </span>
+      <p className="tiny-label">TODAY&apos;S LESSON</p>
+      <h1>
+        3問、おつかれ
+        <br />
+        さまでした！
+      </h1>
+      <p className="complete-copy">空き時間でここまでできたら、今日はもう十分。</p>
+
+      <div className="completed-list">
+        {questions.map((question, index) => (
+          <div key={`${question.id}:${question.revision}`}>
+            <span>{index + 1}</span>
+            <p>
+              <strong>{question.unit.name}</strong>
+              <small>{difficultyNames[question.difficulty.label]}</small>
+            </p>
+            <b aria-label="完了">✓</b>
+          </div>
+        ))}
+      </div>
+
+      <button type="button" className="start-button" onClick={onAgain}>
+        <span>もう3問やる</span>
+        <span className="start-arrow" aria-hidden="true">
+          →
+        </span>
+      </button>
+      <button type="button" className="home-text-button" onClick={onHome}>
+        今日はここまで
+      </button>
+    </main>
+  );
+}
+
 export default function App() {
   const contentState = useContent();
   const progressRef = useRef<ProgressRepository | null>(null);
   if (!progressRef.current) progressRef.current = new BrowserProgressRepository();
+  const [screen, setScreen] = useState<"home" | "library" | "complete">("home");
   const [selected, setSelected] = useState<QuestionSummary>();
   const [question, setQuestion] = useState<PublicQuestion>();
   const [questionError, setQuestionError] = useState<string>();
   const [questionLoading, setQuestionLoading] = useState(false);
+  const [quickQueue, setQuickQueue] = useState<QuestionSummary[]>();
+  const [quickIndex, setQuickIndex] = useState(0);
 
   const open = async (summary: QuestionSummary) => {
     if (contentState.status !== "ready" || !contentState.repository || !contentState.content) return;
@@ -394,27 +535,69 @@ export default function App() {
     }
   };
 
+  const startQuick = (unitId = "all") => {
+    if (contentState.status !== "ready" || !contentState.content) return;
+    const candidates = contentState.content.index.questions.filter(
+      (summary) => unitId === "all" || summary.unit.id === unitId,
+    );
+    const queue = pickRandomQuestions(
+      candidates,
+      3,
+      Math.random,
+      (summary) => statusFor(summary, progressRef.current!) !== "completed",
+    );
+    setQuickQueue(queue);
+    setQuickIndex(0);
+    setScreen("home");
+    if (queue[0]) void open(queue[0]);
+  };
+
+  const leavePlayer = () => {
+    setSelected(undefined);
+    setQuestion(undefined);
+    setQuickQueue(undefined);
+    setQuickIndex(0);
+    setScreen("home");
+  };
+
+  const finishQuestion = () => {
+    if (!quickQueue) {
+      leavePlayer();
+      return;
+    }
+    const nextIndex = quickIndex + 1;
+    if (nextIndex < quickQueue.length) {
+      setQuickIndex(nextIndex);
+      void open(quickQueue[nextIndex]);
+      return;
+    }
+    setSelected(undefined);
+    setQuestion(undefined);
+    setScreen("complete");
+  };
+
   if (contentState.status === "loading") {
     return (
-      <main className="state-screen" aria-busy="true">
-        <div className="loader" />
-        <p className="eyebrow">PREPARING YOUR LESSON</p>
-        <h1>問題を準備しています</h1>
-        <p>安全に読み込めるか、ひとつずつ確認中です。</p>
+      <main className="app-frame state-screen" aria-busy="true">
+        <span className="loading-flower" aria-hidden="true">
+          🌼
+        </span>
+        <h1>問題をえらんでいます</h1>
+        <p>ちょっとだけ待ってね</p>
       </main>
     );
   }
 
   if (contentState.status === "error") {
     return (
-      <main className="state-screen">
-        <span className="state-icon" aria-hidden="true">
-          !
+      <main className="app-frame state-screen">
+        <span className="error-face" aria-hidden="true">
+          …
         </span>
-        <h1>問題を読み込めませんでした</h1>
+        <h1>うまく読み込めませんでした</h1>
         <p>{contentState.message}</p>
-        <button type="button" className="primary-button" onClick={contentState.retry}>
-          もう一度試す
+        <button type="button" className="start-button" onClick={contentState.retry}>
+          もう一度ためす
         </button>
         <details>
           <summary>詳しい情報</summary>
@@ -427,54 +610,75 @@ export default function App() {
   if (selected) {
     if (questionLoading) {
       return (
-        <main className="state-screen" aria-busy="true">
-          <div className="loader" />
-          <h1>問題を読み込んでいます</h1>
+        <main className="app-frame state-screen" aria-busy="true">
+          <span className="loading-flower" aria-hidden="true">
+            🌼
+          </span>
+          <h1>次の問題を準備中</h1>
         </main>
       );
     }
     if (questionError || !question) {
       return (
-        <main className="state-screen">
-          <span className="state-icon" aria-hidden="true">
-            !
+        <main className="app-frame state-screen">
+          <span className="error-face" aria-hidden="true">
+            …
           </span>
           <h1>この問題を開けませんでした</h1>
           <p>{questionError}</p>
-          <div className="state-actions">
-            <button type="button" className="primary-button" onClick={() => void open(selected)}>
-              もう一度試す
-            </button>
-            <button type="button" className="secondary-button" onClick={() => setSelected(undefined)}>
-              一覧に戻る
-            </button>
-          </div>
+          <button type="button" className="start-button" onClick={() => void open(selected)}>
+            もう一度ためす
+          </button>
+          <button type="button" className="home-text-button" onClick={leavePlayer}>
+            ホームへ戻る
+          </button>
         </main>
       );
     }
     return (
       <Player
+        key={`${question.id}:${question.revision}`}
         question={question}
         progress={progressRef.current}
-        onBack={() => {
-          setSelected(undefined);
-          setQuestion(undefined);
+        quickPosition={
+          quickQueue ? { current: quickIndex + 1, total: quickQueue.length } : undefined
+        }
+        onBack={leavePlayer}
+        onDone={finishQuestion}
+      />
+    );
+  }
+
+  if (screen === "complete" && quickQueue) {
+    return (
+      <SessionComplete
+        questions={quickQueue}
+        onAgain={() => startQuick("all")}
+        onHome={leavePlayer}
+      />
+    );
+  }
+
+  if (screen === "library") {
+    return (
+      <Library
+        content={contentState.content!}
+        progress={progressRef.current}
+        onOpen={(summary) => {
+          setQuickQueue(undefined);
+          void open(summary);
         }}
+        onBack={() => setScreen("home")}
       />
     );
   }
 
   return (
-    <main className="site-shell">
-      <Library
-        content={contentState.content!}
-        progress={progressRef.current}
-        onOpen={(summary) => void open(summary)}
-      />
-      <footer>
-        <span>花まる数学</span>
-        <p>一歩ずつ、自分のペースで。</p>
-      </footer>
-    </main>
+    <Home
+      content={contentState.content!}
+      progress={progressRef.current}
+      onStart={startQuick}
+      onLibrary={() => setScreen("library")}
+    />
   );
 }

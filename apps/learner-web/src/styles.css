@@ -1039,7 +1039,7 @@ summary:focus-visible {
   text-align: center;
   pointer-events: none;
   transform: translateX(-50%);
-  animation: roast-one-second 1000ms cubic-bezier(0.2, 0.95, 0.35, 1) forwards;
+  animation: roast-three-seconds 3000ms cubic-bezier(0.2, 0.95, 0.35, 1) forwards;
 }
 
 .roast-popup > span {
@@ -1444,17 +1444,17 @@ summary:focus-visible {
   }
 }
 
-@keyframes roast-one-second {
+@keyframes roast-three-seconds {
   0% {
     opacity: 0;
     transform: translate(-50%, -28px) scale(0.76) rotate(-3deg);
   }
-  14% {
+  8% {
     opacity: 1;
     transform: translate(-50%, 0) scale(1.05) rotate(1deg);
   }
-  25%,
-  78% {
+  16%,
+  88% {
     opacity: 1;
     transform: translate(-50%, 0) scale(1) rotate(0);
   }

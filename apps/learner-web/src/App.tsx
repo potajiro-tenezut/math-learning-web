@@ -359,7 +359,7 @@ function Player({ question, progress, quickPosition, onBack, onDone }: PlayerPro
     if (roastTimer.current) window.clearTimeout(roastTimer.current);
     const text = roastMessages[Math.floor(Math.random() * roastMessages.length)];
     setRoast({ id: Date.now(), text });
-    roastTimer.current = window.setTimeout(() => setRoast(undefined), 1000);
+    roastTimer.current = window.setTimeout(() => setRoast(undefined), 3000);
   };
 
   const choose = (choiceId: string, button: HTMLButtonElement) => {

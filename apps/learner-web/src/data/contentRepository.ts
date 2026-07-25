@@ -159,7 +159,34 @@ function validateQuestion(
       `question:${summary.id}: required fields are invalid`,
     );
   }
-  return value as unknown as PublicQuestion;
+  const question = value as unknown as PublicQuestion;
+  return {
+    ...question,
+    problemText: decodeEscapedUnicode(question.problemText),
+    solutionPlan: {
+      ...question.solutionPlan,
+      summary: decodeEscapedUnicode(question.solutionPlan.summary),
+    },
+    solutionSteps: question.solutionSteps.map((step) => ({
+      ...step,
+      operationText: decodeEscapedUnicode(step.operationText),
+      reason: decodeEscapedUnicode(step.reason),
+      choices: step.choices.map((choice) => ({
+        ...choice,
+        text: decodeEscapedUnicode(choice.text),
+        incorrectReason:
+          choice.incorrectReason === undefined
+            ? undefined
+            : decodeEscapedUnicode(choice.incorrectReason),
+      })),
+    })),
+  };
+}
+
+export function decodeEscapedUnicode(value: string): string {
+  return value.replace(/\\u([0-9a-fA-F]{4})/g, (_, codePoint: string) =>
+    String.fromCharCode(Number.parseInt(codePoint, 16)),
+  );
 }
 
 export function resolveWithinBase(relativePath: string, baseUrl: URL): URL {

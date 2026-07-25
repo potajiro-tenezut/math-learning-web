@@ -4,6 +4,7 @@ import { question, summary } from "../test/fixtures";
 import {
   CachedContentRepository,
   ContentError,
+  decodeEscapedUnicode,
   HttpContentRepository,
   resolveWithinBase,
   sha256,
@@ -110,6 +111,18 @@ describe("HttpContentRepository", () => {
     const base = new URL("https://example.test/content/");
     expect(() => resolveWithinBase("../secret.json", base)).toThrow();
     expect(() => resolveWithinBase("https://evil.test/data.json", base)).toThrow();
+  });
+});
+
+describe("decodeEscapedUnicode", () => {
+  it("二重エスケープされたインライン数式記号を表示文字へ戻す", () => {
+    expect(decodeEscapedUnicode("\\u221a50 を簡単にする")).toBe("√50 を簡単にする");
+    expect(decodeEscapedUnicode("\\u00b12 と \\u03c0")).toBe("±2 と π");
+  });
+
+  it("通常の文章とLaTeXコマンドは変更しない", () => {
+    expect(decodeEscapedUnicode("平方根を考える")).toBe("平方根を考える");
+    expect(decodeEscapedUnicode("\\sqrt{50}")).toBe("\\sqrt{50}");
   });
 });
 

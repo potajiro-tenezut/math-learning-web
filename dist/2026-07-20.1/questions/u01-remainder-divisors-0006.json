@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u01-remainder-divisors-0006",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-01",
+    "name": "約数と倍数"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "imported",
+  "problemType": "remainder-divisors-basic",
+  "problemText": "84を割ると7余る正の整数をすべて求めなさい。",
+  "problemLatex": "84=nq+7,\\quad n>7",
+  "given": {
+    "variables": [
+      "n"
+    ],
+    "conditions": [
+      "84をnで割ると7余る正の整数nをすべて求める。",
+      "余りよりn>7である。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "n=11,\\ 77"
+  },
+  "solutionPlan": {
+    "summary": "84から余り7を引いた77がnで割り切れることを使い、77の正の約数のうち余り7より大きいものを選ぶ。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "84=nq+7",
+      "operationText": "84から余り7を引き、nで割り切れる数を求める。",
+      "operationLatex": "84-7=77",
+      "afterLatex": "77=nq",
+      "reason": "84をnで割った余りが7なので、余りを引いた77はnの倍数です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "84から余り7を引いて77にする。",
+          "latex": "84-7=77",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "84に余り7を足して91にする。",
+          "latex": "84+7=91",
+          "isCorrect": false,
+          "incorrectReason": "割り切れる部分を取り出すには、もとの数から余りを引きます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "84を7で割って12にする。",
+          "latex": "84\\div7=12",
+          "isCorrect": false,
+          "incorrectReason": "7は割る数ではなく余りです。求めるnは77の約数から探します。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "77=nq",
+      "operationText": "77の正の約数として1、7、11、77をすべて挙げる。",
+      "operationLatex": "\\{1,7,11,77\\}",
+      "afterLatex": "77\\text{の正の約数}:\\{1,7,11,77\\}",
+      "reason": "77=7\\times11なので、77を割り切る正の整数は1、7、11、77です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "77の正の約数として1、7、11、77を挙げる。",
+          "latex": "\\{1,7,11,77\\}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "77の正の約数として1、7、11を挙げる。",
+          "latex": "\\{1,7,11\\}",
+          "isCorrect": false,
+          "incorrectReason": "77は77÷77=1と割り切れるので、77自身も正の約数に含まれます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "77の正の約数として1、7、11、49、77を挙げる。",
+          "latex": "\\{1,7,11,49,77\\}",
+          "isCorrect": false,
+          "incorrectReason": "49では77を割り切れないため、49は77の約数ではありません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "77\\text{の正の約数}:\\{1,7,11,77\\}",
+      "operationText": "余り7より大きい約数を選ぶ。",
+      "operationLatex": "n>7",
+      "afterLatex": "n=11,\\ 77",
+      "reason": "余りは割る数より小さくなければなりません。したがってn>7を満たす11と77を選びます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "77の約数から7より大きい11と77を選ぶ。",
+          "latex": "n=11,77",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "77の約数から7以上の7、11、77を選ぶ。",
+          "latex": "n=7,11,77",
+          "isCorrect": false,
+          "incorrectReason": "余り7は割る数より小さくなければならないため、n=7は使えません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "77の約数から7より小さい1を選ぶ。",
+          "latex": "n=1",
+          "isCorrect": false,
+          "incorrectReason": "n=1では余り7にならず、余りが割る数より小さいという条件にも反します。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "divisor",
+      "remainder"
+    ]
+  },
+  "revision": "2acceed6f0e7d433f2bd5dea62feae35cc1b152573d9c0f193298519a2530151"
+}

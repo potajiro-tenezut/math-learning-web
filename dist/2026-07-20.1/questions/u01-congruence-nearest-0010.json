@@ -1,0 +1,257 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u01-congruence-nearest-0010",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-01",
+    "name": "約数と倍数"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "imported",
+  "problemType": "congruence-nearest-basic",
+  "problemText": "15で割ると8余り，20で割ると13余る数の中で，200に最も近い整数を求めなさい。",
+  "problemLatex": "N=15a+8,\\quad N=20b+13",
+  "given": {
+    "variables": [
+      "N"
+    ],
+    "conditions": [
+      "15で割ると8余る。",
+      "20で割ると13余る。",
+      "200に最も近い整数を求める。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "173"
+  },
+  "solutionPlan": {
+    "summary": "どちらの余りも割る数より7小さいので、N+7が15と20の公倍数になることを使う。最小公倍数60からN=60k-7と表し、200の前後の候補を比べる。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "\\text{15で割ると8余り、20で割ると13余る整数}",
+      "operationText": "求める整数をNとおく。",
+      "operationLatex": "\\text{求める整数}=N",
+      "afterLatex": "\\text{求める整数}=N",
+      "reason": "求める整数にNという名前をつけると、余りの条件を式で考えやすくなります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "求める整数をNとおく。",
+          "latex": "\\text{求める整数}=N",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "基準となる整数200をNとおく。",
+          "latex": "N=200",
+          "isCorrect": false,
+          "incorrectReason": "200は近さを比べる基準であり、求める整数そのものとは限りません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "15と20の最小公倍数をNとおく。",
+          "latex": "N=\\operatorname{lcm}(15,20)",
+          "isCorrect": false,
+          "incorrectReason": "求めるのは最小公倍数ではなく、2つの余りの条件を満たして200に近い整数です。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "\\text{求める整数}=N",
+      "operationText": "Nに7を足し、15と20の両方で割り切れる数にする。",
+      "operationLatex": "8+7=15,\\quad13+7=20",
+      "afterLatex": "N+7\\text{は15と20の公倍数}",
+      "reason": "8に7を足すと15、13に7を足すと20になるので、N+7は15と20の両方で割り切れます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "Nに7を足し、15と20の公倍数と考える。",
+          "latex": "N+7",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "Nから7を引き、15と20の公倍数と考える。",
+          "latex": "N-7",
+          "isCorrect": false,
+          "incorrectReason": "8-7=1、13-7=6となり、15でも20でも割り切れる形になりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "Nに8と13を足し、15と20の公倍数と考える。",
+          "latex": "N+8+13",
+          "isCorrect": false,
+          "incorrectReason": "それぞれの余りを足すのではなく、どちらも次の倍数になる共通の7を足します。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "N+7\\text{は15と20の公倍数}",
+      "operationText": "15と20を素因数分解する。",
+      "operationLatex": "15=3\\times5,\\quad20=2^2\\times5",
+      "afterLatex": "N+7\\text{は15と20の公倍数},\\quad15=3\\times5,\\quad20=2^2\\times5",
+      "reason": "15と20の最小公倍数を求めるため、素数ごとの個数が分かる形にします。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "15と20を3×5、2^2×5に素因数分解する。",
+          "latex": "15=3\\times5,\\ 20=2^2\\times5",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "15と20を3×5、2×5に素因数分解する。",
+          "latex": "15=3\\times5,\\ 20=2\\times5",
+          "isCorrect": false,
+          "incorrectReason": "2×5=10なので20にはなりません。20には2が2個あります。"
+        },
+        {
+          "id": "choice-c",
+          "text": "15と20のうち大きい20を最小公倍数と考える。",
+          "latex": "\\operatorname{lcm}(15,20)=20",
+          "isCorrect": false,
+          "incorrectReason": "20は15で割り切れないため、公倍数ではありません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-004",
+      "beforeLatex": "N+7\\text{は15と20の公倍数},\\quad15=3\\times5,\\quad20=2^2\\times5",
+      "operationText": "2、3、5の指数の大きい方を選び、最小公倍数60を求める。",
+      "operationLatex": "2^2\\times3\\times5=60",
+      "afterLatex": "N+7=60k",
+      "reason": "15と20の両方で割り切れる最小の数は60なので、N+7は60の倍数です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "指数の大きい方を選び、2^2×3×5=60を作る。",
+          "latex": "2^2\\times3\\times5=60",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "共通する5を選び、最小公倍数を5とする。",
+          "latex": "\\operatorname{lcm}(15,20)=5",
+          "isCorrect": false,
+          "incorrectReason": "共通部分を選ぶのは最大公約数の考え方です。5は15や20の公倍数ではありません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "15と20をかけ、最小公倍数を300とする。",
+          "latex": "15\\times20=300",
+          "isCorrect": false,
+          "incorrectReason": "300は公倍数ですが、共通する5を重ねて数えているため最小ではありません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-005",
+      "beforeLatex": "N+7=60k",
+      "operationText": "両辺から7を引き、Nを60k-7と表す。",
+      "operationLatex": "N+7-7=60k-7",
+      "afterLatex": "N=60k-7",
+      "reason": "条件を満たすNそのものを求められる形にするため、両辺から7を引きます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "N+7=60kの両辺から7を引き、N=60k-7とする。",
+          "latex": "N=60k-7",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "N+7=60kの両辺に7を足し、N=60k+7とする。",
+          "latex": "N=60k+7",
+          "isCorrect": false,
+          "incorrectReason": "左辺の+7を消すには、両辺から7を引きます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "N+7=60kの両辺を7で割り、N/7+1=60k/7とする。",
+          "latex": "\\dfrac N7+1=\\dfrac{60k}7",
+          "isCorrect": false,
+          "incorrectReason": "Nを単独にするには、Nに足されている7を引くのが直接的です。7で割ってもNが単独になりません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-006",
+      "beforeLatex": "N=60k-7",
+      "operationText": "kに整数を代入してNを計算し、200に近い値を探す。",
+      "operationLatex": "k\\text{に整数を代入して}N\\text{を試す}",
+      "afterLatex": "k\\text{に整数を代入し、}N=60k-7\\text{を計算する}",
+      "reason": "kが整数なので、kに整数を代入して得られるNを順に調べれば、200に近い候補を探せます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "kに整数を代入してNを計算し、200に近い値を探す。",
+          "latex": "N=60k-7",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "Nに200を代入してkを求め、そのkを求める整数とする。",
+          "latex": "200=60k-7",
+          "isCorrect": false,
+          "incorrectReason": "この式から得られるk=207/60は整数ではなく、求める整数Nでもありません。整数のkを代入してNの候補を調べます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "60と7の最大公約数を求め、その数を200から引く。",
+          "latex": "200-\\gcd(60,7)",
+          "isCorrect": false,
+          "incorrectReason": "60と7の最大公約数は、N=60k-7の候補を200へ近づける操作にはなりません。kに整数を代入してNを調べます。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-007",
+      "beforeLatex": "k\\text{に整数を代入し、}N=60k-7\\text{を計算する}",
+      "operationText": "k=3を代入してN=173を求め、200に最も近いことを確認する。",
+      "operationLatex": "N=60\\times3-7=173",
+      "afterLatex": "|200-173|=27,\\quad N=173",
+      "reason": "k=3ではN=173で200との差は27です。k=4ではN=233で差は33、k=5ではN=293で差は93なので、k=3が最も近くなります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "k=3を代入してNを求める。",
+          "latex": "N=60\\times3-7=173",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "k=4を代入してNを求める。",
+          "latex": "N=60\\times4-7=233",
+          "isCorrect": false,
+          "incorrectReason": "N=233と200との差は33です。k=3で得られる173との差27の方が小さくなります。"
+        },
+        {
+          "id": "choice-c",
+          "text": "k=5を代入してNを求める。",
+          "latex": "N=60\\times5-7=293",
+          "isCorrect": false,
+          "incorrectReason": "N=293と200との差は93です。k=3で得られる173の方が200に近くなります。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "multiple",
+      "lcm",
+      "remainder"
+    ]
+  },
+  "revision": "aa8c9935012add6d1043ebed60cb28aa0b5cca3448c72be8e4765bae74e3475a"
+}

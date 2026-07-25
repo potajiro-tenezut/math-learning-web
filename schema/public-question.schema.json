@@ -1,0 +1,177 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://hana-math.local/schema/public-question.schema.json",
+  "title": "Hana Math Public Question",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "id",
+    "revision",
+    "audience",
+    "unit",
+    "gradeLevel",
+    "difficulty",
+    "sourceType",
+    "problemType",
+    "problemText",
+    "problemLatex",
+    "given",
+    "answer",
+    "solutionPlan",
+    "solutionSteps",
+    "metadata"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*-[0-9]{4}$"
+    },
+    "revision": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "audience": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["schoolStage", "levelNote"],
+      "properties": {
+        "schoolStage": { "const": "high-school" },
+        "levelNote": { "type": "string", "minLength": 1 }
+      }
+    },
+    "unit": { "$ref": "#/definitions/unit" },
+    "gradeLevel": {
+      "type": "string",
+      "enum": ["junior-high-review", "high-school-basic"]
+    },
+    "difficulty": { "$ref": "#/definitions/difficulty" },
+    "sourceType": {
+      "type": "string",
+      "enum": ["original", "adapted", "imported"]
+    },
+    "problemType": { "type": "string", "minLength": 1 },
+    "problemText": { "type": "string", "minLength": 1 },
+    "problemLatex": { "type": "string" },
+    "given": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["variables", "conditions"],
+      "properties": {
+        "variables": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "conditions": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "answer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["finalAnswerLatex"],
+      "properties": {
+        "finalAnswerLatex": { "type": "string", "minLength": 1 }
+      }
+    },
+    "solutionPlan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["summary"],
+      "properties": {
+        "summary": { "type": "string", "minLength": 1 }
+      }
+    },
+    "solutionSteps": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/definitions/solutionStep" }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["tags"],
+      "properties": {
+        "tags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 }
+      }
+    },
+    "difficulty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["label", "score"],
+      "properties": {
+        "label": {
+          "type": "string",
+          "enum": ["intro", "standard", "challenge"]
+        },
+        "score": { "type": "integer", "minimum": 1, "maximum": 5 }
+      }
+    },
+    "solutionStep": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stepId",
+        "beforeLatex",
+        "operationText",
+        "operationLatex",
+        "afterLatex",
+        "reason",
+        "choices"
+      ],
+      "properties": {
+        "stepId": { "type": "string", "pattern": "^step-[0-9]{3}$" },
+        "beforeLatex": { "type": "string", "minLength": 1 },
+        "operationText": { "type": "string", "minLength": 1 },
+        "operationLatex": { "type": "string", "minLength": 1 },
+        "afterLatex": { "type": "string", "minLength": 1 },
+        "reason": { "type": "string", "minLength": 1 },
+        "choices": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "$ref": "#/definitions/choice" }
+        }
+      }
+    },
+    "choice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "text", "latex", "isCorrect"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^choice-[a-z]$" },
+        "text": { "type": "string", "minLength": 1 },
+        "latex": { "type": "string" },
+        "isCorrect": { "type": "boolean" },
+        "incorrectReason": { "type": "string", "minLength": 1 }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "isCorrect": { "const": false } },
+            "required": ["isCorrect"]
+          },
+          "then": { "required": ["incorrectReason"] }
+        }
+      ]
+    }
+  }
+}

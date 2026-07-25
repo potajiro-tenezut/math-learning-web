@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u02-radicals-0001",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-02",
+    "name": "根号を含む式"
+  },
+  "gradeLevel": "high-school-basic",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "radical-simplify-basic",
+  "problemText": "\\u221a50 を簡単にしなさい。",
+  "problemLatex": "\\sqrt{50}",
+  "given": {
+    "variables": [],
+    "conditions": [
+      "根号の中を、平方数を使って分ける。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "5\\sqrt{2}"
+  },
+  "solutionPlan": {
+    "summary": "50を平方数25と2に分け、平方根の外に出せる部分を外に出す。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "\\sqrt{50}",
+      "operationText": "50を、平方数の25と残りの2に分ける。",
+      "operationLatex": "50=25\\times 2",
+      "afterLatex": "\\sqrt{50}=\\sqrt{25\\times 2}",
+      "reason": "25は平方数なので、根号の外に出せる形を作れます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "25 × 2 に分ける",
+          "latex": "25\\times 2",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "10 × 5 に分ける",
+          "latex": "10\\times 5",
+          "isCorrect": false,
+          "incorrectReason": "10も5も平方数ではないので、根号の外に出しやすい形になりません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "5 × 10 に分ける",
+          "latex": "5\\times 10",
+          "isCorrect": false,
+          "incorrectReason": "積は50ですが、平方数を使って分けていないので簡単にしにくいです。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "\\sqrt{50}=\\sqrt{25\\times 2}",
+      "operationText": "\\u221a25 を 5 として、根号の外に出す。",
+      "operationLatex": "\\sqrt{25\\times 2}=\\sqrt{25}\\sqrt{2}=5\\sqrt{2}",
+      "afterLatex": "\\sqrt{50}=5\\sqrt{2}",
+      "reason": "25は5の2乗なので、\\u221a25 は5になります。2はこれ以上外に出せません。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "\\u221a25 を 5 として、根号の外に出す。",
+          "latex": "\\sqrt{25}\\sqrt{2}=5\\sqrt{2}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "\\u221a25 を 25 として、25を根号の外に出す。",
+          "latex": "\\sqrt{25}\\sqrt{2}=25\\sqrt{2}",
+          "isCorrect": false,
+          "incorrectReason": "\\u221a25 は25ではなく5です。根号の外に出すときは平方根を考えます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "25を根号の中に残し、2を外に出す。",
+          "latex": "2\\sqrt{25}",
+          "isCorrect": false,
+          "incorrectReason": "外に出せるのは平方数の25です。2は平方数ではないので根号の中に残します。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "radical",
+      "simplify"
+    ]
+  },
+  "revision": "f45ac9fb9ef97ab4c5ea5fe3a5a09ce1d156e10e2b91a4f50338aaf8113a711e"
+}

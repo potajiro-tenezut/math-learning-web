@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u02-rationalize-denominator-0005",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-02",
+    "name": "根号を含む式"
+  },
+  "gradeLevel": "high-school-basic",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "imported",
+  "problemType": "rationalize-denominator-basic",
+  "problemText": "次の式の分母を有理化しなさい。\n(3√2 − √5) / (3√2 + √5)",
+  "problemLatex": "\\dfrac{3\\sqrt2-\\sqrt5}{3\\sqrt2+\\sqrt5}",
+  "given": {
+    "variables": [],
+    "conditions": [
+      "分母の共役な式を使って有理化する。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "\\dfrac{23-6\\sqrt{10}}{13}"
+  },
+  "solutionPlan": {
+    "summary": "分母3√2+√5の共役な式3√2-√5を分子と分母にかける。分母を平方の差で13にし、分子の平方を展開する。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "\\dfrac{3\\sqrt2-\\sqrt5}{3\\sqrt2+\\sqrt5}",
+      "operationText": "分子と分母に3√2-√5をかける。",
+      "operationLatex": "\\dfrac{3\\sqrt2-\\sqrt5}{3\\sqrt2+\\sqrt5}\\times\\dfrac{3\\sqrt2-\\sqrt5}{3\\sqrt2-\\sqrt5}",
+      "afterLatex": "\\dfrac{(3\\sqrt2-\\sqrt5)^2}{(3\\sqrt2+\\sqrt5)(3\\sqrt2-\\sqrt5)}",
+      "reason": "分母と符号だけが違う式をかけて和と差の積を作ると、分母の根号を消せます。同じ式を分子と分母にかけるので値は変わりません。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "分子と分母に3√2-√5をかける。",
+          "latex": "\\dfrac{3\\sqrt2-\\sqrt5}{3\\sqrt2-\\sqrt5}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "分子と分母に分母と同じ式3√2+√5をかける。",
+          "latex": "\\dfrac{3\\sqrt2+\\sqrt5}{3\\sqrt2+\\sqrt5}",
+          "isCorrect": false,
+          "incorrectReason": "同じ符号の式をかけると分母が平方になり、根号を含む項が残ります。共役な式を使います。"
+        },
+        {
+          "id": "choice-c",
+          "text": "分子と分母に√5をかける。",
+          "latex": "\\dfrac{\\sqrt5}{\\sqrt5}",
+          "isCorrect": false,
+          "incorrectReason": "分母が2項あるため、√5をかけても3√10+5となり根号が残ります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "\\dfrac{(3\\sqrt2-\\sqrt5)^2}{(3\\sqrt2+\\sqrt5)(3\\sqrt2-\\sqrt5)}",
+      "operationText": "分母に和と差の積を使い、(3√2)^2-(√5)^2を計算する。",
+      "operationLatex": "(3\\sqrt2)^2-(\\sqrt5)^2=18-5=13",
+      "afterLatex": "\\dfrac{(3\\sqrt2-\\sqrt5)^2}{13}",
+      "reason": "(a+b)(a-b)=a^2-b^2なので、分母の根号を含む中間の項が消えます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "分母を(3√2)^2-(√5)^2として13にする。",
+          "latex": "18-5=13",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "分母を(3√2)^2+(√5)^2として23にする。",
+          "latex": "18+5=23",
+          "isCorrect": false,
+          "incorrectReason": "和と差の積は平方の和ではなく平方の差です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "分母を3√2-√5として共役な式に置き換える。",
+          "latex": "3\\sqrt2-\\sqrt5",
+          "isCorrect": false,
+          "incorrectReason": "共役な式をかけた結果は積です。分母そのものを共役な式へ置き換えることはできません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "\\dfrac{(3\\sqrt2-\\sqrt5)^2}{13}",
+      "operationText": "分子を(a-b)^2=a^2-2ab+b^2で展開する。",
+      "operationLatex": "(3\\sqrt2)^2-2(3\\sqrt2)(\\sqrt5)+(\\sqrt5)^2",
+      "afterLatex": "\\dfrac{23-6\\sqrt{10}}{13}",
+      "reason": "(3√2)^2=18、2(3√2)(√5)=6√10、(√5)^2=5なので、分子は23-6√10です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "分子を(3√2)^2-2(3√2)(√5)+(√5)^2に展開する。",
+          "latex": "18-6\\sqrt{10}+5",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "分子を(3√2)^2-(√5)^2に展開する。",
+          "latex": "18-5",
+          "isCorrect": false,
+          "incorrectReason": "分子は和と差の積ではなく差の平方なので、中間項-2abが必要です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "分子を(3√2)^2+2(3√2)(√5)+(√5)^2に展開する。",
+          "latex": "18+6\\sqrt{10}+5",
+          "isCorrect": false,
+          "incorrectReason": "(a-b)^2の中間項は-2abです。符号を正にすると和の平方になります。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "radical",
+      "rationalization"
+    ]
+  },
+  "revision": "83fa48e48b3c156c042d8d8de5555e3ac450234a63901dc0e4789fdd2fb3dabe"
+}

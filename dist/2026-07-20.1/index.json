@@ -1,0 +1,596 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": "2026-07-20.1",
+  "generatedAt": "2026-07-20T12:36:48.575Z",
+  "questionCount": 30,
+  "questions": [
+    {
+      "id": "u01-calendar-weekday-0009",
+      "revision": "19bf3d4b43e28c411d5f2e362befbfb4d58f8b99e27278946983ecd660a50bca",
+      "file": "questions/u01-calendar-weekday-0009.json",
+      "unit": {
+        "id": "unit-01",
+        "name": "約数と倍数"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "calendar-weekday-modulo-basic",
+      "tags": [
+        "multiple",
+        "remainder",
+        "calendar"
+      ]
+    },
+    {
+      "id": "u01-common-remainder-divisor-0008",
+      "revision": "1ccda56d995758522a457910d91d23fccfcf49dab8353434141805654fd01657",
+      "file": "questions/u01-common-remainder-divisor-0008.json",
+      "unit": {
+        "id": "unit-01",
+        "name": "約数と倍数"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "common-remainder-divisor-basic",
+      "tags": [
+        "divisor",
+        "gcd",
+        "remainder"
+      ]
+    },
+    {
+      "id": "u01-common-remainder-lcm-0007",
+      "revision": "057203bc45a12e876dd3635c852b33375f2c69066fac9d9e194cb7e239b8b656",
+      "file": "questions/u01-common-remainder-lcm-0007.json",
+      "unit": {
+        "id": "unit-01",
+        "name": "約数と倍数"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "common-remainder-lcm-basic",
+      "tags": [
+        "multiple",
+        "lcm",
+        "remainder"
+      ]
+    },
+    {
+      "id": "u01-congruence-nearest-0010",
+      "revision": "aa8c9935012add6d1043ebed60cb28aa0b5cca3448c72be8e4765bae74e3475a",
+      "file": "questions/u01-congruence-nearest-0010.json",
+      "unit": {
+        "id": "unit-01",
+        "name": "約数と倍数"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "congruence-nearest-basic",
+      "tags": [
+        "multiple",
+        "lcm",
+        "remainder"
+      ]
+    },
+    {
+      "id": "u01-divisors-multiples-0001",
+      "revision": "a9e7e7e4f52d21d04a0d03d28fd5b586f894fe4912dbc07edf8e2a33da14a6ed",
+      "file": "questions/u01-divisors-multiples-0001.json",
+      "unit": {
+        "id": "unit-01",
+        "name": "約数と倍数"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "common-divisor-basic",
+      "tags": [
+        "divisor",
+        "multiple",
+        "gcd"
+      ]
+    },
+    {
+      "id": "u01-gcd-lcm-0004",
+      "revision": "d7e730c6280bc1899d55d1113b523c0b121346555894ab220e7d479c7f8ac15b",
+      "file": "questions/u01-gcd-lcm-0004.json",
+      "unit": {
+        "id": "unit-01",
+        "name": "約数と倍数"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "gcd-lcm-basic",
+      "tags": [
+        "divisor",
+        "multiple",
+        "gcd",
+        "lcm"
+      ]
+    },
+    {
+      "id": "u01-gcd-lcm-relation-0005",
+      "revision": "ac8162e7f03591937e21d94848ecaf22c62bdd94ba7a7cfab5764d78bf0047b3",
+      "file": "questions/u01-gcd-lcm-relation-0005.json",
+      "unit": {
+        "id": "unit-01",
+        "name": "約数と倍数"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "gcd-lcm-relation-basic",
+      "tags": [
+        "divisor",
+        "multiple",
+        "gcd",
+        "lcm"
+      ]
+    },
+    {
+      "id": "u01-prime-factorization-0003",
+      "revision": "5f05e395ba33bbc5246d70d0c28592a74726888931d42ab0632e846ccfc92c30",
+      "file": "questions/u01-prime-factorization-0003.json",
+      "unit": {
+        "id": "unit-01",
+        "name": "約数と倍数"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "prime-factorization-basic",
+      "tags": [
+        "divisor",
+        "prime-factorization"
+      ]
+    },
+    {
+      "id": "u01-prime-list-0002",
+      "revision": "30473137cc5921d7a4e7cc96265dfc438cc9abe627fc1bb4c9ce6099c5c70f01",
+      "file": "questions/u01-prime-list-0002.json",
+      "unit": {
+        "id": "unit-01",
+        "name": "約数と倍数"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "prime-list-range-basic",
+      "tags": [
+        "divisor",
+        "prime"
+      ]
+    },
+    {
+      "id": "u01-remainder-divisors-0006",
+      "revision": "2acceed6f0e7d433f2bd5dea62feae35cc1b152573d9c0f193298519a2530151",
+      "file": "questions/u01-remainder-divisors-0006.json",
+      "unit": {
+        "id": "unit-01",
+        "name": "約数と倍数"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "remainder-divisors-basic",
+      "tags": [
+        "divisor",
+        "remainder"
+      ]
+    },
+    {
+      "id": "u02-radical-calculation-0004",
+      "revision": "5ab7e8df7f2eac63ac2987188e937fd9f228445dc775d13a91d65f975405f009",
+      "file": "questions/u02-radical-calculation-0004.json",
+      "unit": {
+        "id": "unit-02",
+        "name": "根号を含む式"
+      },
+      "gradeLevel": "high-school-basic",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "radical-calculation-basic",
+      "tags": [
+        "radical",
+        "calculation",
+        "expansion"
+      ]
+    },
+    {
+      "id": "u02-radical-fraction-calculate-0006",
+      "revision": "cf3885cd5606d972c936a34450554ef5c7e8074dfe1bf8a189f1934b9fa56643",
+      "file": "questions/u02-radical-fraction-calculate-0006.json",
+      "unit": {
+        "id": "unit-02",
+        "name": "根号を含む式"
+      },
+      "gradeLevel": "high-school-basic",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "radical-fraction-calculation-basic",
+      "tags": [
+        "radical",
+        "rationalization",
+        "calculation"
+      ]
+    },
+    {
+      "id": "u02-radical-simplify-0003",
+      "revision": "97f1cf988f46a3002ae1644486db83f640917483d90b5e680e98410f77e08b4e",
+      "file": "questions/u02-radical-simplify-0003.json",
+      "unit": {
+        "id": "unit-02",
+        "name": "根号を含む式"
+      },
+      "gradeLevel": "high-school-basic",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "radical-simplify-basic",
+      "tags": [
+        "radical",
+        "simplify"
+      ]
+    },
+    {
+      "id": "u02-radicals-0001",
+      "revision": "f45ac9fb9ef97ab4c5ea5fe3a5a09ce1d156e10e2b91a4f50338aaf8113a711e",
+      "file": "questions/u02-radicals-0001.json",
+      "unit": {
+        "id": "unit-02",
+        "name": "根号を含む式"
+      },
+      "gradeLevel": "high-school-basic",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "radical-simplify-basic",
+      "tags": [
+        "radical",
+        "simplify"
+      ]
+    },
+    {
+      "id": "u02-radicals-0002",
+      "revision": "ee9387ac73baf747317eb0dd93bdbea480d922308d432c9fc3ae37803f8d9c5a",
+      "file": "questions/u02-radicals-0002.json",
+      "unit": {
+        "id": "unit-02",
+        "name": "根号を含む式"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "vocabulary-square-number-basic",
+      "tags": [
+        "radical",
+        "vocabulary",
+        "square-number"
+      ]
+    },
+    {
+      "id": "u02-rationalize-denominator-0005",
+      "revision": "83fa48e48b3c156c042d8d8de5555e3ac450234a63901dc0e4789fdd2fb3dabe",
+      "file": "questions/u02-rationalize-denominator-0005.json",
+      "unit": {
+        "id": "unit-02",
+        "name": "根号を含む式"
+      },
+      "gradeLevel": "high-school-basic",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "rationalize-denominator-basic",
+      "tags": [
+        "radical",
+        "rationalization"
+      ]
+    },
+    {
+      "id": "u03-expression-value-0001",
+      "revision": "4812266248f5d0511bebf7be822e6b2bea0f388b99311f1da43053d663f75de9",
+      "file": "questions/u03-expression-value-0001.json",
+      "unit": {
+        "id": "unit-03",
+        "name": "式の値"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "intro",
+        "score": 1
+      },
+      "problemType": "substitution-basic",
+      "tags": [
+        "substitution",
+        "expression"
+      ]
+    },
+    {
+      "id": "u03-expression-value-0002",
+      "revision": "59cf478cf6aeaccb886e64282e522c5202c9c6bb449273321448cc4cd6b84095",
+      "file": "questions/u03-expression-value-0002.json",
+      "unit": {
+        "id": "unit-03",
+        "name": "式の値"
+      },
+      "gradeLevel": "high-school-basic",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "expression-value-basic",
+      "tags": [
+        "expression",
+        "substitution",
+        "radical"
+      ]
+    },
+    {
+      "id": "u04-linear-equation-0001",
+      "revision": "d9deaacb4a1f54a4083e0644d3d9122558fb54b9c3a5362ae64b155207550abb",
+      "file": "questions/u04-linear-equation-0001.json",
+      "unit": {
+        "id": "unit-04",
+        "name": "1次方程式"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "linear-equation-basic",
+      "tags": [
+        "equation",
+        "linear"
+      ]
+    },
+    {
+      "id": "u04-linear-equation-0002",
+      "revision": "d6cacd19665b71f3c7d07d57bf21c6a9ff46ab4188c1b3ef4289fbe237f77df4",
+      "file": "questions/u04-linear-equation-0002.json",
+      "unit": {
+        "id": "unit-04",
+        "name": "1次方程式"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "linear-equation-basic",
+      "tags": [
+        "equation",
+        "linear",
+        "ratio"
+      ]
+    },
+    {
+      "id": "u05-quadratic-equation-0001",
+      "revision": "e8e1d0df0f368fe2ad44740e92f4123ed2d24a6261e3e3c6523f7036a0660118",
+      "file": "questions/u05-quadratic-equation-0001.json",
+      "unit": {
+        "id": "unit-05",
+        "name": "2次方程式"
+      },
+      "gradeLevel": "high-school-basic",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "quadratic-equation-factor-basic",
+      "tags": [
+        "equation",
+        "quadratic",
+        "factorization"
+      ]
+    },
+    {
+      "id": "u05-quadratic-equation-factor-0002",
+      "revision": "8826676c5bde9df211dfe53068375068b48dc333c7cd03b48a18d1fe2a21961c",
+      "file": "questions/u05-quadratic-equation-factor-0002.json",
+      "unit": {
+        "id": "unit-05",
+        "name": "2次方程式"
+      },
+      "gradeLevel": "high-school-basic",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "quadratic-equation-factor-basic",
+      "tags": [
+        "equation",
+        "quadratic",
+        "factorization"
+      ]
+    },
+    {
+      "id": "u05-quadratic-equation-formula-0003",
+      "revision": "548c3c56374cdbaae287db21b192ea112cf6b0c5d674d30bdf9dd9d8242679be",
+      "file": "questions/u05-quadratic-equation-formula-0003.json",
+      "unit": {
+        "id": "unit-05",
+        "name": "2次方程式"
+      },
+      "gradeLevel": "high-school-basic",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "quadratic-equation-formula-basic",
+      "tags": [
+        "equation",
+        "quadratic",
+        "quadratic-formula"
+      ]
+    },
+    {
+      "id": "u05-quadratic-root-relation-0004",
+      "revision": "aa875799b43ef36de1d82a9a5c7586ab0ff4ec5444868ff98e39afa24d1d4b6e",
+      "file": "questions/u05-quadratic-root-relation-0004.json",
+      "unit": {
+        "id": "unit-05",
+        "name": "2次方程式"
+      },
+      "gradeLevel": "high-school-basic",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "quadratic-root-relation-basic",
+      "tags": [
+        "equation",
+        "quadratic",
+        "root"
+      ]
+    },
+    {
+      "id": "u06-simultaneous-equation-0001",
+      "revision": "77be9ecebaf16616b3f7578e574f760ef491bd14228efd1d3a3e6300c713983c",
+      "file": "questions/u06-simultaneous-equation-0001.json",
+      "unit": {
+        "id": "unit-06",
+        "name": "連立方程式"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "simultaneous-equation-substitution-basic",
+      "tags": [
+        "equation",
+        "simultaneous-equation"
+      ]
+    },
+    {
+      "id": "u06-simultaneous-equation-0002",
+      "revision": "2c47f0156bc5f880dd36176856c1860b51e95ba73cd7ac1a1efceda4bb88a6d8",
+      "file": "questions/u06-simultaneous-equation-0002.json",
+      "unit": {
+        "id": "unit-06",
+        "name": "連立方程式"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "simultaneous-equation-elimination-basic",
+      "tags": [
+        "equation",
+        "simultaneous-equation"
+      ]
+    },
+    {
+      "id": "u06-simultaneous-equation-0003",
+      "revision": "dc5c045473e093738fd286dcb5f4cde10569b7bf337558d748a36d47ba03e1d9",
+      "file": "questions/u06-simultaneous-equation-0003.json",
+      "unit": {
+        "id": "unit-06",
+        "name": "連立方程式"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "simultaneous-equation-expansion-elimination-basic",
+      "tags": [
+        "equation",
+        "simultaneous-equation"
+      ]
+    },
+    {
+      "id": "u06-simultaneous-equation-0004",
+      "revision": "12e7ceef3e29ce8d284c0ed1a8d33701c649da623e07d869e89550dbbd413f0a",
+      "file": "questions/u06-simultaneous-equation-0004.json",
+      "unit": {
+        "id": "unit-06",
+        "name": "連立方程式"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "simultaneous-equation-fractions-basic",
+      "tags": [
+        "equation",
+        "simultaneous-equation"
+      ]
+    },
+    {
+      "id": "u06-simultaneous-equation-0005",
+      "revision": "7136baffc6afc1ed2999ba6991d27d344948e5163daee7aa744fed00ff0d31ed",
+      "file": "questions/u06-simultaneous-equation-0005.json",
+      "unit": {
+        "id": "unit-06",
+        "name": "連立方程式"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "simultaneous-equation-chain-equality-basic",
+      "tags": [
+        "equation",
+        "simultaneous-equation"
+      ]
+    },
+    {
+      "id": "u06-simultaneous-equation-0006",
+      "revision": "3b891f47e1ef5d9740e03296e96baa5b8d2aaf93bcf9f3734fd5ddf734d78609",
+      "file": "questions/u06-simultaneous-equation-0006.json",
+      "unit": {
+        "id": "unit-06",
+        "name": "連立方程式"
+      },
+      "gradeLevel": "junior-high-review",
+      "difficulty": {
+        "label": "standard",
+        "score": 2
+      },
+      "problemType": "simultaneous-equation-three-variables-basic",
+      "tags": [
+        "equation",
+        "simultaneous-equation"
+      ]
+    }
+  ]
+}

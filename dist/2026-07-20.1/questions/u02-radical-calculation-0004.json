@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u02-radical-calculation-0004",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-02",
+    "name": "根号を含む式"
+  },
+  "gradeLevel": "high-school-basic",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "imported",
+  "problemType": "radical-calculation-basic",
+  "problemText": "次の計算をしなさい。\n(2√5 + √6)(√5 − 3√6)",
+  "problemLatex": "(2\\sqrt5+\\sqrt6)(\\sqrt5-3\\sqrt6)",
+  "given": {
+    "variables": [],
+    "conditions": [
+      "根号を含む二項式の積を展開して計算する。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "-8-5\\sqrt{30}"
+  },
+  "solutionPlan": {
+    "summary": "分配法則で4つの積に展開し、√5×√5と√6×√6を整数にする。同じ根号√30の項と整数項をそれぞれまとめる。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "(2\\sqrt5+\\sqrt6)(\\sqrt5-3\\sqrt6)",
+      "operationText": "分配法則を使い、前のかっこの2項を後ろのかっこの各項にかける。",
+      "operationLatex": "2\\sqrt5\\cdot\\sqrt5+2\\sqrt5\\cdot(-3\\sqrt6)+\\sqrt6\\cdot\\sqrt5+\\sqrt6\\cdot(-3\\sqrt6)",
+      "afterLatex": "10-6\\sqrt{30}+\\sqrt{30}-18",
+      "reason": "4つの積をすべて作ります。√5×√5=5、√6×√6=6も計算します。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "4つの積を作り、10-6√30+√30-18に展開する。",
+          "latex": "10-6\\sqrt{30}+\\sqrt{30}-18",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "外側の2つの積を作り、10-18に展開する。",
+          "latex": "10-18",
+          "isCorrect": false,
+          "incorrectReason": "二項式どうしの積では、内側を含む4つの積が必要です。-6√30と√30が抜けています。"
+        },
+        {
+          "id": "choice-c",
+          "text": "4つの積を作り、10+6√30+√30-18に展開する。",
+          "latex": "10+6\\sqrt{30}+\\sqrt{30}-18",
+          "isCorrect": false,
+          "incorrectReason": "2√5×(-3√6)は負の積なので、-6√30になります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "10-6\\sqrt{30}+\\sqrt{30}-18",
+      "operationText": "整数項どうしと√30の項どうしをそれぞれまとめる。",
+      "operationLatex": "(10-18)+(-6+1)\\sqrt{30}",
+      "afterLatex": "-8-5\\sqrt{30}",
+      "reason": "同じ種類の項だけをまとめます。10-18=-8、-6√30+√30=-5√30です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "整数項と√30の項を分け、(10-18)+(-6+1)√30を計算する。",
+          "latex": "(10-18)+(-6+1)\\sqrt{30}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "整数項と√30の項を分け、(10+18)+(-6+1)√30を計算する。",
+          "latex": "(10+18)+(-6+1)\\sqrt{30}",
+          "isCorrect": false,
+          "incorrectReason": "定数項は-18なので、10-18と計算します。"
+        },
+        {
+          "id": "choice-c",
+          "text": "整数項と√30の項を分け、(10-18)+(-6-1)√30を計算する。",
+          "latex": "(10-18)+(-6-1)\\sqrt{30}",
+          "isCorrect": false,
+          "incorrectReason": "√30の係数は-6と+1なので、-6+1=-5です。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "radical",
+      "calculation",
+      "expansion"
+    ]
+  },
+  "revision": "5ab7e8df7f2eac63ac2987188e937fd9f228445dc775d13a91d65f975405f009"
+}

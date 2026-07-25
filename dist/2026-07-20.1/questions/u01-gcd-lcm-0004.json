@@ -1,0 +1,164 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u01-gcd-lcm-0004",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-01",
+    "name": "約数と倍数"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "imported",
+  "problemType": "gcd-lcm-basic",
+  "problemText": "54と90の最大公約数と最小公倍数を求めなさい。",
+  "problemLatex": "54,\\ 90",
+  "given": {
+    "variables": [],
+    "conditions": [
+      "54と90の最大公約数と最小公倍数を求める。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "\\text{最大公約数}=18,\\quad \\text{最小公倍数}=270"
+  },
+  "solutionPlan": {
+    "summary": "54と90を素因数分解し、最大公約数は共通する素数の指数の小さい方、最小公倍数は出てくる素数の指数の大きい方を選んでかける。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "54,\\ 90",
+      "operationText": "54を2×3^3に素因数分解する。",
+      "operationLatex": "54=2\\times 27=2\\times 3^3",
+      "afterLatex": "54=2\\times 3^3",
+      "reason": "最大公約数と最小公倍数は、素因数分解して素数ごとの個数を比べると求めやすくなります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "54を2×3^3に素因数分解する。",
+          "latex": "54=2\\times3^3",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "54を2×3^2に素因数分解する。",
+          "latex": "54=2\\times3^2",
+          "isCorrect": false,
+          "incorrectReason": "2×3^2=18なので54にはなりません。54では3を3個使います。"
+        },
+        {
+          "id": "choice-c",
+          "text": "54と90を足して144にする。",
+          "latex": "54+90=144",
+          "isCorrect": false,
+          "incorrectReason": "最大公約数や最小公倍数は、2つの数を足して求めるものではありません。まず54を素因数分解します。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "54=2\\times 3^3,\\quad 90",
+      "operationText": "90を2×3^2×5に素因数分解する。",
+      "operationLatex": "90=2\\times45=2\\times3^2\\times5",
+      "afterLatex": "\\begin{aligned}54&=2\\times3^3\\\\90&=2\\times3^2\\times5\\end{aligned}",
+      "reason": "54と90の素因数分解を並べると、同じ素数の個数を比べられます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "90を2×3^2×5に素因数分解する。",
+          "latex": "90=2\\times3^2\\times5",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "90を2×3×5に素因数分解する。",
+          "latex": "90=2\\times3\\times5",
+          "isCorrect": false,
+          "incorrectReason": "2×3×5=30なので90にはなりません。90では3を2個使います。"
+        },
+        {
+          "id": "choice-c",
+          "text": "90から54を引いて36にする。",
+          "latex": "90-54=36",
+          "isCorrect": false,
+          "incorrectReason": "差を求めても、最大公約数や最小公倍数は直接求められません。ここでは90を素因数分解します。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "\\begin{aligned}54&=2\\times3^3\\\\90&=2\\times3^2\\times5\\end{aligned}",
+      "operationText": "共通する素数2と3について、指数の小さい方を選んで最大公約数を求める。",
+      "operationLatex": "2^1\\times3^2=18",
+      "afterLatex": "\\text{最大公約数}=18",
+      "reason": "最大公約数では、両方の数に共通して使える個数を取ります。2はどちらも1個、3は54に3個で90に2個なので、小さい方の2個を取ります。5は54にないので入れません。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "共通する2と3で、指数の小さい方を選んで2×3^2を作る。",
+          "latex": "2\\times3^2",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "2,3,5で、指数の小さい方を選んで2×3^2×5を作る。",
+          "latex": "2\\times3^2\\times5",
+          "isCorrect": false,
+          "incorrectReason": "5は54には含まれないので、共通する素数ではありません。最大公約数には入れません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "共通する2と3で、指数の大きい方を選んで2×3^3を作る。",
+          "latex": "2\\times3^3",
+          "isCorrect": false,
+          "incorrectReason": "指数の大きい方を選ぶのは最小公倍数の考え方です。最大公約数では小さい方を選びます。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-004",
+      "beforeLatex": "\\begin{aligned}54&=2\\times3^3\\\\90&=2\\times3^2\\times5\\end{aligned}",
+      "operationText": "出てくる素数2,3,5について、指数の大きい方を選んで最小公倍数を求める。",
+      "operationLatex": "2^1\\times3^3\\times5=270",
+      "afterLatex": "\\text{最小公倍数}=270",
+      "reason": "最小公倍数では、どちらの数も作れるように必要な個数の多い方を取ります。2は1個、3は3個、5は1個です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "2,3,5で、指数の大きい方を選んで2×3^3×5を作る。",
+          "latex": "2\\times3^3\\times5",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "共通する2と3で、指数の小さい方を選んで2×3^2を作る。",
+          "latex": "2\\times3^2",
+          "isCorrect": false,
+          "incorrectReason": "これは最大公約数の求め方です。最小公倍数では、90に含まれる5も必要です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "54と90をかけて4860にする。",
+          "latex": "54\\times90=4860",
+          "isCorrect": false,
+          "incorrectReason": "54×90は共通する素因数を重ねて数えてしまいます。最小公倍数は指数の大きい方を選んで求めます。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "divisor",
+      "multiple",
+      "gcd",
+      "lcm"
+    ]
+  },
+  "revision": "d7e730c6280bc1899d55d1113b523c0b121346555894ab220e7d479c7f8ac15b"
+}

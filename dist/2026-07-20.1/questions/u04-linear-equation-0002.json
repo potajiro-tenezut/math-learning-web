@@ -1,0 +1,315 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u04-linear-equation-0002",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-04",
+    "name": "1次方程式"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "imported",
+  "problemType": "linear-equation-basic",
+  "problemText": "次の方程式，比例式を解きなさい。\n(1) 5x − 7 = 18\n(2) 3x + 8 = 2 − 2x\n(3) 4 − 3(x − 1) = 5(2 − x)\n(4) 0.4x − 3 = 0.2 + 0.1x\n(5) (2/3)x − 1/2 = (1/6)x + 5\n(6) (3x − 3)/4 − (x + 1)/2 = 3\n(7) x : 4 = (3x − 2) : 8\n(8) (4x + 1) : 5 = (2x − 3) : 2",
+  "problemLatex": "\\begin{array}{ll}(1)&5x-7=18\\\\(2)&3x+8=2-2x\\\\(3)&4-3(x-1)=5(2-x)\\\\(4)&0.4x-3=0.2+0.1x\\\\(5)&\\dfrac23x-\\dfrac12=\\dfrac16x+5\\\\(6)&\\dfrac{3x-3}{4}-\\dfrac{x+1}{2}=3\\\\(7)&x:4=(3x-2):8\\\\(8)&(4x+1):5=(2x-3):2\\end{array}",
+  "given": {
+    "variables": [
+      "x"
+    ],
+    "conditions": [
+      "一次方程式と比例式をそれぞれ解く。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "(1)\\ x=5,\\ (2)\\ x=-\\frac65,\\ (3)\\ x=\\frac32,\\ (4)\\ x=\\frac{32}3,\\ (5)\\ x=11,\\ (6)\\ x=17,\\ (7)\\ x=2,\\ (8)\\ x=\\frac{17}2"
+  },
+  "solutionPlan": {
+    "summary": "各方程式で分配法則、移項、係数を1にする操作を行う。分数式は分母の最小公倍数を両辺にかけ、比例式はa:b=c:dならa\\times d=b\\times cとなる性質を使う。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "5x-7=18",
+      "operationText": "(1)で両辺に7を足し、5x=25にしてから5で割る。",
+      "operationLatex": "5x=25\\Rightarrow x=5",
+      "afterLatex": "x=5",
+      "reason": "定数項を消してxだけを残します。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(1)で-7を右辺へ移して5x=25とし、両辺を5で割る。",
+          "latex": "x=5",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(1)で-7を右辺へ移して5x=11とし、両辺を5で割る。",
+          "latex": "x=\\frac{11}5",
+          "isCorrect": false,
+          "incorrectReason": "-7を右辺へ移すと+7になるので、18+7=25です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(1)で5x=25とし、両辺から5を引く。",
+          "latex": "x=20",
+          "isCorrect": false,
+          "incorrectReason": "5xの係数を1にするには、5を引くのではなく両辺を5で割ります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "3x+8=2-2x",
+      "operationText": "(2)で右辺の-2xを左辺へ移し、8を右辺へ移す。",
+      "operationLatex": "5x=-6",
+      "afterLatex": "x=-\\frac65",
+      "reason": "xの項と定数項をそれぞれまとめます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(2)で-2xの符号を変えて左辺へ、8の符号を変えて右辺へ移し、5x=-6を解く。",
+          "latex": "x=-\\frac65",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(2)で-2xの符号を変えず左辺へ、8の符号を変えて右辺へ移し、x=-6を解く。",
+          "latex": "x=-6",
+          "isCorrect": false,
+          "incorrectReason": "-2xを左辺へ移すと符号が変わり、3x+2x=5xです。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(2)で-2xの符号を変えて左辺へ、8の符号を変えず右辺へ移し、5x=10を解く。",
+          "latex": "x=2",
+          "isCorrect": false,
+          "incorrectReason": "8を右辺へ移すと符号が変わり、2-8=-6です。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "4-3(x-1)=5(2-x)",
+      "operationText": "(3)で分配法則により両辺のかっこを外し、同類項をまとめて解く。",
+      "operationLatex": "7-3x=10-5x\\Rightarrow2x=3",
+      "afterLatex": "x=\\frac32",
+      "reason": "-3(x-1)=-3x+3、5(2-x)=10-5xです。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(3)で分配法則により両辺のかっこを外し、-3(x-1)=-3x+3、5(2-x)=10-5xとして解く。",
+          "latex": "x=\\frac32",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(3)で分配法則により両辺のかっこを外し、-3(x-1)=-3x-3、5(2-x)=10-5xとして解く。",
+          "latex": "x=\\frac92",
+          "isCorrect": false,
+          "incorrectReason": "-3と-1の積は+3なので、左辺は7-3xです。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(3)で分配法則により両辺のかっこを外し、-3(x-1)=-3x+3、5(2-x)=10+5xとして解く。",
+          "latex": "x=-\\frac38",
+          "isCorrect": false,
+          "incorrectReason": "5と-xの積は-5xなので、右辺は10-5xです。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-004",
+      "beforeLatex": "0.4x-3=0.2+0.1x",
+      "operationText": "(4)で両辺を10倍して小数をなくし、xの項をまとめる。",
+      "operationLatex": "4x-30=2+x\\Rightarrow3x=32",
+      "afterLatex": "x=\\frac{32}3",
+      "reason": "両辺のすべての項を10倍します。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(4)で両辺の全項を10倍し、4x-30=2+xを解く。",
+          "latex": "x=\\frac{32}3",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(4)で両辺の全項を10倍し、4x+x=32として解く。",
+          "latex": "x=\\frac{32}5",
+          "isCorrect": false,
+          "incorrectReason": "右辺の+xを左辺へ移すと-xになるので、4x-x=3xです。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(4)でxの係数を10倍し、4x-3=2+xとして解く。",
+          "latex": "x=\\frac53",
+          "isCorrect": false,
+          "incorrectReason": "両辺を10倍するときは、xの項だけでなく定数項も10倍します。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-005",
+      "beforeLatex": "\\frac23x-\\frac12=\\frac16x+5",
+      "operationText": "(5)で両辺に6をかけて分母をなくし、xの項をまとめる。",
+      "operationLatex": "4x-3=x+30\\Rightarrow3x=33",
+      "afterLatex": "x=11",
+      "reason": "分母の最小公倍数6をすべての項にかけます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(5)で両辺の全項に最小公倍数6をかけ、4x-3=x+30を解く。",
+          "latex": "x=11",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(5)で4x-3=x+30とした後、xの係数を4と考えて両辺を4で割る。",
+          "latex": "x=\\frac{33}4",
+          "isCorrect": false,
+          "incorrectReason": "移項後は3x=33なので、xの係数3で割ります。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(5)で各分数にそれぞれの分母をかけ、2x-1=x+5を解く。",
+          "latex": "x=6",
+          "isCorrect": false,
+          "incorrectReason": "方程式では全項に同じ数をかけます。分母の最小公倍数6を両辺の全項にかける必要があります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-006",
+      "beforeLatex": "\\frac{3x-3}4-\\frac{x+1}2=3",
+      "operationText": "(6)で両辺の全項に4をかけて分母をなくす。",
+      "operationLatex": "3x-3-2(x+1)=12",
+      "afterLatex": "3x-3-2(x+1)=12",
+      "reason": "分母4と2の最小公倍数4を両辺の全項にかけます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(6)で両辺の全項に4をかけ、3x-3-2(x+1)=12にする。",
+          "latex": "3x-3-2(x+1)=12",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(6)で第1分数に4、第2分数に2をかけ、3x-3-(x+1)=12にする。",
+          "latex": "3x-3-(x+1)=12",
+          "isCorrect": false,
+          "incorrectReason": "両辺の全項に4をかけるため、第2分数は2(x+1)になります。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(6)で両辺の全項に4をかけ、第2項を加える形にして3x-3+2(x+1)=12にする。",
+          "latex": "3x-3+2(x+1)=12",
+          "isCorrect": false,
+          "incorrectReason": "第2分数の前はマイナスなので、4倍後も-2(x+1)です。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-007",
+      "beforeLatex": "3x-3-2(x+1)=12",
+      "operationText": "(6)で-2を分配し、同類項をまとめてxを求める。",
+      "operationLatex": "3x-3-2x-2=12\\Rightarrow x-5=12",
+      "afterLatex": "x=17",
+      "reason": "3x-2x=x、-3-2=-5なので、x-5=12の両辺に5を足します。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(6)で-2を分配し、3x-2x=x、-3-2=-5としてx-5=12を解く。",
+          "latex": "x=17",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(6)で-2を分配するとき、-2(x+1)=-2x+2としてx-1=12を解く。",
+          "latex": "x=13",
+          "isCorrect": false,
+          "incorrectReason": "-2と+1の積は-2なので、定数項は-3-2=-5です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(6)で-2を分配し、3x-2x=5xとして5x-5=12を解く。",
+          "latex": "x=\\frac{17}5",
+          "isCorrect": false,
+          "incorrectReason": "3x-2x=xなので、xの係数は1です。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-008",
+      "beforeLatex": "x:4=(3x-2):8",
+      "operationText": "(7)で比例式の性質a:b=c:dならa\\times d=b\\times cを使って解く。",
+      "operationLatex": "8x=4(3x-2)\\Rightarrow2x=3x-2",
+      "afterLatex": "x=2",
+      "reason": "x:4=(3x-2):8では、xと8の積、4と3x-2の積を等しくします。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(7)で比例式の性質を使うと考え、xと8、4と3x-2をそれぞれかけて、8x=4(3x-2)を解く。",
+          "latex": "8x=4(3x-2)\\Rightarrow x=2",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(7)で比例式の性質を使うと考え、xと4、3x-2と8をそれぞれかけて、4x=8(3x-2)を解く。",
+          "latex": "4x=8(3x-2)\\Rightarrow x=\\frac45",
+          "isCorrect": false,
+          "incorrectReason": "a:b=c:dではaとd、bとcをそれぞれかけるため、xと8、4と3x-2の積を等しくします。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(7)で比例式の性質を使うと考え、xと8、4と3x+2をそれぞれかけて、8x=4(3x+2)を解く。",
+          "latex": "8x=4(3x+2)\\Rightarrow x=-2",
+          "isCorrect": false,
+          "incorrectReason": "右側の比の第1項は3x+2ではなく3x-2です。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-009",
+      "beforeLatex": "(4x+1):5=(2x-3):2",
+      "operationText": "(8)で比例式の性質a:b=c:dならa\\times d=b\\times cを使って解く。",
+      "operationLatex": "2(4x+1)=5(2x-3)\\Rightarrow8x+2=10x-15",
+      "afterLatex": "x=\\frac{17}2",
+      "reason": "4x+1と2の積、5と2x-3の積を等しくします。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(8)で比例式の性質を使うと考え、4x+1と2、5と2x-3をそれぞれかけて、2(4x+1)=5(2x-3)を解く。",
+          "latex": "2(4x+1)=5(2x-3)\\Rightarrow x=\\frac{17}2",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(8)で比例式の性質を使うと考え、4x+1と5、2x-3と2をそれぞれかけて、5(4x+1)=2(2x-3)を解く。",
+          "latex": "5(4x+1)=2(2x-3)\\Rightarrow x=-\\frac{11}{16}",
+          "isCorrect": false,
+          "incorrectReason": "a:b=c:dではaとd、bとcをそれぞれかけるため、4x+1と2、5と2x-3の積を等しくします。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(8)で比例式の性質を使うと考え、4x+1と2、5と2x+3をそれぞれかけて、2(4x+1)=5(2x+3)を解く。",
+          "latex": "2(4x+1)=5(2x+3)\\Rightarrow x=-\\frac{13}2",
+          "isCorrect": false,
+          "incorrectReason": "右側の比の第1項は2x+3ではなく2x-3です。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "equation",
+      "linear",
+      "ratio"
+    ]
+  },
+  "revision": "d6cacd19665b71f3c7d07d57bf21c6a9ff46ab4188c1b3ef4289fbe237f77df4"
+}

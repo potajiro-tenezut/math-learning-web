@@ -1,0 +1,226 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u06-simultaneous-equation-0006",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-06",
+    "name": "連立方程式"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "imported",
+  "problemType": "simultaneous-equation-three-variables-basic",
+  "problemText": "次の3元連立方程式を解きなさい。\nx + y = 8，y + z = 6，z + x = 10",
+  "problemLatex": "\\begin{cases}x+y=8\\\\y+z=6\\\\z+x=10\\end{cases}",
+  "given": {
+    "variables": [
+      "x",
+      "y",
+      "z"
+    ],
+    "conditions": [
+      "3つの方程式をすべて満たすx、y、zを求める。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "x=6,\\quad y=2,\\quad z=4"
+  },
+  "solutionPlan": {
+    "summary": "3つの2文字の和から、先にx+y+zを求める方針を選ぶ。3式をすべて足してx+y+zを求め、そこからy+zを引いてxを出し、元の方程式へ順に代入する。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "\\begin{cases}x+y=8\\\\y+z=6\\\\z+x=10\\end{cases}",
+      "operationText": "3つの2文字の和が与えられていることから、先にx+y+zを求める方針を選ぶ。",
+      "operationLatex": "\\text{3式をすべて足して }x+y+z\\text{ を求める}",
+      "afterLatex": "\\begin{cases}x+y=8\\\\y+z=6\\\\z+x=10\\end{cases}\\quad\\Rightarrow\\quad x+y+z\\text{ を先に求める}",
+      "reason": "x+y+zが分かれば、そこからy+z、z+x、x+yのいずれかを引いて、1つの文字を求められます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "3式をすべて足し、先にx+y+zを求める。",
+          "latex": "\\text{3式の和から }x+y+z\\text{ を求める}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "上の式から中央の式を引き、x=8-6を求める。",
+          "latex": "(x+y)-(y+z)=8-6\\Rightarrow x=2",
+          "isCorrect": false,
+          "incorrectReason": "左辺ではyは消えますがzが残るため、得られる式はx=2ではなくx-z=2です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "下の式から中央の式を引き、x=10-6を求める。",
+          "latex": "(z+x)-(y+z)=10-6\\Rightarrow x=4",
+          "isCorrect": false,
+          "incorrectReason": "左辺ではzは消えますがyが残るため、得られる式はx=4ではなくx-y=4です。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "\\begin{cases}x+y=8\\\\y+z=6\\\\z+x=10\\end{cases}\\quad\\Rightarrow\\quad x+y+z\\text{ を先に求める}",
+      "operationText": "3つの方程式を辺どうし足し、同じ文字の項をまとめる。",
+      "operationLatex": "(x+y)+(y+z)+(z+x)=8+6+10",
+      "afterLatex": "2x+2y+2z=24",
+      "reason": "3式を足すと、x、y、zはそれぞれ2回ずつ現れます。右辺の和は24です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "3式を辺どうし足し、x、y、zをそれぞれ2項ずつまとめる。",
+          "latex": "2x+2y+2z=24",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "3式を辺どうし足し、x、y、zをそれぞれ1項としてまとめる。",
+          "latex": "x+y+z=24",
+          "isCorrect": false,
+          "incorrectReason": "x、y、zは3式の左辺にそれぞれ2回ずつ現れるため、係数は2になります。"
+        },
+        {
+          "id": "choice-c",
+          "text": "3式を辺どうし足し、x、y、zをそれぞれ3項としてまとめる。",
+          "latex": "3x+3y+3z=24",
+          "isCorrect": false,
+          "incorrectReason": "方程式は3本ありますが、各文字が現れる回数は3回ではなく2回です。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "2x+2y+2z=24",
+      "operationText": "左辺の各項と右辺を2で割り、x+y+zを求める。",
+      "operationLatex": "\\frac{2x}{2}+\\frac{2y}{2}+\\frac{2z}{2}=\\frac{24}{2}",
+      "afterLatex": "x+y+z=12",
+      "reason": "等式を保つには、左辺のすべての項と右辺を同じ2で割ります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "左辺の各項と右辺を2で割る。",
+          "latex": "x+y+z=12",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "右辺を2で割り、左辺を2x+2y+2zとする。",
+          "latex": "2x+2y+2z=12",
+          "isCorrect": false,
+          "incorrectReason": "右辺を2で割るなら、左辺の2x、2y、2zもすべて2で割る必要があります。"
+        },
+        {
+          "id": "choice-c",
+          "text": "左辺の各項を2で割り、右辺を24とする。",
+          "latex": "x+y+z=24",
+          "isCorrect": false,
+          "incorrectReason": "左辺を2で割るなら、右辺も2で割って12にする必要があります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-004",
+      "beforeLatex": "x+y+z=12,\\quad y+z=6",
+      "operationText": "x+y+z=12からy+z=6を引き、xを求める。",
+      "operationLatex": "(x+y+z)-(y+z)=12-6",
+      "afterLatex": "x=6",
+      "reason": "y+zをまとめて引くとyとzが消え、xだけが残ります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "x+y+z=12からy+z=6を引く。",
+          "latex": "x=12-6=6",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "x+y+z=12からx+y=8を引いてxを求める。",
+          "latex": "x=12-8=4",
+          "isCorrect": false,
+          "incorrectReason": "x+y+zからx+yを引くと残る文字はxではなくzです。xを求めるにはy+zを引きます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "x+y+z=12からz+x=10を引いてxを求める。",
+          "latex": "x=12-10=2",
+          "isCorrect": false,
+          "incorrectReason": "x+y+zからz+xを引くと残る文字はxではなくyです。xを求めるにはy+zを引きます。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-005",
+      "beforeLatex": "x+y=8,\\quad x=6",
+      "operationText": "x=6をx+y=8のxに代入し、yを求める。",
+      "operationLatex": "6+y=8",
+      "afterLatex": "y=2",
+      "reason": "xの値が分かったので、xを含む元の方程式へ代入するとyだけの方程式になります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "x=6をx+y=8のxに代入する。",
+          "latex": "6+y=8\\Rightarrow y=2",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "x=6をy+z=6のzに代入してyを求める。",
+          "latex": "y+6=6\\Rightarrow y=0",
+          "isCorrect": false,
+          "incorrectReason": "求めた6はxの値なので、zの位置には代入できません。xを含むx+y=8へ代入します。"
+        },
+        {
+          "id": "choice-c",
+          "text": "x=6をx+y=8のyに代入する。",
+          "latex": "x+6=8\\Rightarrow x=2",
+          "isCorrect": false,
+          "incorrectReason": "6はxの値なので、x+y=8のyではなくxに代入します。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-006",
+      "beforeLatex": "y+z=6,\\quad y=2",
+      "operationText": "y=2をy+z=6のyに代入し、zを求める。",
+      "operationLatex": "2+z=6",
+      "afterLatex": "z=4",
+      "reason": "yの値をy+z=6へ代入すると、残る文字はzだけになります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "y=2をy+z=6のyに代入する。",
+          "latex": "2+z=6\\Rightarrow z=4",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "y=2をx+y=8のxに代入する。",
+          "latex": "2+y=8\\Rightarrow y=6",
+          "isCorrect": false,
+          "incorrectReason": "2はyの値なので、x+y=8のxには代入できません。zを求めるにはyを含むy+z=6を使います。"
+        },
+        {
+          "id": "choice-c",
+          "text": "y=2をz+x=10のxに代入してzを求める。",
+          "latex": "z+2=10\\Rightarrow z=8",
+          "isCorrect": false,
+          "incorrectReason": "求めた2はyの値なので、xの位置には代入できません。yを含むy+z=6へ代入します。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "equation",
+      "simultaneous-equation"
+    ]
+  },
+  "revision": "3b891f47e1ef5d9740e03296e96baa5b8d2aaf93bcf9f3734fd5ddf734d78609"
+}

@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://hana-math.local/schema/content-export-index.schema.json",
+  "title": "Hana Math Content Export Index",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "contentVersion",
+    "generatedAt",
+    "questionCount",
+    "questions"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "1.0.0" },
+    "contentVersion": { "type": "string", "minLength": 1 },
+    "generatedAt": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(?:\\.[0-9]{3})?Z$"
+    },
+    "questionCount": { "type": "integer", "minimum": 0 },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "revision",
+          "file",
+          "unit",
+          "gradeLevel",
+          "difficulty",
+          "problemType",
+          "tags"
+        ],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "revision": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "file": {
+            "type": "string",
+            "pattern": "^questions/[a-z0-9]+(?:-[a-z0-9]+)*-[0-9]{4}\\.json$"
+          },
+          "unit": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "name"],
+            "properties": {
+              "id": { "type": "string", "minLength": 1 },
+              "name": { "type": "string", "minLength": 1 }
+            }
+          },
+          "gradeLevel": {
+            "type": "string",
+            "enum": ["junior-high-review", "high-school-basic"]
+          },
+          "difficulty": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["label", "score"],
+            "properties": {
+              "label": {
+                "type": "string",
+                "enum": ["intro", "standard", "challenge"]
+              },
+              "score": { "type": "integer", "minimum": 1, "maximum": 5 }
+            }
+          },
+          "problemType": { "type": "string", "minLength": 1 },
+          "tags": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    }
+  }
+}

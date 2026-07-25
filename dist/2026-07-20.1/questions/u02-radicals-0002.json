@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u02-radicals-0002",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-02",
+    "name": "根号を含む式"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "original",
+  "problemType": "vocabulary-square-number-basic",
+  "problemText": "平方数とは何か、簡単に説明しなさい。",
+  "problemLatex": "\\text{平方数とは何か。}",
+  "given": {
+    "variables": [],
+    "conditions": [
+      "平方数の意味を確認する。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "\\text{整数を2乗してできる数。つまり、整数 }n\\text{ を使って }n^2\\text{ と表せる数。}"
+  },
+  "solutionPlan": {
+    "summary": "平方数を、同じ整数を2回かけてできる数、または整数nの2乗n^2と表せる数として説明する。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "\\text{平方数とは何か}",
+      "operationText": "平方数を、整数nを2乗したn^2の形で表せる数と説明する。",
+      "operationLatex": "n^2=n\\times n\\quad(n\\text{は整数})",
+      "afterLatex": "\\text{平方数は整数を2乗してできる数}",
+      "reason": "たとえば0=0^2、1=1^2、4=2^2、9=3^2は平方数です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "整数nを使ってn^2と表せる数と説明する。",
+          "latex": "n^2\\quad(n\\text{は整数})",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "整数nを使って2nと表せる数と説明する。",
+          "latex": "2n\\quad(n\\text{は整数})",
+          "isCorrect": false,
+          "incorrectReason": "2nは整数を2倍した偶数を表します。平方数はnをn自身にかけたn^2です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "整数nを使ってn^3と表せる数と説明する。",
+          "latex": "n^3\\quad(n\\text{は整数})",
+          "isCorrect": false,
+          "incorrectReason": "n^3は同じ整数を3回かけてできる立方数です。平方数は同じ整数を2回かけたn^2で表します。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "radical",
+      "vocabulary",
+      "square-number"
+    ]
+  },
+  "revision": "ee9387ac73baf747317eb0dd93bdbea480d922308d432c9fc3ae37803f8d9c5a"
+}

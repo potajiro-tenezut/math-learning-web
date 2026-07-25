@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u04-linear-equation-0001",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-04",
+    "name": "1次方程式"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "original",
+  "problemType": "linear-equation-basic",
+  "problemText": "3x - 11 = -2 を解きなさい。",
+  "problemLatex": "3x - 11 = -2",
+  "given": {
+    "variables": [
+      "x"
+    ],
+    "conditions": []
+  },
+  "answer": {
+    "finalAnswerLatex": "x=3"
+  },
+  "solutionPlan": {
+    "summary": "両辺に11を足して定数項を消し、最後に両辺を3で割ってxを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "3x-11=-2",
+      "operationText": "左辺の -11 を消すために、両辺に 11 を足す。",
+      "operationLatex": "3x-11+11=-2+11",
+      "afterLatex": "3x=9",
+      "reason": "xの項だけを左辺に残すために、-11と反対の+11を両辺に足します。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "両辺に11を足して 3x = 9 にする",
+          "latex": "3x=9",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "両辺から11を引いて 3x = -13 にする",
+          "latex": "3x=-13",
+          "isCorrect": false,
+          "incorrectReason": "-11を消すには、11を引くのではなく11を足します。"
+        },
+        {
+          "id": "choice-c",
+          "text": "右辺に11を足して 3x - 11 = 9 にする",
+          "latex": "3x-11=9",
+          "isCorrect": false,
+          "incorrectReason": "方程式では、右辺に11を足すなら左辺にも11を足します。両辺に同じ操作をする必要があります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "3x=9",
+      "operationText": "xの係数3を1にするために、両辺を3で割る。",
+      "operationLatex": "\\frac{3x}{3}=\\frac{9}{3}",
+      "afterLatex": "x=3",
+      "reason": "3xはxが3倍されている形なので、両辺を3で割るとxだけになります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "両辺を3で割る。",
+          "latex": "x=3",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "x = 9 が答えだと考える。",
+          "latex": "x=9",
+          "isCorrect": false,
+          "incorrectReason": "3x=9なので、xを求めるには9を3で割ります。"
+        },
+        {
+          "id": "choice-c",
+          "text": "両辺に3をかける。",
+          "latex": "x=27",
+          "isCorrect": false,
+          "incorrectReason": "両辺に3をかけるのではなく、両辺を3で割ります。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "equation",
+      "linear"
+    ]
+  },
+  "revision": "d9deaacb4a1f54a4083e0644d3d9122558fb54b9c3a5362ae64b155207550abb"
+}

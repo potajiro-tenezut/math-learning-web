@@ -1,0 +1,165 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u06-simultaneous-equation-0003",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-06",
+    "name": "連立方程式"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "imported",
+  "problemType": "simultaneous-equation-expansion-elimination-basic",
+  "problemText": "次の連立方程式を解きなさい。\n3x + 2(x − y) = 6，4(x + y) + y = 19",
+  "problemLatex": "\\begin{cases}3x+2(x-y)=6\\\\4(x+y)+y=19\\end{cases}",
+  "given": {
+    "variables": [
+      "x",
+      "y"
+    ],
+    "conditions": [
+      "かっこを外してから、2つの方程式をともに満たすx、yを求める。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "x=\\frac{68}{33},\\quad y=\\frac{71}{33}"
+  },
+  "solutionPlan": {
+    "summary": "両方の式のかっこを分配法則で外す。yの係数を-10と10にそろえて加減法でxを求め、その値を元の式へ代入してyを求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "\\begin{cases}3x+2(x-y)=6\\\\4(x+y)+y=19\\end{cases}",
+      "operationText": "分配法則で両方の式のかっこを外し、同類項をまとめる。",
+      "operationLatex": "3x+2x-2y=6,\\quad4x+4y+y=19",
+      "afterLatex": "\\begin{cases}5x-2y=6\\\\4x+5y=19\\end{cases}",
+      "reason": "かっこの前の数を、かっこ内のすべての項にかけます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "第1式は2をxと-yに、第2式は4をxとyにかけてかっこを外す。",
+          "latex": "\\begin{cases}5x-2y=6\\\\4x+5y=19\\end{cases}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "第1式を3x+2x-y=6、第2式を4x+4y+y=19にする。",
+          "latex": "\\begin{cases}5x-y=6\\\\4x+5y=19\\end{cases}",
+          "isCorrect": false,
+          "incorrectReason": "2(x-y)では、2をxと-yの両方にかけるため-2yになります。"
+        },
+        {
+          "id": "choice-c",
+          "text": "第1式を3x+2x-2y=6、第2式を4x+y+y=19にする。",
+          "latex": "\\begin{cases}5x-2y=6\\\\4x+2y=19\\end{cases}",
+          "isCorrect": false,
+          "incorrectReason": "4(x+y)では、4をxとyの両方にかけるため4yになります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "\\begin{cases}5x-2y=6\\\\4x+5y=19\\end{cases}",
+      "operationText": "第1式を5倍、第2式を2倍してyの係数を-10と10にし、2式を足す。",
+      "operationLatex": "\\begin{cases}25x-10y=30\\\\8x+10y=38\\end{cases}",
+      "afterLatex": "33x=68",
+      "reason": "yの係数が反対の数になるため、2式を足すとyを消去できます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "第1式を5倍、第2式を2倍し、2式を足す。",
+          "latex": "(25x-10y)+(8x+10y)=30+38\\Rightarrow33x=68",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "第1式を5倍、第2式を-2倍し、2式を足す。",
+          "latex": "(25x-10y)+(-8x-10y)=30-38\\Rightarrow17x-20y=-8",
+          "isCorrect": false,
+          "incorrectReason": "yの係数が-10と-10になるため、足してもyを消去できません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "第1式と第2式をともに4倍し、第1式から第2式を引く。",
+          "latex": "(20x-8y)-(16x+20y)=24-76\\Rightarrow4x-28y=-52",
+          "isCorrect": false,
+          "incorrectReason": "xの係数が20と16、yの係数が-8と20なので、引いてもどちらの文字も消去できません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "33x=68",
+      "operationText": "xの係数33を1にするために、両辺を33で割る。",
+      "operationLatex": "x=\\frac{68}{33}",
+      "afterLatex": "x=\\frac{68}{33}",
+      "reason": "33xはxの33倍なので、33で割るとxを求められます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "両辺を33で割る。",
+          "latex": "x=\\frac{68}{33}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "両辺を68で割る。",
+          "latex": "x=\\frac{33}{68}",
+          "isCorrect": false,
+          "incorrectReason": "xの係数は33なので、両辺を33で割ります。"
+        },
+        {
+          "id": "choice-c",
+          "text": "右辺から33を引く。",
+          "latex": "x=35",
+          "isCorrect": false,
+          "incorrectReason": "33はxの係数なので、引くのではなく両辺を33で割ります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-004",
+      "beforeLatex": "4x+5y=19,\\quad x=\\frac{68}{33}",
+      "operationText": "x=\\frac{68}{33}を4x+5y=19へ代入し、yを求める。",
+      "operationLatex": "4\\cdot\\frac{68}{33}+5y=19\\Rightarrow5y=\\frac{355}{33}",
+      "afterLatex": "y=\\frac{71}{33}",
+      "reason": "xを元の式へ戻すとyだけの方程式になり、両辺を5で割ってyを求められます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "x=\\frac{68}{33}を4x+5y=19へ代入する。",
+          "latex": "\\frac{272}{33}+5y=19\\Rightarrow y=\\frac{71}{33}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "x=\\frac{68}{33}をx+4+5y=19のxに代入する。",
+          "latex": "\\frac{68}{33}+4+5y=19\\Rightarrow y=\\frac{427}{165}",
+          "isCorrect": false,
+          "incorrectReason": "4xはxに4を足すのではなく、xを4倍する項です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "x=\\frac{68}{33}を4x-5y=19のxに代入する。",
+          "latex": "\\frac{272}{33}-5y=19\\Rightarrow y=-\\frac{71}{33}",
+          "isCorrect": false,
+          "incorrectReason": "元の第2式は4x-5y=19ではなく4x+5y=19なので、yの項は正のままです。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "equation",
+      "simultaneous-equation"
+    ]
+  },
+  "revision": "dc5c045473e093738fd286dcb5f4cde10569b7bf337558d748a36d47ba03e1d9"
+}

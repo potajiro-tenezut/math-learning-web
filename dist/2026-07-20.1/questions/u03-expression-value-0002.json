@@ -1,0 +1,258 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u03-expression-value-0002",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-03",
+    "name": "式の値"
+  },
+  "gradeLevel": "high-school-basic",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "imported",
+  "problemType": "expression-value-basic",
+  "problemText": "次の式の値を求めなさい。\n(1) a = 3 のとき，a² − 4a + 7 の値\n(2) x = −2，y = 5 のとき，−y(2x + y²) の値\n(3) a + b = √7 + 1，a − b = √7 − 1 のとき，a² − b² の値\n(4) x + y = 8，xy = 12 のとき，x² + y² の値\n(5) a = (√7 + √5)/2，b = (√7 − √5)/2 のとき，a² + b² の値\n(6) x = √3 + 2 のとき，x² + 1/x² の値",
+  "problemLatex": "\\begin{array}{ll}(1)&a=3,\\ a^2-4a+7\\\\(2)&x=-2,\\ y=5,\\ -y(2x+y^2)\\\\(3)&a+b=\\sqrt7+1,\\ a-b=\\sqrt7-1,\\ a^2-b^2\\\\(4)&x+y=8,\\ xy=12,\\ x^2+y^2\\\\(5)&a=\\dfrac{\\sqrt7+\\sqrt5}{2},\\ b=\\dfrac{\\sqrt7-\\sqrt5}{2},\\ a^2+b^2\\\\(6)&x=\\sqrt3+2,\\ x^2+\\dfrac1{x^2}\\end{array}",
+  "given": {
+    "variables": [
+      "a",
+      "b",
+      "x",
+      "y"
+    ],
+    "conditions": [
+      "代入や式変形を用いて、それぞれの式の値を求める。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "(1)\\ 4,\\quad (2)\\ -105,\\quad (3)\\ 6,\\quad (4)\\ 40,\\quad (5)\\ 6,\\quad (6)\\ 14"
+  },
+  "solutionPlan": {
+    "summary": "(1)(2)は数を代入し、(3)(4)は平方の公式を使う。(5)はa+bとabを先に求めてa^2+b^2=(a+b)^2-2abを使い、(6)は逆数を有理化してから平方を計算する。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "a^2-4a+7,\\ a=3",
+      "operationText": "(1)の式のaに3を代入して計算する。",
+      "operationLatex": "3^2-4\\cdot3+7",
+      "afterLatex": "4",
+      "reason": "9-12+7=4です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(1)のaに3を代入し、3^2-4\\cdot3+7を計算する。",
+          "latex": "4",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(1)のaに-3を代入し、(-3)^2-4\\cdot(-3)+7を計算する。",
+          "latex": "28",
+          "isCorrect": false,
+          "incorrectReason": "(1)で与えられた値は-3ではなく3です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(1)のaに3を代入し、3^2+4\\cdot3+7を計算する。",
+          "latex": "28",
+          "isCorrect": false,
+          "incorrectReason": "元の式のaの項は+4aではなく-4aです。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "-y(2x+y^2),\\ x=-2,y=5",
+      "operationText": "(2)の式にx=-2、y=5を代入し、かっこの中から計算する。",
+      "operationLatex": "-5(2(-2)+5^2)=-5(21)",
+      "afterLatex": "-105",
+      "reason": "2(-2)+25=21、よって-5\\cdot21=-105です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(2)にx=-2、y=5を代入し、-5(2(-2)+5^2)を計算する。",
+          "latex": "-105",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(2)にx=2、y=5を代入し、-5(2(2)+5^2)を計算する。",
+          "latex": "-145",
+          "isCorrect": false,
+          "incorrectReason": "(2)のxの値は2ではなく-2です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(2)にx=-2、y=5を代入し、5(2(-2)+5^2)を計算する。",
+          "latex": "105",
+          "isCorrect": false,
+          "incorrectReason": "式の先頭は-yなので、y=5を代入すると-5になります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "a^2-b^2,\\ a+b=\\sqrt7+1,\\ a-b=\\sqrt7-1",
+      "operationText": "(3)で平方の差の公式を使い、与えられた2つの式をかける。",
+      "operationLatex": "(a+b)(a-b)=(\\sqrt7+1)(\\sqrt7-1)=7-1",
+      "afterLatex": "6",
+      "reason": "a^2-b^2=(a+b)(a-b)です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(3)のa^2-b^2を(a+b)(a-b)にして、与えられた式をかける。",
+          "latex": "6",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(3)のa^2-b^2を(a+b)^2+(a-b)^2として計算する。",
+          "latex": "16",
+          "isCorrect": false,
+          "incorrectReason": "平方の差は積(a+b)(a-b)で表します。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(3)のa^2-b^2を(a+b)^2として計算する。",
+          "latex": "8+2\\sqrt7",
+          "isCorrect": false,
+          "incorrectReason": "a^2-b^2は(a+b)^2ではなく、(a+b)(a-b)です。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-004",
+      "beforeLatex": "x^2+y^2,\\ x+y=8,\\ xy=12",
+      "operationText": "(4)で(x+y)^2=x^2+2xy+y^2を使ってx^2+y^2を求める。",
+      "operationLatex": "x^2+y^2=(x+y)^2-2xy=8^2-2\\cdot12",
+      "afterLatex": "40",
+      "reason": "64-24=40です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(4)のx^2+y^2を(x+y)^2-2xyにして、8と12を代入する。",
+          "latex": "40",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(4)のx^2+y^2を(x+y)^2+2xyにして、8と12を代入する。",
+          "latex": "88",
+          "isCorrect": false,
+          "incorrectReason": "2xyを左辺へ移すので、引き算になります。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(4)のx^2+y^2を(x+y)^2-xyにして、8と12を代入する。",
+          "latex": "52",
+          "isCorrect": false,
+          "incorrectReason": "(x+y)^2に含まれる積の項はxyではなく2xyです。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-005",
+      "beforeLatex": "a=\\frac{\\sqrt7+\\sqrt5}2,\\quad b=\\frac{\\sqrt7-\\sqrt5}2",
+      "operationText": "(5)でa^2+b^2=(a+b)^2-2abを使うと考え、その準備として和a+bと積abを求める。",
+      "operationLatex": "a+b=\\sqrt7,\\quad ab=\\frac{(\\sqrt7+\\sqrt5)(\\sqrt7-\\sqrt5)}4=\\frac12",
+      "afterLatex": "a+b=\\sqrt7,\\quad ab=\\frac12",
+      "reason": "a^2+b^2を和と積で表す公式に必要な2つの値を準備します。和では\\sqrt5の項が消え、積は(7-5)/4=1/2です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(5)で(a+b)^2-2abを使うため、和a+bと積abを求める。",
+          "latex": "a^2+b^2=(a+b)^2-2ab,\\quad a+b=\\sqrt7,\\quad ab=\\frac12",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(5)で(a+b)(a-b)を使うため、和a+bと差a-bを求める。",
+          "latex": "a^2+b^2=(a+b)(a-b),\\quad a+b=\\sqrt7,\\quad a-b=\\sqrt5",
+          "isCorrect": false,
+          "incorrectReason": "(a+b)(a-b)で表せるのはa^2+b^2ではなくa^2-b^2です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(5)で(ab)^2を使うため、積abを求める。",
+          "latex": "a^2+b^2=(ab)^2,\\quad ab=\\frac12",
+          "isCorrect": false,
+          "incorrectReason": "(ab)^2はa^2b^2であり、a^2+b^2を表す式ではありません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-006",
+      "beforeLatex": "a+b=\\sqrt7,\\quad ab=\\frac12",
+      "operationText": "(5)でa^2+b^2=(a+b)^2-2abを使う。",
+      "operationLatex": "a^2+b^2=(\\sqrt7)^2-2\\cdot\\frac12=7-1",
+      "afterLatex": "6",
+      "reason": "和の平方から2abを引くとa^2+b^2が残ります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(5)のa^2+b^2を(a+b)^2-2abにして計算する。",
+          "latex": "a^2+b^2=6",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(5)のa^2+b^2を(a+b)^2+2abにして計算する。",
+          "latex": "a^2+b^2=8",
+          "isCorrect": false,
+          "incorrectReason": "(a+b)^2にはすでに2abが含まれるため、a^2+b^2を求めるには2abを引きます。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(5)のa^2+b^2を(a+b)^2-abにして計算する。",
+          "latex": "a^2+b^2=\\frac{13}2",
+          "isCorrect": false,
+          "incorrectReason": "(a+b)^2から引く積の項はabではなく2abです。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-007",
+      "beforeLatex": "x^2+\\frac1{x^2},\\ x=\\sqrt3+2",
+      "operationText": "(6)で1/x=2-\\sqrt3を使い、x^2と1/x^2を計算する。",
+      "operationLatex": "(2+\\sqrt3)^2+(2-\\sqrt3)^2=(7+4\\sqrt3)+(7-4\\sqrt3)",
+      "afterLatex": "14",
+      "reason": "(2+\\sqrt3)(2-\\sqrt3)=1なので、逆数は2-\\sqrt3です。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "(6)のxの逆数を2-\\sqrt3とし、x^2と1/x^2を計算する。",
+          "latex": "14",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "(6)の1/xを2+\\sqrt3とし、同じ式の平方を2回足す。",
+          "latex": "14+8\\sqrt3",
+          "isCorrect": false,
+          "incorrectReason": "2+\\sqrt3の逆数は共役の2-\\sqrt3です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "(6)の1/xを2-\\sqrt3とし、x^2+1/xを計算する。",
+          "latex": "9+3\\sqrt3",
+          "isCorrect": false,
+          "incorrectReason": "求める式はx^2+1/xではなく、x^2+1/x^2です。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "expression",
+      "substitution",
+      "radical"
+    ]
+  },
+  "revision": "59cf478cf6aeaccb886e64282e522c5202c9c6bb449273321448cc4cd6b84095"
+}

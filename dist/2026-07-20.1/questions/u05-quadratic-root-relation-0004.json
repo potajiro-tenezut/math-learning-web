@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u05-quadratic-root-relation-0004",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-05",
+    "name": "2次方程式"
+  },
+  "gradeLevel": "high-school-basic",
+  "difficulty": {
+    "label": "standard",
+    "score": 2
+  },
+  "sourceType": "imported",
+  "problemType": "quadratic-root-relation-basic",
+  "problemText": "二次方程式 x² + ax + (a − 20) = 0 の解の1つが4であるとき，もう1つの解を求めなさい。",
+  "problemLatex": "x^2+ax+(a-20)=0,\\quad x=4",
+  "given": {
+    "variables": [
+      "x",
+      "a"
+    ],
+    "conditions": [
+      "二次方程式 x^2+ax+(a-20)=0 の解の1つが4である。",
+      "もう1つの解を求める。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "x=-\\frac{24}{5}"
+  },
+  "solutionPlan": {
+    "summary": "与えられた解 x=4 を方程式に代入して a を決める。その後、二次方程式の2解の和が -a になることを使い、もう1つの解を求める。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "x^2+ax+(a-20)=0,\\quad x=4",
+      "operationText": "解の1つ x=4 を方程式の x に代入し、a の方程式を作る。",
+      "operationLatex": "4^2+4a+(a-20)=0\\Rightarrow5a-4=0",
+      "afterLatex": "5a-4=0",
+      "reason": "解は方程式を成り立たせる値なので、x=4を代入するとaを決めるための方程式が得られます。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "x=4を代入して、4^2+4a+(a-20)=0から5a-4=0を作る。",
+          "latex": "4^2+4a+(a-20)=0\\Rightarrow5a-4=0",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "与えられた4をaの値と考え、a=4を元の方程式に入れる。",
+          "latex": "a=4\\Rightarrow x^2+4x-16=0",
+          "isCorrect": false,
+          "incorrectReason": "問題で4だと与えられているのは係数aではなく、方程式の解xです。"
+        },
+        {
+          "id": "choice-c",
+          "text": "与えられた4を定数項の値と考え、a-20=4からaを求める。",
+          "latex": "a-20=4\\Rightarrow a=24",
+          "isCorrect": false,
+          "incorrectReason": "解が4であることは、定数項a-20が4であることを意味しません。x=4を式全体に代入して使います。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "5a-4=0",
+      "operationText": "定数項 -4 を消すために両辺に4を足し、両辺を5で割って a を求める。",
+      "operationLatex": "5a=4\\Rightarrow a=\\frac45",
+      "afterLatex": "a=\\frac45",
+      "reason": "5a-4=0の-4を消すために4を足すと5a=4になり、最後に5で割るとaだけになります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "両辺に4を足して5a=4にし、両辺を5で割ってa=\\frac45とする。",
+          "latex": "5a=4\\Rightarrow a=\\frac45",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "両辺から4を引いて5a=-4にし、両辺を5で割ってa=-\\frac45とする。",
+          "latex": "5a=-4\\Rightarrow a=-\\frac45",
+          "isCorrect": false,
+          "incorrectReason": "-4を消すには4を足すので、右辺は4になります。"
+        },
+        {
+          "id": "choice-c",
+          "text": "両辺に4を足して5a=4にし、両辺に5をかけてa=20とする。",
+          "latex": "5a=4\\Rightarrow a=20",
+          "isCorrect": false,
+          "incorrectReason": "5aからaを求めるには、5をかけるのではなく5で割ります。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "a=\\frac45,\\quad x_1=4",
+      "operationText": "a=\\frac45を使い、2つの解の和 x_1+x_2=-a に x_1=4 を代入して、もう1つの解 x_2 を求める。",
+      "operationLatex": "4+x_2=-\\frac45\\Rightarrow x_2=-\\frac{24}{5}",
+      "afterLatex": "x_2=-\\frac{24}{5}",
+      "reason": "x^2+ax+(a-20)=0ではx^2の係数が1なので、解の和は-aです。a=\\frac45とx_1=4を使うと、もう1つの解が決まります。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "解の和4+x_2=-a=-\\frac45を使い、x_2=-\\frac{24}{5}とする。",
+          "latex": "4+x_2=-\\frac45\\Rightarrow x_2=-\\frac{24}{5}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "解の和4+x_2=a=\\frac45を使い、x_2=-\\frac{16}{5}とする。",
+          "latex": "4+x_2=\\frac45\\Rightarrow x_2=-\\frac{16}{5}",
+          "isCorrect": false,
+          "incorrectReason": "x^2+ax+(a-20)=0の解の和はaではなく-aです。"
+        },
+        {
+          "id": "choice-c",
+          "text": "解の積4x_2=-a=-\\frac45を使い、x_2=-\\frac15とする。",
+          "latex": "4x_2=-\\frac45\\Rightarrow x_2=-\\frac15",
+          "isCorrect": false,
+          "incorrectReason": "解の積は-aではなくa-20です。-aは2つの解の和を表します。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "equation",
+      "quadratic",
+      "root"
+    ]
+  },
+  "revision": "aa875799b43ef36de1d82a9a5c7586ab0ff4ec5444868ff98e39afa24d1d4b6e"
+}

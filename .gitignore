@@ -1,0 +1,5 @@
+.DS_Store
+apps/learner-web/node_modules/
+apps/learner-web/build/
+apps/learner-web/coverage/
+*.tsbuildinfo

@@ -1,0 +1,194 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "u01-prime-list-0002",
+  "audience": {
+    "schoolStage": "high-school",
+    "levelNote": "偏差値40〜50程度。難しい用語を避け、基礎から確認する。"
+  },
+  "unit": {
+    "id": "unit-01",
+    "name": "約数と倍数"
+  },
+  "gradeLevel": "junior-high-review",
+  "difficulty": {
+    "label": "intro",
+    "score": 1
+  },
+  "sourceType": "imported",
+  "problemType": "prime-list-range-basic",
+  "problemText": "50から80までの整数の中から素数を見つけ，すべて書きなさい。",
+  "problemLatex": "50\\leq n\\leq 80",
+  "given": {
+    "variables": [
+      "n"
+    ],
+    "conditions": [
+      "50から80までの整数の中から素数をすべて求める。"
+    ]
+  },
+  "answer": {
+    "finalAnswerLatex": "53,\\ 59,\\ 61,\\ 67,\\ 71,\\ 73,\\ 79"
+  },
+  "solutionPlan": {
+    "summary": "50から80までの整数について、2, 3, 5, 7で割り切れるものを除く。最後に、残った候補に11が含まれず、11^2>80なので11以上の素数で割る確認が不要だと確かめる。"
+  },
+  "solutionSteps": [
+    {
+      "stepId": "step-001",
+      "beforeLatex": "50\\leq n\\leq 80",
+      "operationText": "50から80までの整数のうち、2で割り切れる偶数を候補から外す。",
+      "operationLatex": "51,53,55,57,59,61,63,65,67,69,71,73,75,77,79",
+      "afterLatex": "\\text{候補}=51,53,55,57,59,61,63,65,67,69,71,73,75,77,79",
+      "reason": "2より大きい偶数は2で割り切れるので、素数ではありません。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "50から80までの偶数を候補から外す。",
+          "latex": "50,52,54,\\ldots,80\\ \\text{を外す}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "50から80までの奇数を候補から外す。",
+          "latex": "51,53,55,\\ldots,79\\ \\text{を外す}",
+          "isCorrect": false,
+          "incorrectReason": "奇数の中には素数が含まれます。まず外すのは、2より大きくて2で割り切れる偶数です。"
+        },
+        {
+          "id": "choice-c",
+          "text": "50から80までの数をすべて答えにする。",
+          "latex": "50,51,52,\\ldots,80",
+          "isCorrect": false,
+          "incorrectReason": "範囲内には合成数も多くあります。割り切れる数を除いてから素数を選びます。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-002",
+      "beforeLatex": "\\text{候補}=51,53,55,57,59,61,63,65,67,69,71,73,75,77,79",
+      "operationText": "残った候補から、3で割り切れる数を外す。",
+      "operationLatex": "51,57,63,69,75\\ \\text{を外す}",
+      "afterLatex": "\\text{候補}=53,55,59,61,65,67,71,73,77,79",
+      "reason": "各けたの和が3の倍数になる数は3で割り切れるので、素数ではありません。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "残った候補から、3で割り切れる数を外す。",
+          "latex": "51,57,63,69,75\\ \\text{を外す}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "残った候補から、3を含む数を外す。",
+          "latex": "53,63,73\\ \\text{を外す}",
+          "isCorrect": false,
+          "incorrectReason": "3という数字を含むかどうかではなく、3で割り切れるかどうかを調べます。53と73は3で割り切れません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "残った候補から、3で割った余りが1の数を外す。",
+          "latex": "55,61,67,73,79\\ \\text{を外す}",
+          "isCorrect": false,
+          "incorrectReason": "素数でないと分かるのは3で割り切れる数です。余りが1の数を外す理由はありません。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-003",
+      "beforeLatex": "\\text{候補}=53,55,59,61,65,67,71,73,77,79",
+      "operationText": "残った候補から、5で割り切れる数を外す。",
+      "operationLatex": "55,65\\ \\text{を外す}",
+      "afterLatex": "\\text{候補}=53,59,61,67,71,73,77,79",
+      "reason": "一の位が0または5の数は5で割り切れるので、5以外は素数ではありません。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "残った候補から、5で割り切れる数を外す。",
+          "latex": "55,65\\ \\text{を外す}",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "残った候補から、5より大きい数をすべて外す。",
+          "latex": "53,55,59,\\ldots,79\\ \\text{を外す}",
+          "isCorrect": false,
+          "incorrectReason": "5より大きくても素数の数はあります。外すのは5で割り切れる数だけです。"
+        },
+        {
+          "id": "choice-c",
+          "text": "残った候補から、一の位が5でない数を外す。",
+          "latex": "53,59,61,67,71,73,77,79\\ \\text{を外す}",
+          "isCorrect": false,
+          "incorrectReason": "一の位が5の数こそ5で割り切れます。外す向きが逆です。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-004",
+      "beforeLatex": "\\text{候補}=53,59,61,67,71,73,77,79",
+      "operationText": "残った候補から、7で割り切れる77を外す。",
+      "operationLatex": "77=7\\times 11",
+      "afterLatex": "\\text{候補}=53,59,61,67,71,73,79",
+      "reason": "残った候補の中で7で割り切れるのは77だけです。77は7×11なので素数ではありません。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "残った候補から、7で割り切れる77を外す。",
+          "latex": "77=7\\times 11",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "残った候補から、7を含む数を外す。",
+          "latex": "67,71,73,77,79\\ \\text{を外す}",
+          "isCorrect": false,
+          "incorrectReason": "7という数字を含むかどうかではなく、7で割り切れるかどうかを調べます。67,71,73,79は7で割り切れません。"
+        },
+        {
+          "id": "choice-c",
+          "text": "残った候補をすべて7で割り切れる数として外す。",
+          "latex": "53,59,61,67,71,73,77,79\\ \\text{を外す}",
+          "isCorrect": false,
+          "incorrectReason": "残った候補の中で7で割り切れるのは77だけです。他の数まで外すと素数を消してしまいます。"
+        }
+      ]
+    },
+    {
+      "stepId": "step-005",
+      "beforeLatex": "\\text{候補}=53,59,61,67,71,73,79",
+      "operationText": "残った候補に11の倍数がなく、11^2>80なので、11以上の素数で割る確認が不要だと確かめる。",
+      "operationLatex": "11^2=121>80",
+      "afterLatex": "\\text{素数}=53,59,61,67,71,73,79",
+      "reason": "80以下の合成数なら、1以外の約数のうち小さい方は8以下になります。だから2,3,5,7で割れず、11の倍数でもない候補は、11以上の素数でさらに割る必要がありません。",
+      "choices": [
+        {
+          "id": "choice-a",
+          "text": "残った候補に11の倍数がなく、11^2>80なので確認を終える。",
+          "latex": "11^2=121>80",
+          "isCorrect": true
+        },
+        {
+          "id": "choice-b",
+          "text": "残った候補に11が含まれないことを確認して、確認を終える。",
+          "latex": "11\\notin\\{53,59,61,67,71,73,79\\}",
+          "isCorrect": false,
+          "incorrectReason": "11そのものがないだけでは不十分です。残った候補に11の倍数がないことも確認します。"
+        },
+        {
+          "id": "choice-c",
+          "text": "11^2>80を確認して、確認を終える。",
+          "latex": "11^2=121>80",
+          "isCorrect": false,
+          "incorrectReason": "11^2>80はこれ以上の素数を調べない理由になりますが、残った候補に11の倍数がないことは確認しておく必要があります。"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "tags": [
+      "divisor",
+      "prime"
+    ]
+  },
+  "revision": "30473137cc5921d7a4e7cc96265dfc438cc9abe627fc1bb4c9ce6099c5c70f01"
+}

@@ -184,19 +184,9 @@ function validateQuestion(
 }
 
 export function normalizeProseMath(value: string): string {
-  return value
-    .replace(/\\u([0-9a-fA-F]{4})/g, (_, codePoint: string) =>
-      String.fromCharCode(Number.parseInt(codePoint, 16)),
-    )
-    .replace(/\\sqrt\{([^{}]+)\}/g, "√$1")
-    .replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, "$1/$2")
-    .replace(/\\times\b/g, "×")
-    .replace(/\\div\b/g, "÷")
-    .replace(/\\cdot\b/g, "·")
-    .replace(/\\pm\b/g, "±")
-    .replace(/\\(?:le|leq)\b/g, "≤")
-    .replace(/\\(?:ge|geq)\b/g, "≥")
-    .replace(/\\neq\b/g, "≠");
+  return value.replace(/\\u([0-9a-fA-F]{4})/g, (_, codePoint: string) =>
+    String.fromCharCode(Number.parseInt(codePoint, 16)),
+  );
 }
 
 export function resolveWithinBase(relativePath: string, baseUrl: URL): URL {

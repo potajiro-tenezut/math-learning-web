@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import { Latex } from "./components/Latex";
+import { InlineMathText } from "./components/InlineMathText";
 import { ContentError } from "./data/contentRepository";
 import type {
   AvailableContent,
@@ -459,7 +460,9 @@ function Player({ question, progress, quickPosition, onBack, onDone }: PlayerPro
           aria-hidden="true"
         >
           <span>✓</span>
-          <strong>{flyingAnswer.label}</strong>
+          <strong>
+            <InlineMathText value={flyingAnswer.label} />
+          </strong>
         </div>
       )}
       {roast && (
@@ -502,7 +505,9 @@ function Player({ question, progress, quickPosition, onBack, onDone }: PlayerPro
           </div>
         </div>
 
-        <h1>{question.problemText}</h1>
+        <h1>
+          <InlineMathText value={question.problemText} />
+        </h1>
         {question.problemLatex && (
           <div className="problem-math">
             <Latex value={question.problemLatex} block />
@@ -524,7 +529,9 @@ function Player({ question, progress, quickPosition, onBack, onDone }: PlayerPro
             </div>
             <details className="solution-note">
               <summary>解き方をおさらい</summary>
-              <p>{question.solutionPlan.summary}</p>
+              <p>
+                <InlineMathText value={question.solutionPlan.summary} />
+              </p>
             </details>
             <button type="button" className="start-button next-question" onClick={onDone}>
               <span>
@@ -576,7 +583,9 @@ function Player({ question, progress, quickPosition, onBack, onDone }: PlayerPro
                   >
                     <span className="choice-letter">{String.fromCharCode(65 + index)}</span>
                     <span className="choice-copy">
-                      <strong>{choice.text}</strong>
+                      <strong>
+                        <InlineMathText value={choice.text} />
+                      </strong>
                       {choice.latex && <Latex value={choice.latex} />}
                     </span>
                     {selected && (
@@ -596,7 +605,9 @@ function Player({ question, progress, quickPosition, onBack, onDone }: PlayerPro
                 aria-live="polite"
               >
                 <strong>{state.phase === "correct" ? "いい感じ！" : "おしい！"}</strong>
-                <p>{state.feedback}</p>
+                <p>
+                  <InlineMathText value={state.feedback} />
+                </p>
                 {state.phase === "correct" && (
                   <>
                     <button type="button" className="continue-button" onClick={next} autoFocus>

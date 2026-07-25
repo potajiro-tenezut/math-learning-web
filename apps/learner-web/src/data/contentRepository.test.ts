@@ -115,17 +115,16 @@ describe("HttpContentRepository", () => {
 });
 
 describe("normalizeProseMath", () => {
-  it("二重エスケープされた記号と本文中のLaTeXを表示文字へ戻す", () => {
+  it("二重エスケープされたUnicodeだけを表示文字へ戻す", () => {
     expect(normalizeProseMath("\\u221a50 を簡単にする")).toBe("√50 を簡単にする");
     expect(normalizeProseMath("\\u00b12 と \\u03c0")).toBe("±2 と π");
-    expect(normalizeProseMath("2 \\times 5=10、10 \\div 2=5")).toBe(
-      "2 × 5=10、10 ÷ 2=5",
-    );
-    expect(normalizeProseMath("\\sqrt{50} と \\frac{1}{2}")).toBe("√50 と 1/2");
   });
 
-  it("通常の文章は変更しない", () => {
+  it("通常の文章とLaTeXは変更しない", () => {
     expect(normalizeProseMath("平方根を考える")).toBe("平方根を考える");
+    expect(normalizeProseMath("\\sqrt{50} と \\frac{1}{2}")).toBe(
+      "\\sqrt{50} と \\frac{1}{2}",
+    );
   });
 });
 

@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
 import { describe, expect, it, vi } from "vitest";
+import { splitInlineMath } from "../domain/inlineMath";
 import { HttpContentRepository } from "./contentRepository";
 
 describe("実エクスポート統合", () => {
@@ -48,18 +49,18 @@ describe("実エクスポート統合", () => {
     expect(new Set(grade3Questions.map((question) => question.unit.name))).toEqual(
       new Set(["たし算", "ひき算", "かけ算", "わり算"]),
     );
-    const grade3Prose = grade3Questions.flatMap((question) => [
+    const prose = [...highSchoolQuestions, ...grade3Questions].flatMap((question) => [
       question.problemText,
       question.solutionPlan.summary,
       ...question.solutionSteps.flatMap((step) => [
         step.operationText,
         step.reason,
-        ...step.choices.flatMap((choice) => [
-          choice.text,
-          choice.incorrectReason ?? "",
-        ]),
+        ...step.choices.flatMap((choice) => [choice.text, choice.incorrectReason ?? ""]),
       ]),
     ]);
-    expect(grade3Prose.join("\n")).not.toMatch(/\\(?:times|div)\b/);
+    const unparsedText = prose.flatMap(splitInlineMath).flatMap((segment) =>
+      segment.kind === "text" ? [segment.value] : [],
+    );
+    expect(unparsedText.join("\n")).not.toMatch(/\\[A-Za-z]+/);
   });
 });

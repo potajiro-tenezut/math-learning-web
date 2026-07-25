@@ -227,10 +227,16 @@ async function fetchText(url: URL, init?: RequestInit): Promise<string> {
 }
 
 export class HttpContentRepository implements ContentRepository {
-  constructor(private readonly baseUrl: URL) {}
+  constructor(
+    private readonly baseUrl: URL,
+    private readonly cacheBuster: () => string = () => Date.now().toString(),
+  ) {}
 
   async loadAvailableContent(): Promise<AvailableContent> {
     const latestUrl = resolveWithinBase("latest.json", this.baseUrl);
+    // GitHub Pages and some CDNs apply their own cache headers. A unique query
+    // keeps the release pointer fresh even when those headers cannot be changed.
+    latestUrl.searchParams.set("cache-bust", this.cacheBuster());
     const latest = parseJson(await fetchText(latestUrl, { cache: "no-store" }), "latest");
     assertSchema(latest, "latest");
     if (

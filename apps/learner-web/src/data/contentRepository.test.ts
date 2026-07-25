@@ -45,14 +45,14 @@ async function makePackage(schemaVersion = "1.0.0") {
 
 function installFetch(files: Awaited<ReturnType<typeof makePackage>>) {
   return vi.spyOn(globalThis, "fetch").mockImplementation(async (input, init) => {
-    const url = String(input);
-    if (url.endsWith("/latest.json")) {
+    const url = new URL(String(input));
+    if (url.pathname.endsWith("/latest.json")) {
       expect(init).toMatchObject({ cache: "no-store" });
       return new Response(files.latest);
     }
-    if (url.endsWith("/manifest.json")) return new Response(files.manifest);
-    if (url.endsWith("/index.json")) return new Response(files.index);
-    if (url.endsWith(`/${summary.file}`)) return new Response(files.question);
+    if (url.pathname.endsWith("/manifest.json")) return new Response(files.manifest);
+    if (url.pathname.endsWith("/index.json")) return new Response(files.index);
+    if (url.pathname.endsWith(`/${summary.file}`)) return new Response(files.question);
     return new Response("", { status: 404 });
   });
 }
@@ -63,13 +63,16 @@ describe("HttpContentRepository", () => {
   it("latest → manifest → index → questionのURLを解決する", async () => {
     const files = await makePackage();
     const fetchSpy = installFetch(files);
-    const repository = new HttpContentRepository(new URL("https://example.test/content/"));
+    const repository = new HttpContentRepository(
+      new URL("https://example.test/content/"),
+      () => "test",
+    );
     const content = await repository.loadAvailableContent();
     const loaded = await repository.loadQuestion(content, summary);
 
     expect(loaded.id).toBe(summary.id);
     expect(fetchSpy.mock.calls.map(([url]) => String(url))).toEqual([
-      "https://example.test/content/latest.json",
+      "https://example.test/content/latest.json?cache-bust=test",
       "https://example.test/content/2026-01-01.1/manifest.json",
       "https://example.test/content/2026-01-01.1/index.json",
       "https://example.test/content/2026-01-01.1/questions/unit-sample-0001.json",

@@ -13,6 +13,7 @@ import {
   type ProgressRepository,
 } from "./domain/progress";
 import { pickRandomQuestions } from "./domain/quickSession";
+import { pickRoastMessage } from "./domain/roasts";
 import { LearningSession } from "./domain/session";
 import { useContent } from "./hooks/useContent";
 
@@ -27,15 +28,6 @@ const statusNames: Record<ProgressStatus, string> = {
   "in-progress": "途中",
   completed: "できた",
 };
-
-const roastMessages = [
-  "え、そこ？ 正解から全力で逃げてるけど。",
-  "勘で押して、勘にも負けたの？",
-  "今の一手、数学が二度見してる。",
-  "その選択は雑すぎ。指が勝手に動いた？",
-  "考えた結果がそれ？ いったん深呼吸しよ。",
-  "逆にどうしたらそこを選べるの。",
-];
 
 function statusFor(summary: QuestionSummary, progress: ProgressRepository): ProgressStatus {
   return progress.get(summary.id, summary.revision)?.status ?? "not-started";
@@ -329,6 +321,7 @@ function Player({ question, progress, quickPosition, onBack, onDone }: PlayerPro
   const formulaRef = useRef<HTMLDivElement>(null);
   const timers = useRef<number[]>([]);
   const roastTimer = useRef<number | undefined>(undefined);
+  const lastRoast = useRef<string | undefined>(undefined);
   const [flyingAnswer, setFlyingAnswer] = useState<FlyingAnswer>();
   const [formulaBurst, setFormulaBurst] = useState(false);
   const [formulaTransformed, setFormulaTransformed] = useState(false);
@@ -357,7 +350,8 @@ function Player({ question, progress, quickPosition, onBack, onDone }: PlayerPro
 
   const showRoast = () => {
     if (roastTimer.current) window.clearTimeout(roastTimer.current);
-    const text = roastMessages[Math.floor(Math.random() * roastMessages.length)];
+    const text = pickRoastMessage(Math.random, lastRoast.current);
+    lastRoast.current = text;
     setRoast({ id: Date.now(), text });
     roastTimer.current = window.setTimeout(() => setRoast(undefined), 3000);
   };
